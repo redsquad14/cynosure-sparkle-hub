@@ -1,50 +1,40 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
-
 const Gallery = () => {
   // Placeholder for gallery items
-  const galleryItems = [
-    {
-      type: 'image',
-      title: 'Dance Revolution 2023',
-      description: 'Students from 12 schools came together for an epic dance battle!',
-      highlight: '500+ participants'
-    },
-    {
-      type: 'video',
-      title: 'Musical Moments',
-      description: 'The most melodious voices of Mumbai in one magical evening.',
-      highlight: '25 performances'
-    },
-    {
-      type: 'image',
-      title: 'Art Exhibition',
-      description: 'Creativity knows no bounds when young artists unite!',
-      highlight: '100+ artworks'
-    },
-    {
-      type: 'video',
-      title: 'Tech Innovations',
-      description: 'Young programmers showcasing the future of technology.',
-      highlight: '50 projects'
-    },
-    {
-      type: 'image',
-      title: 'Team Spirit',
-      description: 'Friendships formed, memories created, dreams shared.',
-      highlight: '∞ Smiles'
-    },
-    {
-      type: 'image',
-      title: 'Victory Moments',
-      description: 'Every participant is a winner in the CYNOSURE family!',
-      highlight: 'Pure Joy'
-    }
-  ];
-
-  return (
-    <section id="gallery" className="py-20 px-4 relative">
+  const galleryItems = [{
+    type: 'image',
+    title: 'Dance Revolution 2023',
+    description: 'Students from 12 schools came together for an epic dance battle!',
+    highlight: '500+ participants'
+  }, {
+    type: 'video',
+    title: 'Musical Moments',
+    description: 'The most melodious voices of Mumbai in one magical evening.',
+    highlight: '25 performances'
+  }, {
+    type: 'image',
+    title: 'Art Exhibition',
+    description: 'Creativity knows no bounds when young artists unite!',
+    highlight: '100+ artworks'
+  }, {
+    type: 'video',
+    title: 'Tech Innovations',
+    description: 'Young programmers showcasing the future of technology.',
+    highlight: '50 projects'
+  }, {
+    type: 'image',
+    title: 'Team Spirit',
+    description: 'Friendships formed, memories created, dreams shared.',
+    highlight: '∞ Smiles'
+  }, {
+    type: 'image',
+    title: 'Victory Moments',
+    description: 'Every participant is a winner in the CYNOSURE family!',
+    highlight: 'Pure Joy'
+  }];
+  return <section id="gallery" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -69,10 +59,7 @@ const Gallery = () => {
                 <h3 className="text-2xl font-bold text-gradient">Memories Loading...</h3>
                 <Heart className="w-8 h-8 text-accent animate-pulse" />
               </div>
-              <p className="text-lg text-muted-foreground mb-4">
-                🌟 We're currently curating the most beautiful moments from our previous editions! 
-                Get ready for a visual treat that'll make you want to be part of CYNOSURE 2024!
-              </p>
+              <p className="text-lg text-muted-foreground mb-4">🌟 We're currently curating the most beautiful moments from our previous editions! Get ready for a visual treat that'll make you want to be part of CYNOSURE 2025!</p>
               <p className="text-accent font-semibold">
                 ✨ Gallery will be updated soon with stunning photos and videos! ✨
               </p>
@@ -82,19 +69,12 @@ const Gallery = () => {
 
         {/* Preview Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {galleryItems.map((item, index) => (
-            <Card 
-              key={item.title}
-              className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group relative overflow-hidden"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {galleryItems.map((item, index) => <Card key={item.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group relative overflow-hidden" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               {/* Placeholder Background */}
               <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center relative">
-                {item.type === 'video' ? (
-                  <Play className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" />
-                ) : (
-                  <Camera className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" />
-                )}
+                {item.type === 'video' ? <Play className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" /> : <Camera className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" />}
                 <div className="absolute top-2 right-2 bg-accent/80 text-accent-foreground px-2 py-1 rounded text-xs font-semibold">
                   {item.highlight}
                 </div>
@@ -104,8 +84,7 @@ const Gallery = () => {
                 <h3 className="text-lg font-bold text-gradient mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* What to Expect */}
@@ -154,8 +133,6 @@ const Gallery = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Gallery;
