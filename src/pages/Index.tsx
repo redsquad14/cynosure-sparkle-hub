@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Events from '@/components/Events';
+import Gallery from '@/components/Gallery';
+import Team from '@/components/Team';
+import Contact from '@/components/Contact';
+import StarField from '@/components/StarField';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
+      <StarField />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Events />
+        <Gallery />
+        <Team />
+        <Contact />
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-card border-t border-primary/20 py-8 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-muted-foreground mb-2">
+            ✨ Made with love by the CYNOSURE team ✨
+          </p>
+          <p className="text-sm text-muted-foreground">
+            © 2024 CYNOSURE - Pan Mumbai Interschool Fest. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
