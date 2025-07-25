@@ -2,10 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Star, Calendar } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
 import StarField from './StarField';
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <StarField />
       
       {/* Main Content */}
@@ -14,10 +12,15 @@ const Hero = () => {
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-pulse">
-              <Star className="w-12 h-12 text-primary-foreground animate-spin" style={{ animationDuration: '8s' }} />
+              <Star className="w-12 h-12 text-primary-foreground animate-spin" style={{
+              animationDuration: '8s'
+            }} />
             </div>
             {/* Blinking eye effect */}
-            <div className="absolute inset-0 w-24 h-24 rounded-full bg-background animate-pulse" style={{ animationDelay: '3s', animationDuration: '4s' }} />
+            <div className="absolute inset-0 w-24 h-24 rounded-full bg-background animate-pulse" style={{
+            animationDelay: '3s',
+            animationDuration: '4s'
+          }} />
           </div>
         </div>
 
@@ -49,7 +52,8 @@ const Hero = () => {
         <div className="mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Calendar className="text-primary" />
-            <h3 className="text-2xl font-semibold text-gradient">September 26, 2024</h3>
+            <h3 className="text-2xl font-semibold text-gradient">September 26, 2025
+          </h3>
             <Calendar className="text-primary" />
           </div>
           <CountdownTimer />
@@ -77,13 +81,15 @@ const Hero = () => {
         <Sparkles className="w-8 h-8 text-accent float" />
       </div>
       <div className="absolute top-20 right-20 opacity-30">
-        <Star className="w-6 h-6 text-primary float" style={{ animationDelay: '2s' }} />
+        <Star className="w-6 h-6 text-primary float" style={{
+        animationDelay: '2s'
+      }} />
       </div>
       <div className="absolute bottom-20 right-10 opacity-30">
-        <Sparkles className="w-10 h-10 text-secondary float" style={{ animationDelay: '4s' }} />
+        <Sparkles className="w-10 h-10 text-secondary float" style={{
+        animationDelay: '4s'
+      }} />
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
