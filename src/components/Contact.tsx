@@ -4,18 +4,16 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Instagram, Heart, Send } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-20 px-4 relative">
+  return <section id="contact" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gradient mb-6">Contact Us</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
-            <Heart className="text-accent animate-pulse" />
+            
             <p className="text-xl text-primary font-semibold">We're Here for You!</p>
-            <Heart className="text-accent animate-pulse" />
+            
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             💌 Whether you're curious, confused, or just super excited about CYNOSURE - 
@@ -25,73 +23,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gradient mb-6 flex items-center gap-2">
-                <Send className="w-6 h-6 text-primary" />
-                Send Us a Message
-              </h3>
-              
-              <form className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-foreground font-semibold">Your Name ✨</Label>
-                  <Input 
-                    id="name" 
-                    placeholder="Tell us who you are!" 
-                    className="mt-2 bg-background/50 border-primary/30 focus:border-primary"
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="email" className="text-foreground font-semibold">Email Address 📧</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="your.awesome@email.com" 
-                    className="mt-2 bg-background/50 border-primary/30 focus:border-primary"
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="school" className="text-foreground font-semibold">School/College 🏫</Label>
-                  <Input 
-                    id="school" 
-                    placeholder="Which amazing institution are you from?" 
-                    className="mt-2 bg-background/50 border-primary/30 focus:border-primary"
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="subject" className="text-foreground font-semibold">What's on your mind? 💭</Label>
-                  <select 
-                    id="subject"
-                    className="w-full mt-2 p-3 rounded-md bg-background/50 border border-primary/30 focus:border-primary text-foreground"
-                  >
-                    <option value="">Choose a topic...</option>
-                    <option value="registration">Registration Info 🌟</option>
-                    <option value="events">Event Details 🎭</option>
-                    <option value="volunteer">Volunteer Opportunities 🤝</option>
-                    <option value="collaboration">School Collaboration 🏫</option>
-                    <option value="media">Media Partnerships 📸</option>
-                    <option value="other">Just Excited! 🎉</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <Label htmlFor="message" className="text-foreground font-semibold">Your Message 💌</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Share your thoughts, questions, or just say hi! We love hearing from future CYNOSURE stars! ✨" 
-                    className="mt-2 min-h-[120px] bg-background/50 border-primary/30 focus:border-primary resize-none"
-                  />
-                </div>
-                
-                <Button variant="gradient" size="lg" className="w-full text-lg py-6">
-                  🚀 Send Message & Spread the Magic!
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          
 
           {/* Contact Information */}
           <div className="space-y-8">
@@ -146,8 +78,8 @@ const Contact = () => {
                 <div className="space-y-2 text-sm">
                   <p className="text-accent font-semibold">📍 Central Coordination Hub</p>
                   <p className="text-muted-foreground">
-                    Various Partner Colleges<br/>
-                    Mumbai, Maharashtra<br/>
+                    Various Partner Colleges<br />
+                    Mumbai, Maharashtra<br />
                     India 🇮🇳
                   </p>
                 </div>
@@ -168,8 +100,8 @@ const Contact = () => {
                     <p className="text-muted-foreground">Registration opens soon! Stay tuned for updates.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-accent">💰 Registration fees?</p>
-                    <p className="text-muted-foreground">Very affordable! Details coming soon.</p>
+                    
+                    
                   </div>
                 </div>
               </CardContent>
@@ -191,8 +123,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

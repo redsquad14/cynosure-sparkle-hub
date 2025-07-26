@@ -6,10 +6,8 @@ import Gallery from '@/components/Gallery';
 import Team from '@/components/Team';
 import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
+  return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
       <Navbar />
       <main>
@@ -24,16 +22,10 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-card border-t border-primary/20 py-8 text-center relative z-10">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-muted-foreground mb-2">
-            ✨ Made with love by the CYNOSURE team ✨
-          </p>
-          <p className="text-sm text-muted-foreground">
-            © 2024 CYNOSURE - Pan Mumbai Interschool Fest. All rights reserved.
-          </p>
+          <p className="text-muted-foreground mb-2"> Made with love by the CYNOSURE team </p>
+          <p className="text-sm text-muted-foreground">© 2024 CYNOSURE - Pan Mumbai Interschool Fes</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
