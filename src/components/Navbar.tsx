@@ -26,8 +26,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-primary animate-pulse" />
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/627530d8-e51f-404f-a8fb-e79c0b106a8f.png" 
+              alt="CYNOSURE Logo" 
+              className="h-12 w-12 object-contain"
+            />
             <span className="text-2xl font-bold text-gradient">CYNOSURE</span>
           </div>
 
