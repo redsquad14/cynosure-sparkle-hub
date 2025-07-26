@@ -1,18 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Heart, Users, Lightbulb } from 'lucide-react';
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 px-4 relative">
+  return <section id="about" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6">About Cynosure</h2>
-          <div className="flex items-center justify-center gap-2 mb-8">
-            <Star className="text-primary animate-pulse" />
-            <p className="text-xl text-accent font-semibold">The Guiding Star of Mumbai's Youth</p>
-            <Star className="text-primary animate-pulse" />
-          </div>
+          <h2 className="text-5xl font-bold text-gradient mb-6 mx-0 py-0">About Cynosure</h2>
+          
         </div>
 
         {/* Origin Story */}
@@ -29,11 +23,7 @@ const About = () => {
                 young minds from across the city. This dream blossomed into <span className="text-primary font-semibold">CYNOSURE</span> 
                 – a festival where creativity knows no limits and every participant becomes a shining star.
               </p>
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                ✨ Named after the constellation that guides sailors home, CYNOSURE serves as the guiding star 
-                for Mumbai's youth, illuminating paths of friendship, creativity, and excellence. Here, every student 
-                finds their moment to shine, every talent gets its stage, and every dream finds its wings.
-              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">✨CYNOSURE serves as the guiding star for Mumbai's youth, illuminating paths of friendship, creativity, and excellence. Here, every student finds their moment to shine, every talent gets its stage, and every dream finds its wings.</p>
             </CardContent>
           </Card>
         </div>
@@ -84,8 +74,6 @@ const About = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

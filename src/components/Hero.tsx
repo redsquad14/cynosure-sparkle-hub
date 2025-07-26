@@ -38,9 +38,7 @@ const Hero = () => {
 
         {/* Coming Soon */}
         <div className="mb-8">
-          <h2 className="text-4xl md:text-6xl font-bold glow-text mb-4 animate-pulse">
-            COMING SOON
-          </h2>
+          
           <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
             🌟 Get ready for Mumbai's most heartfully curated interschool celebration! 
             Where young stars shine brightest and dreams take flight. 
@@ -61,18 +59,9 @@ const Hero = () => {
 
         {/* Call to Action */}
         <div className="space-y-4">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="gradient" size="lg" className="text-lg px-8 py-6 font-semibold">
-              🌟 Register Your School
-            </Button>
-            <Button variant="glow" size="lg" className="text-lg px-8 py-6">
-              📧 Get Updates
-            </Button>
-          </div>
           
-          <p className="text-sm text-muted-foreground mt-4">
-            ✨ Be the first to know when registrations open! ✨
-          </p>
+          
+          <p className="text-sm text-muted-foreground mt-4">Contact us on Instagram: @cynosure.stghs</p>
         </div>
       </div>
 
