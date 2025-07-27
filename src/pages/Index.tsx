@@ -23,7 +23,7 @@ const Index = () => {
       <footer className="bg-card border-t border-primary/20 py-8 text-center relative z-10">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-muted-foreground mb-2"> Made with love by the CYNOSURE team </p>
-          <p className="text-sm text-muted-foreground">© 2025 CYNOSURE - Pan Mumbai Interschool Fes</p>
+          <p className="text-sm text-muted-foreground">© 2025 CYNOSURE - St. Gregorios High Schools Student Powered Interschool Fest</p>
         </div>
       </footer>
     </div>;
