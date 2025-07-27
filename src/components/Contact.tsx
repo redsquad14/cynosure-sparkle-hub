@@ -67,7 +67,7 @@ const Contact = () => {
 
             {/* Location */}
             <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30">
-              <CardContent className="p-6">
+              <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold text-gradient mb-4 flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
