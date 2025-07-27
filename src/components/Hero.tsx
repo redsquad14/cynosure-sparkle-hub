@@ -12,12 +12,9 @@ const Hero = () => {
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="w-28 h-28 rounded-full flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
-                alt="CYNOSURE Logo" 
-                className="w-28 h-28 object-contain animate-spin" 
-                style={{animationDuration: '8s'}}
-              />
+              <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="w-28 h-28 object-contain animate-spin" style={{
+              animationDuration: '8s'
+            }} />
             </div>
             {/* Blinking eye effect */}
             <div className="absolute inset-0 w-28 h-28 rounded-full bg-background animate-pulse" style={{
@@ -34,7 +31,7 @@ const Hero = () => {
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="text-accent animate-pulse" />
-            <p className="text-xl md:text-2xl text-accent font-semibold">Pan Mumbai Interschool Fest</p>
+            <p className="text-xl md:text-2xl text-accent font-semibold">St. Gregorios High School's Student Powered Interschool Fest</p>
             <Sparkles className="text-accent animate-pulse" />
           </div>
         </div>
