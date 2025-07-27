@@ -11,7 +11,7 @@ const Hero = () => {
         {/* Mascot Eye */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-pulse">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center">
               <img 
                 src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
                 alt="CYNOSURE Logo" 
@@ -20,7 +20,7 @@ const Hero = () => {
               />
             </div>
             {/* Blinking eye effect */}
-            <div className="absolute inset-0 w-24 h-24 rounded-full bg-background animate-pulse" style={{
+            <div className="absolute inset-0 w-16 h-16 rounded-full bg-background animate-pulse" style={{
             animationDelay: '3s',
             animationDuration: '4s'
           }} />
