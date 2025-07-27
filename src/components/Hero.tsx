@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center animate-pulse">
               <img 
-                src="/lovable-uploads/627530d8-e51f-404f-a8fb-e79c0b106a8f.png" 
+                src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
                 alt="CYNOSURE Logo" 
                 className="w-16 h-16 object-contain animate-spin" 
                 style={{animationDuration: '8s'}}

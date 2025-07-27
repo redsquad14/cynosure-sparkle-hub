@@ -28,7 +28,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/627530d8-e51f-404f-a8fb-e79c0b106a8f.png" 
+              src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
               alt="CYNOSURE Logo" 
               className="h-12 w-12 object-contain"
             />
