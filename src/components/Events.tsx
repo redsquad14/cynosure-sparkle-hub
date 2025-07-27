@@ -67,7 +67,11 @@ const Events = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {event.description}
                 </p>
-                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary">
+                <Button 
+                  variant="outline" 
+                  className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary"
+                  onClick={() => window.open('https://www.canva.com/design/DAGtzBTiecA/jsntczu5Hn3Yxy8AuMNynQ/edit?utm_content=DAGtzBTiecA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')}
+                >
                   Learn More ✨
                 </Button>
               </CardContent>
