@@ -1,67 +1,57 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Music, Coffee, Palette, Users, Heart, Star } from 'lucide-react';
-
 const Team = () => {
-  const teamMembers = [
-    {
-      name: "Arya Sharma",
-      role: "Festival Director",
-      school: "St. Xavier's College",
-      favoriteSong: "Bohemian Rhapsody - Queen 🎵",
-      snack: "Masala Chai & Parle-G 🍪",
-      talent: "Can solve a Rubik's cube blindfolded! 🧩",
-      icon: Star
-    },
-    {
-      name: "Dev Patel",
-      role: "Events Coordinator",
-      school: "Mithibai College",
-      favoriteSong: "Vande Mataram - A.R. Rahman 🎼",
-      snack: "Samosas from the college canteen 🥟",
-      talent: "Beatboxing champion! 🎤",
-      icon: Music
-    },
-    {
-      name: "Ananya Iyer",
-      role: "Creative Head",
-      school: "Sophia College",
-      favoriteSong: "Imagine - John Lennon ✨",
-      snack: "Dark chocolate and green tea 🍫",
-      talent: "Creates art from coffee stains! ☕",
-      icon: Palette
-    },
-    {
-      name: "Rohan Gupta",
-      role: "Tech Lead",
-      school: "K.J. Somaiya",
-      favoriteSong: "Daft Punk - Get Lucky 🤖",
-      snack: "Energy drinks and protein bars ⚡",
-      talent: "Can code in 7 programming languages! 💻",
-      icon: Coffee
-    },
-    {
-      name: "Priya Krishnan",
-      role: "Marketing Head",
-      school: "Jai Hind College",
-      favoriteSong: "Counting Stars - OneRepublic ⭐",
-      snack: "Homemade ladoos 🍯",
-      talent: "Remembers everyone's birthday! 🎂",
-      icon: Heart
-    },
-    {
-      name: "Vikram Singh",
-      role: "Logistics Manager",
-      school: "H.R. College",
-      favoriteSong: "We Are The Champions - Queen 👑",
-      snack: "Street food adventures 🌮",
-      talent: "Can organize chaos into perfection! 📋",
-      icon: Users
-    }
-  ];
-
-  return (
-    <section id="team" className="py-20 px-4 relative">
+  const teamMembers = [{
+    name: "Arya Sharma",
+    role: "Festival Director",
+    school: "St. Xavier's College",
+    favoriteSong: "Bohemian Rhapsody - Queen 🎵",
+    snack: "Masala Chai & Parle-G 🍪",
+    talent: "Can solve a Rubik's cube blindfolded! 🧩",
+    icon: Star
+  }, {
+    name: "Dev Patel",
+    role: "Events Coordinator",
+    school: "Mithibai College",
+    favoriteSong: "Vande Mataram - A.R. Rahman 🎼",
+    snack: "Samosas from the college canteen 🥟",
+    talent: "Beatboxing champion! 🎤",
+    icon: Music
+  }, {
+    name: "Ananya Iyer",
+    role: "Creative Head",
+    school: "Sophia College",
+    favoriteSong: "Imagine - John Lennon ✨",
+    snack: "Dark chocolate and green tea 🍫",
+    talent: "Creates art from coffee stains! ☕",
+    icon: Palette
+  }, {
+    name: "Rohan Gupta",
+    role: "Tech Lead",
+    school: "K.J. Somaiya",
+    favoriteSong: "Daft Punk - Get Lucky 🤖",
+    snack: "Energy drinks and protein bars ⚡",
+    talent: "Can code in 7 programming languages! 💻",
+    icon: Coffee
+  }, {
+    name: "Priya Krishnan",
+    role: "Marketing Head",
+    school: "Jai Hind College",
+    favoriteSong: "Counting Stars - OneRepublic ⭐",
+    snack: "Homemade ladoos 🍯",
+    talent: "Remembers everyone's birthday! 🎂",
+    icon: Heart
+  }, {
+    name: "Vikram Singh",
+    role: "Logistics Manager",
+    school: "H.R. College",
+    favoriteSong: "We Are The Champions - Queen 👑",
+    snack: "Street food adventures 🌮",
+    talent: "Can organize chaos into perfection! 📋",
+    icon: Users
+  }];
+  return <section id="team" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -79,12 +69,9 @@ const Team = () => {
 
         {/* Team Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {teamMembers.map((member, index) => (
-            <Card 
-              key={member.name}
-              className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {teamMembers.map((member, index) => <Card key={member.name} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               <CardContent className="p-6">
                 {/* Profile Section */}
                 <div className="text-center mb-6">
@@ -116,8 +103,7 @@ const Team = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Team Values */}
@@ -147,24 +133,8 @@ const Team = () => {
         </div>
 
         {/* Join the Team */}
-        <div className="text-center">
-          <h3 className="text-3xl font-bold text-gradient mb-4">Want to Join Our Family? 🌟</h3>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            CYNOSURE is always looking for passionate students who want to make a difference! 
-            Whether you're a creative genius, tech wizard, or people person - we have a place for you!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Badge variant="outline" className="border-primary text-primary px-4 py-2">
-              📧 team@cynosure.com
-            </Badge>
-            <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-              💬 DM us on Instagram
-            </Badge>
-          </div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Team;

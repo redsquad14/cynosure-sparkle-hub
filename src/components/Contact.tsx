@@ -76,7 +76,7 @@ const Contact = () => {
                   We're spread across Mumbai's amazing colleges, but our heart beats strongest in:
                 </p>
                 <div className="space-y-2 text-sm">
-                  <p className="text-accent font-semibold">📍 Central Coordination Hub</p>
+                  <p className="text-accent font-semibold">📍 St Gregorios High School</p>
                   <p className="text-muted-foreground">
                     Various Partner Colleges<br />
                     Mumbai, Maharashtra<br />
