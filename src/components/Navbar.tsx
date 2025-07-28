@@ -27,12 +27,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
-              alt="CYNOSURE Logo" 
-              className="h-12 w-12 object-contain"
-            />
-            <span className="text-2xl font-bold text-gradient">CYNOSURE</span>
+            <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="h-12 w-12 object-contain" />
+            <span className="text-2xl text-gradient font-bold">CYNOSURE</span>
           </div>
 
           {/* Desktop Navigation */}
