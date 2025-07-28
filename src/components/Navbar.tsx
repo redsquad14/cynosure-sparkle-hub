@@ -44,7 +44,8 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Button 
               variant="default" 
-              className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg"
+              className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+              style={{ animationDuration: '0.8s' }}
               asChild
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
