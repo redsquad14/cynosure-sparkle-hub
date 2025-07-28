@@ -38,7 +38,7 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6">Gallery</h2>
+          <h2 className="text-5xl font-bold text-gradient mb-6 my-0 py-[12px]">Gallery</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             <Camera className="text-primary animate-pulse" />
             <p className="text-xl text-accent font-semibold">Moments That Sparkle Forever</p>
@@ -125,12 +125,8 @@ const Gallery = () => {
         {/* Call to Action */}
         <div className="text-center">
           <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
-          <p className="text-lg text-muted-foreground mb-6">
-            Join CYNOSURE 2024 and become part of our next beautiful gallery!
-          </p>
-          <Button variant="gradient" size="lg" className="text-lg px-8 py-6">
-            🌟 Be Featured in Our Gallery
-          </Button>
+          <p className="text-lg text-muted-foreground mb-6">Join CYNOSURE 2025 and become part of our family!</p>
+          <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950">🌟 REGISTER NOW!</Button>
         </div>
       </div>
     </section>;

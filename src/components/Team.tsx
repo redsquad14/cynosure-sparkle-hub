@@ -51,18 +51,16 @@ const Team = () => {
     talent: "Can organize chaos into perfection! 📋",
     icon: Users
   }];
-  return (
-    <section id="brochures" className="py-20 bg-card/30 relative">
+  return <section id="brochures" className="py-20 bg-card/30 relative">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
-          <p className="text-muted-foreground text-lg">Download our event brochures</p>
+          <p className="text-muted-foreground text-lg">Download the CYNOSURE brochures</p>
         </div>
         <div className="text-center">
           <p className="text-muted-foreground">Brochures coming soon...</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Team;
