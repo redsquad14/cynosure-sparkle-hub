@@ -60,7 +60,7 @@ const FullWidthSlideshow = () => {
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
-            {slide.type === 'image' ? <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover" /> : <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />}
+            {slide.type === 'image' ? <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 0 ? 'object-contain' : 'object-cover'}`} /> : <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />}
             
             {/* Content Overlay */}
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
