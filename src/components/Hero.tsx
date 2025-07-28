@@ -39,11 +39,7 @@ const Hero = () => {
         {/* Coming Soon */}
         <div className="mb-8">
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
-            🌟 Get ready for Mumbai's most heartfully curated interschool celebration! 
-            Where young stars shine brightest and dreams take flight. 
-            Join us as we bring together the most brilliant minds from across the city! ✨
-          </p>
+          <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed"> We, the students of St. Gregorios High School, wish to extend a warm invitation for the fourth edition of our student-powered inter-school event, CYNOSURE, being held on the 26th and 27th of September, 2025. This much-awaited celebration brings together a group of immensely talented students from across Mumbai to participate, connect, and shine.</p>
         </div>
 
         {/* Countdown Timer */}
