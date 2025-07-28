@@ -16,7 +16,7 @@ const Hero = () => {
         {/* Welcome Message */}
         <div className="mb-6">
           <h1 className="text-6xl md:text-8xl font-bold mb-4">
-            <span className="text-gradient font-komu">CYNOSURE</span>
+            
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="text-accent animate-pulse" />
