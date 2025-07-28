@@ -17,10 +17,10 @@ const FullWidthSlideshow = () => {
     description: 'Where Innovation Meets Creativity'
   }, {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    alt: 'Starry Night',
-    title: 'Reach for the Stars',
-    description: 'Your Journey Begins Here'
+    src: '/lovable-uploads/26f725f9-45bf-4897-b1fe-acf6296d096d.png',
+    alt: 'CYNOSURE 2024 Student Event',
+    title: 'CYNOSURE 2024',
+    description: 'Celebrating Student Excellence'
   }, {
     type: 'image',
     src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
