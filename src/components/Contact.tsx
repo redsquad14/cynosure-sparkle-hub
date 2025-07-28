@@ -53,7 +53,7 @@ const Contact = () => {
                     <div className="p-2 rounded-full bg-secondary/20">
                       <Instagram className="w-5 h-5 text-secondary" />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <p className="font-semibold text-foreground">Follow us</p>
                       <p className="text-sm text-muted-foreground">@cynosure_mumbai</p>
                     </div>
