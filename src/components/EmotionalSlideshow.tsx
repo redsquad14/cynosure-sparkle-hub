@@ -55,8 +55,8 @@ const EmotionalSlideshow = () => {
         </div>
       ))}
       
-      {/* Subtle overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/40" />
+      {/* Overlay to block background images */}
+      <div className="absolute inset-0 bg-background" />
     </div>
   );
 };
