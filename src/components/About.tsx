@@ -5,7 +5,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6 mx-0 py-[10px]">About Cynosure</h2>
+          <h2 className="text-5xl font-bold text-gradient mb-6 mx-0 py-0">About Cynosure</h2>
           
         </div>
 
@@ -15,7 +15,7 @@ const About = () => {
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="w-8 h-8 text-accent animate-pulse" />
-                <h3 className="text-3xl font-bold text-gradient py-[4px]">Our Origin Story</h3>
+                <h3 className="text-3xl font-bold text-gradient">Our Origin Story</h3>
               </div>
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">Cynosure is a inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Visual Arts, and Sports. Whether you're a wordsmith, a performer, a creator, or an athlete — there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork, and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram</p>
               

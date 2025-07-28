@@ -22,14 +22,11 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          
-
-          {/* Contact Information */}
+          {/* Left Side - Quick Reach and Quick Answers */}
           <div className="space-y-8">
             {/* Quick Contact */}
-            <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 mx-0 px-[111px]">
-              <CardContent className="p-8 text-center max-w-md mx-0">
+            <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
+              <CardContent className="p-8 text-center max-w-md mx-auto">
                 <h3 className="text-xl font-bold text-gradient mb-4">Quick Reach 🚀</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -65,7 +62,30 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Location */}
+            {/* FAQ Snippet */}
+            <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-gradient mb-4">Quick Answers 💡</h3>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <p className="font-semibold text-accent">🤔 When is CYNOSURE 2025?</p>
+                    <p className="text-muted-foreground">September 26, 2025 - Mark your calendar!</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-accent">📋 How to register?</p>
+                    <p className="text-muted-foreground">Registration opens soon! Stay tuned for updates.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-accent">⏰ Last date of registration is?</p>
+                    <p className="text-muted-foreground">Registration closes on September 15, 2025.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Right Side - Find Us in Mumbai */}
+          <div>
             <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30">
               <CardContent className="p-6 text-center mx-0">
                 <h3 className="text-xl font-bold text-gradient mb-4 flex items-center gap-2">
@@ -86,30 +106,16 @@ const Contact = () => {
                 
                 {/* Google Map */}
                 <div className="flex justify-center">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3007003604725!2d72.9077488!3d19.050512299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c60508681da9%3A0xe7ce066a06e48b92!2sSt%20Gregorios%20High%20School%2C%20New%20Building%20Premises!5e0!3m2!1sen!2sin!4v1753685586510!5m2!1sen!2sin" width="400" height="300" style={{
-                  border: 0
-                }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg shadow-md" />
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* FAQ Snippet */}
-            <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gradient mb-4">Quick Answers 💡</h3>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <p className="font-semibold text-accent">🤔 When is CYNOSURE 2024?</p>
-                    <p className="text-muted-foreground">September 26, 2024 - Mark your calendar!</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-accent">📋 How to register?</p>
-                    <p className="text-muted-foreground">Registration opens soon! Stay tuned for updates.</p>
-                  </div>
-                  <div>
-                    
-                    
-                  </div>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3007003604725!2d72.9077488!3d19.050512299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c60508681da9%3A0xe7ce066a06e48b92!2sSt%20Gregorios%20High%20School%2C%20New%20Building%20Premises!5e0!3m2!1sen!2sin!4v1753685586510!5m2!1sen!2sin" 
+                    width="400" 
+                    height="300" 
+                    style={{border:0}} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg shadow-md"
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -122,7 +128,7 @@ const Contact = () => {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gradient mb-4">💌 We Can't Wait to Hear From You!</h3>
               <p className="text-muted-foreground">
-                Every message you send brings us one step closer to making CYNOSURE 2024 
+                Every message you send brings us one step closer to making CYNOSURE 2025 
                 the most incredible celebration Mumbai has ever seen! 
                 Your excitement fuels our passion! ✨
               </p>
