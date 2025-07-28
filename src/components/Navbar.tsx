@@ -27,20 +27,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" 
-              alt="CYNOSURE Logo" 
-              className="h-12 w-12 object-contain"
-            />
+            <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="h-12 w-12 object-contain" />
             <span className="text-2xl font-bold text-gradient">CYNOSURE</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map(item => <a key={item.name} href={item.href} className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-primary/10">
-                  {item.name}
-                </a>)}
+              {navItems.map(item => {})}
             </div>
           </div>
 
