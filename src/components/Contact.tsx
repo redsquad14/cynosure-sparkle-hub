@@ -68,8 +68,8 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gradient mb-4">Quick Answers 💡</h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <p className="font-semibold text-accent">🤔 When is CYNOSURE 2024?</p>
-                    <p className="text-muted-foreground">September 26, 2024 - Mark your calendar!</p>
+                    <p className="font-semibold text-accent">🤔 When is CYNOSURE 2025?</p>
+                    <p className="text-muted-foreground">September 26, 2025 - Mark your calendar!</p>
                   </div>
                   <div>
                     <p className="font-semibold text-accent">📋 How to register?</p>
@@ -124,7 +124,7 @@ const Contact = () => {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gradient mb-4">💌 We Can't Wait to Hear From You!</h3>
               <p className="text-muted-foreground">
-                Every message you send brings us one step closer to making CYNOSURE 2024 
+                Every message you send brings us one step closer to making CYNOSURE 2025 
                 the most incredible celebration Mumbai has ever seen! 
                 Your excitement fuels our passion! ✨
               </p>
