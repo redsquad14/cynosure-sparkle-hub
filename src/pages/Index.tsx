@@ -6,10 +6,12 @@ import Gallery from '@/components/Gallery';
 import Team from '@/components/Team';
 import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
+import FullWidthSlideshow from '@/components/FullWidthSlideshow';
 const Index = () => {
   return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
       <Navbar />
+      <FullWidthSlideshow />
       <main>
         <Hero />
         <About />
