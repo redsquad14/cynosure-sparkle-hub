@@ -51,64 +51,90 @@ const Team = () => {
     talent: "Can organize chaos into perfection! 📋",
     icon: Users
   }];
-  return (
-    <section id="team" className="py-20 bg-background relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  return <section id="team" className="py-20 px-4 relative">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
-            Meet the Team
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            The passionate minds behind CYNOSURE - your fellow students making magic happen! 🌟
+          <h2 className="text-5xl font-bold text-gradient mb-6">Meet the Team</h2>
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <Users className="text-accent animate-pulse" />
+            <p className="text-xl text-primary font-semibold">The Dream Makers Behind CYNOSURE</p>
+            <Users className="text-accent animate-pulse" />
+          </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            🌟 Meet the incredible students who turned a simple dream into Mumbai's most loved interschool fest! 
+            Each one brings their unique spark to make CYNOSURE magical! ✨
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => {
-            const IconComponent = member.icon;
-            return (
-              <Card key={index} className="group hover:scale-105 transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 rounded-full bg-primary/10 mr-4">
-                      <IconComponent className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground">{member.name}</h3>
-                      <Badge variant="secondary" className="mt-1">{member.role}</Badge>
-                    </div>
+        {/* Team Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {teamMembers.map((member, index) => <Card key={member.name} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
+              <CardContent className="p-6">
+                {/* Profile Section */}
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <member.icon className="w-10 h-10 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gradient mb-1">{member.name}</h3>
+                  <Badge variant="outline" className="border-accent text-accent mb-2">
+                    {member.role}
+                  </Badge>
+                  <p className="text-sm text-muted-foreground">{member.school}</p>
+                </div>
+
+                {/* Fun Facts */}
+                <div className="space-y-3">
+                  <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
+                    <p className="text-sm font-semibold text-primary mb-1">🎵 Favorite Song:</p>
+                    <p className="text-xs text-muted-foreground">{member.favoriteSong}</p>
                   </div>
                   
-                  <div className="space-y-3 text-sm">
-                    <p className="text-muted-foreground">
-                      <span className="font-semibold text-primary">School:</span> {member.school}
-                    </p>
-                    <p className="text-muted-foreground">
-                      <span className="font-semibold text-primary">Current Jam:</span> {member.favoriteSong}
-                    </p>
-                    <p className="text-muted-foreground">
-                      <span className="font-semibold text-primary">Fuel:</span> {member.snack}
-                    </p>
-                    <p className="text-muted-foreground">
-                      <span className="font-semibold text-primary">Secret Power:</span> {member.talent}
-                    </p>
+                  <div className="p-3 rounded-lg bg-accent/5 border border-accent/20">
+                    <p className="text-sm font-semibold text-accent mb-1">🍫 Go-to Snack:</p>
+                    <p className="text-xs text-muted-foreground">{member.snack}</p>
                   </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+                  
+                  <div className="p-3 rounded-lg bg-secondary/5 border border-secondary/20">
+                    <p className="text-sm font-semibold text-secondary mb-1">🎨 Hidden Talent:</p>
+                    <p className="text-xs text-muted-foreground">{member.talent}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>)}
         </div>
 
-        <div className="text-center mt-16">
-          <p className="text-lg text-muted-foreground mb-4">
-            Want to be part of our amazing team? 
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Follow us on social media for volunteer opportunities! 🤝
-          </p>
+        {/* Team Values */}
+        <div className="text-center mb-12">
+          <Card className="card-hover bg-gradient-to-br from-accent/10 to-primary/10 border-accent/30 max-w-4xl mx-auto">
+            <CardContent className="p-8">
+              <h3 className="text-3xl font-bold text-gradient mb-6">What Drives Us ✨</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <Heart className="w-8 h-8 text-accent mx-auto mb-3 animate-pulse" />
+                  <h4 className="font-bold text-gradient mb-2">Passion</h4>
+                  <p className="text-sm text-muted-foreground">We live and breathe CYNOSURE!</p>
+                </div>
+                <div className="text-center">
+                  <Users className="w-8 h-8 text-primary mx-auto mb-3 animate-pulse" />
+                  <h4 className="font-bold text-gradient mb-2">Unity</h4>
+                  <p className="text-sm text-muted-foreground">Together we achieve the impossible!</p>
+                </div>
+                <div className="text-center">
+                  <Star className="w-8 h-8 text-secondary mx-auto mb-3 animate-pulse" />
+                  <h4 className="font-bold text-gradient mb-2">Excellence</h4>
+                  <p className="text-sm text-muted-foreground">Every detail matters to us!</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
+
+        {/* Join the Team */}
+        
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Team;
