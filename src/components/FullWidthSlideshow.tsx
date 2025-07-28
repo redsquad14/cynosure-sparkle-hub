@@ -56,7 +56,7 @@ const FullWidthSlideshow = () => {
   };
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
-  return <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+  return <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black mt-16" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
@@ -80,12 +80,23 @@ const FullWidthSlideshow = () => {
 
       {/* Dot Indicators */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => {})}
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'
+            }`}
+          />
+        ))}
       </div>
 
       {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20">
-        
+        <div 
+          className="h-full bg-primary transition-all duration-300 ease-out"
+          style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
+        />
       </div>
     </div>;
 };
