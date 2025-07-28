@@ -18,10 +18,7 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gradient">Our Origin Story</h3>
               </div>
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                🌟 Once upon a time, in the bustling heart of Mumbai, a group of passionate students had a dream. 
-                They envisioned a celebration that would transcend school boundaries, bringing together the brightest 
-                young minds from across the city. This dream blossomed into <span className="text-primary font-semibold">CYNOSURE</span> 
-                – a festival where creativity knows no limits and every participant becomes a shining star.
+                Cynosure is a vibrant inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Visual Arts, and Sports. Whether you're a wordsmith, a performer, a creator, or an athlete — there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork, and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">✨CYNOSURE serves as the guiding star for Mumbai's youth, illuminating paths of friendship, creativity, and excellence. Here, every student finds their moment to shine, every talent gets its stage, and every dream finds its wings.</p>
             </CardContent>
