@@ -63,7 +63,7 @@ const FullWidthSlideshow = () => {
             {slide.type === 'image' ? <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 0 ? 'object-contain' : 'object-cover'}`} /> : <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />}
             
             {/* Content Overlay */}
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+            <div className="absolute top-16 left-0 right-0 bottom-0 bg-black/30 flex items-center justify-center">
               
             </div>
           </div>)}
