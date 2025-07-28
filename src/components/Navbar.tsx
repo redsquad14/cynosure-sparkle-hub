@@ -43,8 +43,8 @@ const Navbar = () => {
           {/* Register Button */}
           <div className="hidden md:block">
             <Button 
-              variant="destructive" 
-              className="bg-red-500 hover:bg-red-600 animate-pulse font-bold shadow-lg"
+              variant="default" 
+              className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg"
               asChild
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
