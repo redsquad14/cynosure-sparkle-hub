@@ -2,12 +2,14 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, Star, Calendar } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
 import StarField from './StarField';
+import EmotionalSlideshow from './EmotionalSlideshow';
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <EmotionalSlideshow />
       <StarField />
       
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+      <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
         {/* Mascot Eye */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
