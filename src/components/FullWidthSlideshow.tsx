@@ -75,17 +75,7 @@ const FullWidthSlideshow = () => {
       </Button>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-white' : 'bg-white/50 hover:bg-white/75'
-            }`}
-            onClick={() => goToSlide(index)}
-          />
-        ))}
-      </div>
+      
 
       {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20">
