@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="w-40 h-40 rounded-full flex items-center justify-center">
-              <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="w-40 h-40 object-contain" />
+              <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="w-40 h-40 object-contain mt-36" />
             </div>
           </div>
         </div>
