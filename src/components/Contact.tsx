@@ -34,7 +34,7 @@ const Contact = () => {
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Email us</p>
+                      <p className="font-semibold text-foreground whitespace-nowrap">Email us</p>
                       <p className="text-sm text-muted-foreground">hello@cynosure.com</p>
                     </div>
                   </div>
