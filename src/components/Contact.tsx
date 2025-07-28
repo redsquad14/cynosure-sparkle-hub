@@ -75,6 +75,10 @@ const Contact = () => {
                     <p className="font-semibold text-accent">📋 How to register?</p>
                     <p className="text-muted-foreground">Registration opens soon! Stay tuned for updates.</p>
                   </div>
+                  <div>
+                    <p className="font-semibold text-accent">⏰ Last date of registration is?</p>
+                    <p className="text-muted-foreground">Registration closes on September 15, 2025.</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
