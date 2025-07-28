@@ -80,23 +80,12 @@ const FullWidthSlideshow = () => {
 
       {/* Dot Indicators */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'
-            }`}
-          />
-        ))}
+        {slides.map((_, index) => {})}
       </div>
 
       {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20">
-        <div 
-          className="h-full bg-primary transition-all duration-300 ease-out"
-          style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
-        />
+        
       </div>
     </div>;
 };
