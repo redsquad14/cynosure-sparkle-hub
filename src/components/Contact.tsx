@@ -93,7 +93,7 @@ const Contact = () => {
                   Find Us in Mumbai! 🏙️
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  We're spread across Mumbai's amazing colleges, but our heart beats strongest in:
+                  One event. One location. All roads lead to:
                 </p>
                 <div className="space-y-2 text-sm mb-4">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
