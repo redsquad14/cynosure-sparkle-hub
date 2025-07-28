@@ -67,11 +67,7 @@ const Events = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {event.description}
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary"
-                  onClick={() => window.open('https://www.canva.com/design/DAGtzBTiecA/jsntczu5Hn3Yxy8AuMNynQ/edit?utm_content=DAGtzBTiecA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')}
-                >
+                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary" onClick={() => window.open('https://www.canva.com/design/DAGtzBTiecA/jsntczu5Hn3Yxy8AuMNynQ/edit?utm_content=DAGtzBTiecA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')}>
                   Learn More ✨
                 </Button>
               </CardContent>
@@ -121,7 +117,7 @@ const Events = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-gradient mb-4">Ready to Shine? ✨</h3>
+          <h3 className="text-3xl font-bold text-gradient mb-4 py-[2px]">Ready to Shine? ✨</h3>
           
           
         </div>
