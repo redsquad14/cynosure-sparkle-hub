@@ -33,7 +33,7 @@ const Contact = () => {
                     <div className="p-2 rounded-full bg-primary/20">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <p className="font-semibold text-foreground whitespace-nowrap">Email us</p>
                       <p className="text-sm text-muted-foreground">hello@cynosure.com</p>
                     </div>
