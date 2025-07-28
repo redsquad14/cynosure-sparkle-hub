@@ -75,13 +75,27 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-4">
                   We're spread across Mumbai's amazing colleges, but our heart beats strongest in:
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm mb-4">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
                   <p className="text-muted-foreground">
                     Various Partner Colleges<br />
                     Mumbai, Maharashtra<br />
                     India 🇮🇳
                   </p>
+                </div>
+                
+                {/* Google Map */}
+                <div className="flex justify-center">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3007003604725!2d72.9077488!3d19.050512299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c60508681da9%3A0xe7ce066a06e48b92!2sSt%20Gregorios%20High%20School%2C%20New%20Building%20Premises!5e0!3m2!1sen!2sin!4v1753685586510!5m2!1sen!2sin" 
+                    width="400" 
+                    height="300" 
+                    style={{border:0}} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg shadow-md"
+                  />
                 </div>
               </CardContent>
             </Card>
