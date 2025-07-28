@@ -14,8 +14,8 @@ const FullWidthSlideshow = () => {
   const slides: SlideContent[] = [
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-      alt: 'Tech Event Display',
+      src: '/lovable-uploads/b71f7da9-3a9f-48ff-9897-c4a9db216f9b.png',
+      alt: 'CYNOSURE Logo',
       title: 'Welcome to CYNOSURE 2024',
       description: 'Where Innovation Meets Creativity'
     },
@@ -73,7 +73,7 @@ const FullWidthSlideshow = () => {
 
   return (
     <div 
-      className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group"
+      className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
