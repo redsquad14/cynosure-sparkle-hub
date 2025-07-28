@@ -13,6 +13,17 @@ const Hero = () => {
         {/* Mascot Eye */}
         
 
+        {/* Countdown Timer */}
+        <div className="mb-8">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Calendar className="text-primary" />
+            <h3 className="text-2xl font-semibold text-gradient">September 26, 2025
+          </h3>
+            <Calendar className="text-primary" />
+          </div>
+          <CountdownTimer />
+        </div>
+
         {/* Welcome Message */}
         <div className="mb-6">
           <h1 className="text-6xl md:text-8xl font-bold mb-4">
@@ -29,17 +40,6 @@ const Hero = () => {
         <div className="mb-8">
           
           <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed"> We, the students of St. Gregorios High School, wish to extend a warm invitation for the fourth edition of our student-powered inter-school event, CYNOSURE, being held on the 26th and 27th of September, 2025. This much-awaited celebration brings together a group of immensely talented students from across Mumbai to participate, connect, and shine.</p>
-        </div>
-
-        {/* Countdown Timer */}
-        <div className="mb-8">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Calendar className="text-primary" />
-            <h3 className="text-2xl font-semibold text-gradient">September 26, 2025
-          </h3>
-            <Calendar className="text-primary" />
-          </div>
-          <CountdownTimer />
         </div>
 
         {/* Call to Action */}
