@@ -2,38 +2,21 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
-  // Placeholder for gallery items
-  const galleryItems = [{
-    type: 'image',
-    title: 'Dance Revolution 2023',
-    description: 'Students from 12 schools came together for an epic dance battle!',
-    highlight: '500+ participants'
-  }, {
-    type: 'video',
-    title: 'Musical Moments',
-    description: 'The most melodious voices of Mumbai in one magical evening.',
-    highlight: '25 performances'
-  }, {
-    type: 'image',
-    title: 'Art Exhibition',
-    description: 'Creativity knows no bounds when young artists unite!',
-    highlight: '100+ artworks'
-  }, {
-    type: 'video',
-    title: 'Tech Innovations',
-    description: 'Young programmers showcasing the future of technology.',
-    highlight: '50 projects'
-  }, {
-    type: 'image',
-    title: 'Team Spirit',
-    description: 'Friendships formed, memories created, dreams shared.',
-    highlight: '∞ Smiles'
-  }, {
-    type: 'image',
-    title: 'Victory Moments',
-    description: 'Every participant is a winner in the CYNOSURE family!',
-    highlight: 'Pure Joy'
-  }];
+  // Video gallery items
+  const galleryItems = [
+    { type: 'video', src: '/vid 1.mp4', title: 'Performance Video 1' },
+    { type: 'video', src: '/vid 2.mp4', title: 'Performance Video 2' },
+    { type: 'video', src: '/vid 3.mp4', title: 'Performance Video 3' },
+    { type: 'video', src: '/vid 4.mp4', title: 'Performance Video 4' },
+    { type: 'video', src: '/vid 5.mp4', title: 'Performance Video 5' },
+    { type: 'video', src: '/vid 6.mp4', title: 'Performance Video 6' },
+    { type: 'video', src: '/vid 7.mp4', title: 'Performance Video 7' },
+    { type: 'video', src: '/vid 8.mp4', title: 'Performance Video 8' },
+    { type: 'video', src: '/vid 9.mp4', title: 'Performance Video 9' },
+    { type: 'video', src: '/vid 10.mp4', title: 'Performance Video 10' },
+    { type: 'video', src: '/vid 11.mp4', title: 'Performance Video 11' },
+    { type: 'video', src: '/vid 12.mp4', title: 'Performance Video 12' },
+  ];
   return <section id="gallery" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -50,24 +33,33 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Coming Soon Notice */}
-        <div className="text-center mb-12">
-          <Card className="card-hover bg-gradient-to-br from-accent/10 to-primary/10 border-accent/30 max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Heart className="w-8 h-8 text-accent animate-pulse" />
-                <h3 className="text-2xl font-bold text-gradient">Memories Loading...</h3>
-                <Heart className="w-8 h-8 text-accent animate-pulse" />
-              </div>
-              <p className="text-lg text-muted-foreground mb-4">🌟 We're currently curating the most beautiful moments from our previous editions! Get ready for a visual treat that'll make you want to be part of CYNOSURE 2025!</p>
-              <p className="text-accent font-semibold">
-                ✨ Gallery will be updated soon with stunning photos and videos! ✨
-              </p>
-            </CardContent>
-          </Card>
+        {/* Video Gallery Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {galleryItems.map((item, index) => (
+            <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative group">
+                  <video 
+                    controls 
+                    className="w-full h-64 object-cover rounded-t-lg"
+                    poster=""
+                  >
+                    <source src={item.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-lg" />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-bold text-gradient mb-2">{item.title}</h3>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Play className="w-4 h-4" />
+                    <span>CYNOSURE Memories</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-
-        {/* Preview Grid */}
         
 
         {/* What to Expect */}
