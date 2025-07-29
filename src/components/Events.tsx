@@ -1,9 +1,9 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mic, Palette, Music, Camera, Gamepad2, Trophy, Sparkles, Users } from 'lucide-react';
+import { BookOpen, Palette, Music, Camera, Gamepad2, Trophy, Sparkles, Users } from 'lucide-react';
 const Events = () => {
   const events = [{
-    icon: Mic,
+    icon: BookOpen,
     title: "Literary Events",
     description: "🎤 Let your voice be heard! Solo singing, group performances, and musical battles that'll give you goosebumps!",
     category: "Music"
