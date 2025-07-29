@@ -126,7 +126,7 @@ const Events = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-gradient mb-4">Ready to Shine? ✨</h3>
+          
           
           
         </div>
