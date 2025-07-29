@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="space-y-4">
           
           
-          <p className="text-sm text-muted-foreground mt-4">Contact us on Instagram: @cynosure.stghs</p>
+          <p className="text-sm text-muted-foreground mt-4">Follow us on Instagram: @cynosure.stghs</p>
         </div>
       </div>
 
