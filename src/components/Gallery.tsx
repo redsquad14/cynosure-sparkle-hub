@@ -91,7 +91,18 @@ const Gallery = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
+        <div className="text-center relative">
+          {/* 2022 Brochures Button - Bottom Left */}
+          <div className="absolute bottom-0 left-0">
+            <Button 
+              variant="outline" 
+              className="border-primary/30 hover:bg-primary/10"
+              onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}
+            >
+              📄 2022 Brochures
+            </Button>
+          </div>
+          
           <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
           <p className="text-lg text-muted-foreground mb-6">Join CYNOSURE 2025 and become part of our family!</p>
           <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950">🌟 REGISTER NOW!</Button>
