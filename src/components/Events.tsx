@@ -5,7 +5,7 @@ const Events = () => {
   const events = [{
     icon: BookOpen,
     title: "Literary Events",
-    description: "🎤 Let your voice be heard! Solo singing, group performances, and musical battles that'll give you goosebumps!",
+    description: "📚 Unleash the power of words! Poetry recitations, storytelling competitions, creative writing, and literary debates that inspire!",
     category: "Music"
   }, {
     icon: Palette,
