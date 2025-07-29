@@ -23,6 +23,13 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Team Photo',
       title: 'CYNOSURE Team',
       description: 'St. Gregorios High School presents the amazing CYNOSURE team'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/1523ab97-cc06-4945-9209-74a3edeb3068.png',
+      alt: 'CYNOSURE Event Celebration',
+      title: 'School Celebration',
+      description: 'Traditional celebration at St. Gregorios High School'
     }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
