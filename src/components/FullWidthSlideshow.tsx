@@ -12,6 +12,13 @@ const FullWidthSlideshow = () => {
   const slides: SlideContent[] = [
     {
       type: 'image',
+      src: '/lovable-uploads/5277d382-76a1-4a24-9174-04eb4b5bd417.png',
+      alt: 'CYNOSURE 2025 Logo',
+      title: 'CYNOSURE 2025',
+      description: 'Welcome to CYNOSURE 2025'
+    },
+    {
+      type: 'image',
       src: '/lovable-uploads/1575a70c-488a-4c69-aa66-0fd8c115d43e.png',
       alt: 'CYNOSURE Team Photo',
       title: 'CYNOSURE Team',
