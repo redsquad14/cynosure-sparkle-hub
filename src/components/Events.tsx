@@ -73,12 +73,7 @@ const Events = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {event.description}
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary"
-                  onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')}
-                  disabled={!event.link}
-                >
+                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
                   Learn More ✨
                 </Button>
               </CardContent>
@@ -127,31 +122,7 @@ const Events = () => {
         </div>
 
         {/* Brochures Section */}
-        <div id="brochures" className="text-center mb-16">
-          <h3 className="text-4xl font-bold text-gradient mb-8">📋 Event Brochures</h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Download detailed brochures for each event to get all the information you need!
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {events.filter(event => event.link).map((event) => (
-              <Card key={event.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <event.icon className="w-6 h-6 text-primary" />
-                    <h4 className="text-lg font-semibold text-gradient">{event.title}</h4>
-                  </div>
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-primary/30 hover:bg-primary/10"
-                    onClick={() => window.open(event.link!, '_blank')}
-                  >
-                    Download Brochure 📄
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Call to Action */}
         <div className="text-center">
