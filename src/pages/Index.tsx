@@ -12,12 +12,6 @@ const Index = () => {
       <StarField />
       <Navbar />
       <div id="top"></div>
-      
-      {/* School Logo and Title Section */}
-      <section className="relative bg-background py-12 px-4 z-10">
-        
-      </section>
-      
       <FullWidthSlideshow />
       <main>
         <Hero />
