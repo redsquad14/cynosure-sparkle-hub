@@ -63,16 +63,33 @@ const Gallery = () => {
                 <div className="relative group">
                   <video 
                     controls 
-                    className="w-full h-64 object-cover rounded-lg" 
-                    poster=""
-                    onError={(e) => console.error('Video loading error:', item.src, e)}
+                    preload="metadata"
+                    className="w-full h-64 object-cover rounded-lg"
+                    controlsList="nodownload"
+                    onError={(e) => {
+                      console.error('Video loading error:', item.src, e);
+                      e.currentTarget.style.display = 'none';
+                    }}
                     onLoadStart={() => console.log('Video loading started:', item.src)}
                     onCanPlay={() => console.log('Video can play:', item.src)}
+                    onLoadedData={() => console.log('Video data loaded:', item.src)}
+                    style={{ backgroundColor: '#000' }}
                   >
                     <source src={item.src} type="video/mp4" />
-                    Your browser does not support the video tag.
+                    <p className="p-4 text-center text-muted-foreground">
+                      Your browser doesn't support video playback. 
+                      <a href={item.src} download className="text-primary underline ml-1">
+                        Download video
+                      </a>
+                    </p>
                   </video>
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
+                  
+                  {/* Custom Play Button Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <div className="bg-primary/80 rounded-full p-4 backdrop-blur-sm">
+                      <Play className="w-8 h-8 text-primary-foreground" />
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>)}
