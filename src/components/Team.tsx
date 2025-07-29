@@ -58,7 +58,7 @@ const Team = () => {
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
           <p className="text-muted-foreground text-lg">Download the CYNOSURE brochures</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* 2022 Brochures */}
           <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group">
             <CardContent className="p-6 text-center">
@@ -148,6 +148,37 @@ const Team = () => {
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download 2024
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* 2025 Brochures */}
+          <Card className="card-hover bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/30 group">
+            <CardContent className="p-6 text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <div className="p-2 rounded-full bg-gradient-to-br from-primary to-secondary group-hover:scale-110 transition-transform duration-300">
+                  <FileText className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient">2025 Brochures</h3>
+                  <div className="flex items-center justify-center gap-1">
+                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
+                    <span className="text-xs text-muted-foreground">Future</span>
+                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                🌈 Get ready for CYNOSURE 2025! The most spectacular edition awaits.
+              </p>
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10"
+                disabled
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Coming Soon!
               </Button>
             </CardContent>
           </Card>
