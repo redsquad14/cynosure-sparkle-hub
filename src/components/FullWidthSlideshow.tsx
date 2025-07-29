@@ -15,6 +15,12 @@ const FullWidthSlideshow = () => {
     alt: 'CYNOSURE Logo',
     title: 'Welcome to CYNOSURE 2024',
     description: 'Where Innovation Meets Creativity'
+  }, {
+    type: 'image',
+    src: '/lovable-uploads/51ec13ca-f7de-46bb-af72-bfda6cc35214.png',
+    alt: 'CYNOSURE 2024 Celebration',
+    title: 'CYNOSURE 2024',
+    description: 'Celebrating Student Excellence and Innovation'
   }];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
