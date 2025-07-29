@@ -57,33 +57,17 @@ const EmotionalSlideshow = () => {
       
       {/* Enhanced Star Field Background */}
       <div className="absolute inset-0 bg-background overflow-hidden">
-        {/* Twinkling stars with different animation */}
-        {[...Array(40)].map((_, i) => (
+        {/* Simple stars */}
+        {[...Array(20)].map((_, i) => (
           <div
-            key={`twinkle-${i}`}
+            key={`star-${i}`}
             className="absolute bg-accent rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              width: `${Math.random() * 2 + 0.5}px`,
-              height: `${Math.random() * 2 + 0.5}px`,
-              animation: `twinkle ${Math.random() * 4 + 3}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 4}s`
-            }}
-          />
-        ))}
-        
-        {/* Shooting stars */}
-        {[...Array(3)].map((_, i) => (
-          <div
-            key={`shooting-${i}`}
-            className="absolute h-px bg-gradient-to-r from-transparent via-primary to-transparent"
-            style={{
-              left: '-100px',
-              top: `${Math.random() * 60 + 20}%`,
-              width: '200px',
-              animation: `shooting-star ${Math.random() * 8 + 6}s ease-out infinite`,
-              animationDelay: `${Math.random() * 10}s`
+              width: `${Math.random() * 2 + 1}px`,
+              height: `${Math.random() * 2 + 1}px`,
+              opacity: Math.random() * 0.6 + 0.4
             }}
           />
         ))}
