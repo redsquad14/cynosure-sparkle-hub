@@ -52,7 +52,7 @@ const Team = () => {
     talent: "Can organize chaos into perfection! 📋",
     icon: Users
   }];
-  return <section id="brochures" className="py-20 bg-card/30 relative">
+  return <section id="brochures" className="pt-10 pb-20 bg-card/30 relative">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
