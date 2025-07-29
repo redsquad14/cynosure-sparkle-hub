@@ -61,20 +61,12 @@ const Gallery = () => {
           {galleryItems.map((item, index) => <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative group">
-                  <video 
-                    controls 
-                    preload="metadata"
-                    className="w-full h-64 object-cover rounded-lg"
-                    controlsList="nodownload"
-                    onError={(e) => {
-                      console.error('Video loading error:', item.src, e);
-                      e.currentTarget.style.display = 'none';
-                    }}
-                    onLoadStart={() => console.log('Video loading started:', item.src)}
-                    onCanPlay={() => console.log('Video can play:', item.src)}
-                    onLoadedData={() => console.log('Video data loaded:', item.src)}
-                    style={{ backgroundColor: '#000' }}
-                  >
+                  <video controls preload="metadata" className="w-full h-64 object-cover rounded-lg" controlsList="nodownload" onError={e => {
+                console.error('Video loading error:', item.src, e);
+                e.currentTarget.style.display = 'none';
+              }} onLoadStart={() => console.log('Video loading started:', item.src)} onCanPlay={() => console.log('Video can play:', item.src)} onLoadedData={() => console.log('Video data loaded:', item.src)} style={{
+                backgroundColor: '#000'
+              }}>
                     <source src={item.src} type="video/mp4" />
                     <p className="p-4 text-center text-muted-foreground">
                       Your browser doesn't support video playback. 
@@ -97,39 +89,7 @@ const Gallery = () => {
         
 
         {/* What to Expect */}
-        <div className="grid md:grid-cols-4 gap-6 mb-12">
-          <Card className="card-hover bg-gradient-to-br from-primary/10 to-transparent border-primary/30 text-center">
-            <CardContent className="p-6">
-              <Users className="w-8 h-8 text-primary mx-auto mb-3 animate-pulse" />
-              <h3 className="font-bold text-gradient mb-2">Team Photos</h3>
-              <p className="text-sm text-muted-foreground">Group shots that capture the spirit of unity</p>
-            </CardContent>
-          </Card>
-
-          <Card className="card-hover bg-gradient-to-br from-accent/10 to-transparent border-accent/30 text-center">
-            <CardContent className="p-6">
-              <Play className="w-8 h-8 text-accent mx-auto mb-3 animate-pulse" />
-              <h3 className="font-bold text-gradient mb-2">Performance Videos</h3>
-              <p className="text-sm text-muted-foreground">Highlights of amazing performances</p>
-            </CardContent>
-          </Card>
-
-          <Card className="card-hover bg-gradient-to-br from-secondary/10 to-transparent border-secondary/30 text-center">
-            <CardContent className="p-6">
-              <Heart className="w-8 h-8 text-secondary mx-auto mb-3 animate-pulse" />
-              <h3 className="font-bold text-gradient mb-2">Candid Moments</h3>
-              <p className="text-sm text-muted-foreground">Spontaneous joy and laughter</p>
-            </CardContent>
-          </Card>
-
-          <Card className="card-hover bg-gradient-to-br from-primary/10 to-transparent border-primary/30 text-center">
-            <CardContent className="p-6">
-              <Camera className="w-8 h-8 text-primary mx-auto mb-3 animate-pulse" />
-              <h3 className="font-bold text-gradient mb-2">Behind Scenes</h3>
-              <p className="text-sm text-muted-foreground">The magic that happens backstage</p>
-            </CardContent>
-          </Card>
-        </div>
+        
 
         {/* Call to Action */}
         <div className="text-center relative">
