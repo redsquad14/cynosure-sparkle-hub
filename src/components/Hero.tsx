@@ -14,7 +14,7 @@ const Hero = () => {
         
 
         {/* Countdown Timer */}
-        <div className="mb-8">
+          <div className="mb-4">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Calendar className="text-primary" />
             <h3 className="text-2xl font-semibold text-gradient">September 26, 2025
