@@ -17,14 +17,10 @@ const Index = () => {
       <section className="relative bg-background py-12 px-4 z-10">
         <div className="max-w-6xl mx-auto flex items-center">
           <div className="w-1/3 flex justify-center">
-            <img 
-              src="/lovable-uploads/b26a31ad-e1d7-414f-9e26-0c35e8ba0e0c.png" 
-              alt="St. Gregorios High School Logo" 
-              className="h-44 w-44 object-contain"
-            />
+            <img src="/lovable-uploads/b26a31ad-e1d7-414f-9e26-0c35e8ba0e0c.png" alt="St. Gregorios High School Logo" className="h-44 w-44 object-contain" />
           </div>
           <div className="flex-1">
-            <h1 className="text-5xl md:text-7xl font-bold text-gradient">
+            <h1 className="text-5xl font-bold text-gradient md:text-6xl">
               St. Gregorios High School
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold text-gradient text-center mt-4">
