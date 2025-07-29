@@ -7,6 +7,7 @@ import Team from '@/components/Team';
 import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
 import FullWidthSlideshow from '@/components/FullWidthSlideshow';
+import LogoWithBackgroundRemoval from '@/components/LogoWithBackgroundRemoval';
 const Index = () => {
   return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
@@ -18,10 +19,10 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-start">
             {/* Logo */}
-            <div className="mr-8">
-              <img 
-                src="/lovable-uploads/3dcd2ac8-6c4b-454f-a42d-fafe05f4a527.png" 
-                alt="St. Gregorios High School Logo" 
+            <div className="mr-8 ml-4 mt-2">
+              <LogoWithBackgroundRemoval
+                originalSrc="/lovable-uploads/3dcd2ac8-6c4b-454f-a42d-fafe05f4a527.png"
+                alt="St. Gregorios High School Logo"
                 className="w-32 h-32 object-contain"
               />
             </div>
