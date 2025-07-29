@@ -2,60 +2,102 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
-  // Gallery items - images first, then videos
-  const galleryItems = [{
-    type: 'image',
-    src: '/lovable-uploads/8080baa4-7fd2-40d6-98e9-35ee811c368c.png',
-    alt: 'CYNOSURE team group photo'
-  }, {
-    type: 'image', 
-    src: '/lovable-uploads/084914d0-7df6-46f0-ab88-c9c4715e0841.png',
-    alt: 'CYNOSURE team members with event t-shirts'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/92782be3-62c6-4201-9b8b-f806c5773cf7.png', 
-    alt: 'CYNOSURE stage event with students'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/d0c3b3f7-9992-49d3-a652-4001df107730.png',
-    alt: 'CYNOSURE stage performance with band'
-  }, {
-    type: 'video',
-    src: '/vid1.mp4'
-  }, {
-    type: 'video',
-    src: '/vid2.mp4'
-  }, {
-    type: 'video',
-    src: '/vid3.mp4'
-  }, {
-    type: 'video',
-    src: '/vid4.mp4'
-  }, {
-    type: 'video',
-    src: '/vid5.mp4'
-  }, {
-    type: 'video',
-    src: '/vid6.mp4'
-  }, {
-    type: 'video',
-    src: '/vid7.mp4'
-  }, {
-    type: 'video',
-    src: '/vid8.mp4'
-  }, {
-    type: 'video',
-    src: '/vid9.mp4'
-  }, {
-    type: 'video',
-    src: '/vid10.mp4'
-  }, {
-    type: 'video',
-    src: '/vid11.mp4'
-  }, {
-    type: 'video',
-    src: '/vid12.mp4'
-  }];
+  // Gallery items - new images first, then existing images and videos
+  const galleryItems = [
+    {
+      type: 'image',
+      src: '/lovable-uploads/81cdeb1b-0b47-4d3d-93bc-2172190351f6.png',
+      alt: 'CYNOSURE 2024 stage performance with band'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/705a9cf1-3e92-417c-9e3e-7946ce949bc7.png',
+      alt: 'St. Gregorios High School CYNOSURE award ceremony'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/67bf5193-2870-4474-b783-e26dedb45f4e.png',
+      alt: 'CYNOSURE group photo with all participants'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/4e770b97-f9b0-441d-8bf5-c462d3097400.png',
+      alt: 'CYNOSURE team members with event t-shirts'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/3ac4a03f-7501-40bb-bd75-52f9223b850f.png',
+      alt: 'CYNOSURE award ceremony with participants on stage'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/8080baa4-7fd2-40d6-98e9-35ee811c368c.png',
+      alt: 'CYNOSURE team group photo'
+    },
+    {
+      type: 'image', 
+      src: '/lovable-uploads/084914d0-7df6-46f0-ab88-c9c4715e0841.png',
+      alt: 'CYNOSURE team members with event t-shirts'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/92782be3-62c6-4201-9b8b-f806c5773cf7.png', 
+      alt: 'CYNOSURE stage event with students'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/d0c3b3f7-9992-49d3-a652-4001df107730.png',
+      alt: 'CYNOSURE stage performance with band'
+    },
+    {
+      type: 'video',
+      src: '/vid1.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid2.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid3.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid4.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid5.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid6.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid7.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid8.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid9.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid10.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid11.mp4'
+    },
+    {
+      type: 'video',
+      src: '/vid12.mp4'
+    }
+  ];
   return <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
