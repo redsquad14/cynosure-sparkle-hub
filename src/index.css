@@ -108,6 +108,10 @@ All colors MUST be HSL for consistency.
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', serif;
+  }
 }
 
 /* CYNOSURE Custom Styles */
