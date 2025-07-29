@@ -40,7 +40,7 @@ const Gallery = () => {
     type: 'video',
     src: '/vid12.mp4'
   }];
-  return <section id="gallery" className="py-20 px-4 relative">
+  return <section id="gallery" className="pt-4 pb-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
