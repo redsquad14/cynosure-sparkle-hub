@@ -17,8 +17,8 @@ const Index = () => {
       {/* School Header Section */}
       <section className="relative bg-background py-8 md:py-12 border-b border-primary/20">
         <div className="max-w-4xl mx-auto px-4">
-          {/* Logo - Top Center on Mobile, Left on Desktop */}
-          <div className="flex justify-center md:justify-start mb-6 md:mb-8">
+          {/* Logo - Centered above heading */}
+          <div className="flex justify-center mb-6 md:mb-8">
             <div className="flex-shrink-0">
               <img src="/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png" alt="St. Gregorios High School Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
             </div>
