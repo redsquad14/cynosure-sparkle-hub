@@ -61,12 +61,8 @@ const About = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <p className="text-xl text-accent font-semibold mb-4">
-            🌟 Ready to be part of something magical? 🌟
-          </p>
-          <p className="text-lg text-muted-foreground">
-            Join us as we celebrate the boundless potential of Mumbai's incredible youth!
-          </p>
+          
+          
         </div>
       </div>
     </section>;
