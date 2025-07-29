@@ -4,18 +4,18 @@ import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
   // Video gallery items
   const galleryItems = [
-    { type: 'video', src: '/vid 1.mp4', title: 'Performance Video 1' },
-    { type: 'video', src: '/vid 2.mp4', title: 'Performance Video 2' },
-    { type: 'video', src: '/vid 3.mp4', title: 'Performance Video 3' },
-    { type: 'video', src: '/vid 4.mp4', title: 'Performance Video 4' },
-    { type: 'video', src: '/vid 5.mp4', title: 'Performance Video 5' },
-    { type: 'video', src: '/vid 6.mp4', title: 'Performance Video 6' },
-    { type: 'video', src: '/vid 7.mp4', title: 'Performance Video 7' },
-    { type: 'video', src: '/vid 8.mp4', title: 'Performance Video 8' },
-    { type: 'video', src: '/vid 9.mp4', title: 'Performance Video 9' },
-    { type: 'video', src: '/vid 10.mp4', title: 'Performance Video 10' },
-    { type: 'video', src: '/vid 11.mp4', title: 'Performance Video 11' },
-    { type: 'video', src: '/vid 12.mp4', title: 'Performance Video 12' },
+    { type: 'video', src: '/vid%201.mp4' },
+    { type: 'video', src: '/vid%202.mp4' },
+    { type: 'video', src: '/vid%203.mp4' },
+    { type: 'video', src: '/vid%204.mp4' },
+    { type: 'video', src: '/vid%205.mp4' },
+    { type: 'video', src: '/vid%206.mp4' },
+    { type: 'video', src: '/vid%207.mp4' },
+    { type: 'video', src: '/vid%208.mp4' },
+    { type: 'video', src: '/vid%209.mp4' },
+    { type: 'video', src: '/vid%2010.mp4' },
+    { type: 'video', src: '/vid%2011.mp4' },
+    { type: 'video', src: '/vid%2012.mp4' },
   ];
   return <section id="gallery" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
@@ -41,20 +41,13 @@ const Gallery = () => {
                 <div className="relative group">
                   <video 
                     controls 
-                    className="w-full h-64 object-cover rounded-t-lg"
+                    className="w-full h-64 object-cover rounded-lg"
                     poster=""
                   >
                     <source src={item.src} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-lg" />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-gradient mb-2">{item.title}</h3>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Play className="w-4 h-4" />
-                    <span>CYNOSURE Memories</span>
-                  </div>
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                 </div>
               </CardContent>
             </Card>
