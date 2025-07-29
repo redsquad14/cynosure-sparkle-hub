@@ -23,16 +23,22 @@ const FullWidthSlideshow = () => {
     description: 'Celebrating Student Excellence'
   }, {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    alt: 'Creative Arts',
-    title: 'Unleash Your Creativity',
-    description: 'Art, Music, and Performance'
+    src: '/lovable-uploads/c7e01668-b132-40bf-9ee5-bec38ce8024f.png',
+    alt: 'St. Gregorios High School Group Photo',
+    title: 'United We Shine',
+    description: 'Our Amazing CYNOSURE Participants'
   }, {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    alt: 'Technology Innovation',
-    title: 'Code the Future',
-    description: 'Technology Competitions Await'
+    src: '/lovable-uploads/e0f053e6-f363-4dbb-8838-1fd18fc0c80d.png',
+    alt: 'Award Ceremony Moment',
+    title: 'Celebrating Excellence',
+    description: 'Recognizing Outstanding Achievements'
+  }, {
+    type: 'image',
+    src: '/lovable-uploads/07445e39-ebb7-494e-9c11-f159d34531eb.png',
+    alt: 'CYBERDUKE Champions',
+    title: 'Victory Moments',
+    description: 'Champions of CYNOSURE 2024'
   }];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
