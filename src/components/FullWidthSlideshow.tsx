@@ -81,30 +81,12 @@ const FullWidthSlideshow = () => {
       </Button>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-primary scale-125' 
-                : 'bg-white/40 hover:bg-white/60'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+      
       
 
       {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20">
-        <div 
-          className="h-full bg-primary transition-all duration-300 ease-linear"
-          style={{ 
-            width: `${((currentSlide + 1) / slides.length) * 100}%`
-          }}
-        />
+        
       </div>
     </div>;
 };
