@@ -195,6 +195,23 @@ All colors MUST be HSL for consistency.
   50% { opacity: 1; }
 }
 
+@keyframes shooting-star {
+  0% {
+    transform: translateX(-100px) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(-200px);
+    opacity: 0;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
