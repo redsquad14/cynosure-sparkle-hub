@@ -5,7 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Instagram, Heart, Send } from 'lucide-react';
 const Contact = () => {
-  return <section id="contact" className="py-20 px-4 relative">
+  return <section id="contact" className="pt-4 pb-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
