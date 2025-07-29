@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Star, Heart, Users, Lightbulb } from 'lucide-react';
 const About = () => {
   return <section id="about" className="pt-10 pb-4 px-4 relative scroll-mt-24">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto font-times">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gradient mb-6 mx-0 py-[9px]">About Cynosure</h2>
