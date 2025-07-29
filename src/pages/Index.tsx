@@ -20,13 +20,16 @@ const Index = () => {
             <img 
               src="/lovable-uploads/b26a31ad-e1d7-414f-9e26-0c35e8ba0e0c.png" 
               alt="St. Gregorios High School Logo" 
-              className="h-32 w-32 object-contain"
+              className="h-44 w-44 object-contain"
             />
           </div>
           <div className="flex-1">
-            <h1 className="text-4xl md:text-5xl font-bold text-gradient">
+            <h1 className="text-5xl md:text-7xl font-bold text-gradient">
               St. Gregorios High School
             </h1>
+            <h2 className="text-2xl md:text-3xl font-bold text-gradient text-center mt-4">
+              Presents
+            </h2>
           </div>
         </div>
       </section>
