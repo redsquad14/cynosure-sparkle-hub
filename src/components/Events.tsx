@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Palette, Music, ShoppingCart, Gamepad2, Trophy, Sparkles, Users } from 'lucide-react';
+import { BookOpen, Palette, Music, ShoppingCart, Mic, Trophy, Sparkles, Users } from 'lucide-react';
 const Events = () => {
   const events = [{
     icon: BookOpen,
@@ -27,10 +27,10 @@ const Events = () => {
     category: "Business",
     link: null // Will be updated when you provide the link
   }, {
-    icon: Gamepad2,
-    title: "Tech Warriors",
-    description: "💻 Code, create, innovate! Programming challenges, app development, and tech innovation contests!",
-    category: "Technology",
+    icon: Mic,
+    title: "Performing Arts",
+    description: "🎭 Express yourself through performance! Drama, theater, singing, and musical performances that captivate audiences!",
+    category: "Performance",
     link: null // Will be updated when you provide the link
   }, {
     icon: Trophy,
