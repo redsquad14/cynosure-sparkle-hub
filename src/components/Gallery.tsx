@@ -2,31 +2,31 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
-  // Gallery items - new images first, then existing images and videos
+  // Gallery items - new uploaded images first, then existing images and videos
   const galleryItems = [
     {
       type: 'image',
-      src: '/lovable-uploads/81cdeb1b-0b47-4d3d-93bc-2172190351f6.png',
+      src: '/lovable-uploads/07445e39-ebb7-494e-9c11-f159d34531eb.png',
       alt: 'CYNOSURE 2024 stage performance with band'
     },
     {
       type: 'image',
-      src: '/lovable-uploads/705a9cf1-3e92-417c-9e3e-7946ce949bc7.png',
+      src: '/lovable-uploads/1e82be09-fbb7-43af-a3ba-a7ed614e427f.png',
       alt: 'St. Gregorios High School CYNOSURE award ceremony'
     },
     {
       type: 'image',
-      src: '/lovable-uploads/67bf5193-2870-4474-b783-e26dedb45f4e.png',
+      src: '/lovable-uploads/2f3164f6-8cf3-4467-972d-205e303ec046.png',
       alt: 'CYNOSURE group photo with all participants'
     },
     {
       type: 'image',
-      src: '/lovable-uploads/4e770b97-f9b0-441d-8bf5-c462d3097400.png',
+      src: '/lovable-uploads/32d389f1-0682-4410-9df8-5469354b7f56.png',
       alt: 'CYNOSURE team members with event t-shirts'
     },
     {
       type: 'image',
-      src: '/lovable-uploads/3ac4a03f-7501-40bb-bd75-52f9223b850f.png',
+      src: '/lovable-uploads/18f2d4f6-be6c-43ce-9ae3-e8be35bc8544.png',
       alt: 'CYNOSURE award ceremony with participants on stage'
     },
     {
