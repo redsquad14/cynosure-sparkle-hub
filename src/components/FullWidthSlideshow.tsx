@@ -49,14 +49,16 @@ const FullWidthSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Auto-advance slides every 3 seconds
+  // Auto-advance slides with different timing for first slide
   useEffect(() => {
     if (!isAutoPlaying || slides.length <= 1) return;
-    const interval = setInterval(() => {
+    
+    const timeout = setTimeout(() => {
       setCurrentSlide(prev => (prev + 1) % slides.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [slides.length, isAutoPlaying]);
+    }, currentSlide === 0 ? 3000 : 2000); // First slide: 3s, others: 2s
+    
+    return () => clearTimeout(timeout);
+  }, [slides.length, isAutoPlaying, currentSlide]);
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
