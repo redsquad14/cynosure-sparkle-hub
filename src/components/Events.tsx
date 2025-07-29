@@ -4,7 +4,7 @@ import { Mic, Palette, Music, Camera, Gamepad2, Trophy, Sparkles, Users } from '
 const Events = () => {
   const events = [{
     icon: Mic,
-    title: "Performing Arts",
+    title: "Literary Events",
     description: "🎤 Let your voice be heard! Solo singing, group performances, and musical battles that'll give you goosebumps!",
     category: "Music"
   }, {
