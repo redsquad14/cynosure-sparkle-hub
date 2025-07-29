@@ -3,7 +3,9 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import { Play, Heart, Camera, Users, Maximize2, Star, Sparkles } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion, useInView, useAnimation } from 'framer-motion';
+import VideoSlideshow from './VideoSlideshow';
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [likedVideos, setLikedVideos] = useState<Set<number>>(new Set());
@@ -94,54 +96,134 @@ const Gallery = () => {
       return newSet;
     });
   };
-  return <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20">
+  return (
+    <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20 bg-gradient-to-b from-background via-background to-muted/10">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6 my-0 py-[12px]">Gallery</h2>
-          <div className="flex items-center justify-center gap-2 mb-8">
-            <Camera className="text-primary animate-pulse" />
-            <p className="text-xl text-accent font-semibold">Moments That Sparkle Forever</p>
-            <Camera className="text-primary animate-pulse" />
-          </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        {/* Enhanced Section Header with Modern Typography */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <motion.h2 
+            className="text-6xl md:text-7xl font-playfair font-bold text-gradient mb-8 tracking-tight"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            Gallery
+          </motion.h2>
+          
+          <motion.div 
+            className="flex items-center justify-center gap-3 mb-10"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Camera className="text-primary animate-pulse w-6 h-6" />
+            <p className="text-2xl font-inter font-medium text-accent tracking-wide">
+              Moments That Sparkle Forever
+            </p>
+            <Camera className="text-primary animate-pulse w-6 h-6" />
+          </motion.div>
+          
+          <motion.p 
+            className="text-lg font-inter text-muted-foreground max-w-4xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, 
             every video captures a dream, and every moment here is pure gold! ✨
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
+
+        {/* Full-Width Video Slideshow */}
+        <motion.div 
+          className="mb-20"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 
+            className="text-4xl font-playfair font-semibold text-center text-gradient mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Featured Moments
+          </motion.h3>
+          <VideoSlideshow videos={galleryItems} autoPlayInterval={10000} />
+        </motion.div>
 
         {/* Enhanced Video Gallery Grid with Creative Animations */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <motion.div 
+          className="mb-20"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 
+            className="text-4xl font-playfair font-semibold text-center text-gradient mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Explore Our Collection
+          </motion.h3>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
-            <Card 
-              key={index} 
-              className={`group relative overflow-hidden border-primary/20 transition-all duration-500 hover:scale-105 hover:rotate-1 hover:shadow-2xl hover:shadow-primary/30 ${
-                hoveredIndex === index ? 'animate-pulse' : ''
-              }`}
-              style={{
-                background: 'linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)/0.1))',
-                animationDelay: `${index * 100}ms`
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ 
+                duration: 0.6, 
+                delay: index * 0.1,
+                ease: "easeOut"
               }}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              viewport={{ once: true, margin: "-50px" }}
             >
-              {/* Floating particles on hover */}
-              {hoveredIndex === index && (
-                <div className="absolute inset-0 pointer-events-none">
-                  {[...Array(8)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute w-1 h-1 bg-primary rounded-full animate-bounce"
-                      style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
-                        animationDelay: `${i * 200}ms`,
-                        animationDuration: '1s'
-                      }}
-                    />
-                  ))}
-                </div>
-              )}
+              <Card 
+                className={`group relative overflow-hidden border-primary/20 transition-all duration-700 hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-primary/40 bg-gradient-to-br from-card via-card to-muted/20 ${
+                  hoveredIndex === index ? 'animate-pulse' : ''
+                }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                {/* Floating particles on hover */}
+                {hoveredIndex === index && (
+                  <div className="absolute inset-0 pointer-events-none z-10">
+                    {[...Array(12)].map((_, i) => (
+                      <motion.div
+                        key={i}
+                        className="absolute w-1 h-1 bg-primary rounded-full"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ 
+                          opacity: [0, 1, 0], 
+                          scale: [0, 1, 0],
+                          x: Math.random() * 100 - 50,
+                          y: Math.random() * 100 - 50
+                        }}
+                        transition={{
+                          duration: 2,
+                          delay: i * 0.1,
+                          repeat: Infinity,
+                          repeatDelay: 1
+                        }}
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 100}%`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
 
               {/* Category Badge */}
               <div className="absolute top-2 left-2 z-20">
@@ -269,28 +351,62 @@ const Gallery = () => {
 
               {/* Animated Border Effect */}
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary via-accent to-secondary opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10" />
-            </Card>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+          </div>
+        </motion.div>
         
 
         {/* What to Expect */}
         
 
-        {/* Call to Action */}
-        <div className="text-center relative">
-          {/* 2022 Brochures Button - Bottom Left */}
-          <div className="absolute bottom-0 left-0">
-            
-          </div>
+        {/* Enhanced Call to Action with Modern Design */}
+        <motion.div 
+          className="text-center relative"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 
+            className="text-4xl md:text-5xl font-playfair font-bold text-gradient mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Create Your Own Memories! 📸
+          </motion.h3>
           
-          <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
-          <p className="text-lg text-muted-foreground mb-6">Join CYNOSURE 2025 and become part of our family!</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
-            <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse" style={{ animationDuration: '0.8s' }}>🌟 REGISTER NOW!</Button>
-          </a>
-        </div>
+          <motion.p 
+            className="text-xl font-inter text-muted-foreground mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            Join CYNOSURE 2025 and become part of our creative family!
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="text-xl font-semibold px-12 py-8 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-primary-foreground shadow-2xl shadow-primary/50 transition-all duration-500 rounded-2xl border-2 border-primary/50 hover:border-accent/50"
+              >
+                🌟 REGISTER NOW! ✨
+              </Button>
+            </a>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Gallery;
