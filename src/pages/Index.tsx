@@ -16,7 +16,7 @@ const Index = () => {
       
       {/* School Header Section */}
       <section className="relative bg-background py-8 md:py-12 border-b border-primary/20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4">
           {/* Logo - Top Center on Mobile, Left on Desktop */}
           <div className="flex justify-center md:justify-start mb-6 md:mb-8">
             <div className="flex-shrink-0">
@@ -24,12 +24,12 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Centered Headings */}
-          <div className="text-center space-y-4 md:space-y-6">
+          {/* Headings - Aligned with Logo */}
+          <div className="text-center md:text-left space-y-4 md:space-y-6">
             <h1 className="font-times text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               St. Gregorios High School
             </h1>
-            <h2 className="font-times text-lg sm:text-xl md:text-2xl font-semibold text-accent lg:text-6xl">
+            <h2 className="font-times text-lg sm:text-xl md:text-2xl font-semibold text-accent lg:text-6xl text-center">
               Presents
             </h2>
           </div>
