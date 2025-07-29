@@ -16,7 +16,7 @@ const Events = () => {
     link: "https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing"
   }, {
     icon: Music,
-    title: "Dance Revolution",
+    title: "Fine arts",
     description: "💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves!",
     category: "Performance",
     link: "https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing"
