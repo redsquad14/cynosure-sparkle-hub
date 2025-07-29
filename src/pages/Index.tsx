@@ -32,12 +32,14 @@ const Index = () => {
               <h1 className="font-times text-6xl font-bold text-primary mb-4">
                 St. Gregorios High School
               </h1>
-              <div className="flex justify-center">
-                <h2 className="font-times text-2xl font-semibold text-accent">
-                  Presents
-                </h2>
-              </div>
             </div>
+          </div>
+          
+          {/* Centered "Presents" heading */}
+          <div className="w-full flex justify-center mt-4">
+            <h2 className="font-times text-2xl font-semibold text-accent">
+              Presents
+            </h2>
           </div>
         </div>
       </section>
