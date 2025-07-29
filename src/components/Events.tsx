@@ -10,7 +10,7 @@ const Events = () => {
     link: "https://drive.google.com/file/d/1z66w6wAwbEeWexAXnAwIRvGh6u_drvN8/view?usp=sharing"
   }, {
     icon: Palette,
-    title: "Art Attack",
+    title: "Cynoshow",
     description: "🎨 Unleash your creativity! From traditional painting to digital art - express your soul on canvas!",
     category: "Creative",
     link: "https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing"
