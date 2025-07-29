@@ -57,23 +57,6 @@ const EmotionalSlideshow = () => {
       
       {/* Enhanced Star Field Background */}
       <div className="absolute inset-0 bg-background overflow-hidden">
-        {/* Multiple layers of animated stars */}
-        {[...Array(80)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute bg-primary rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              width: `${Math.random() * 3 + 1}px`,
-              height: `${Math.random() * 3 + 1}px`,
-              animationDuration: `${Math.random() * 3 + 2}s`,
-              animationDelay: `${Math.random() * 2}s`,
-              opacity: Math.random() * 0.8 + 0.2
-            }}
-          />
-        ))}
-        
         {/* Twinkling stars with different animation */}
         {[...Array(40)].map((_, i) => (
           <div
