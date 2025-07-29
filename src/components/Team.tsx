@@ -58,8 +58,9 @@ const Team = () => {
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
           <p className="text-muted-foreground text-lg">Download the CYNOSURE brochures</p>
         </div>
-        <div className="flex justify-center">
-          <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group max-w-md">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* 2022 Brochures */}
+          <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group">
             <CardContent className="p-8 text-center">
               <div className="flex items-center justify-center gap-3 mb-6">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -86,6 +87,39 @@ const Team = () => {
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download 2022 Brochures
+                <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* 2023 Brochures */}
+          <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/20 group">
+            <CardContent className="p-8 text-center">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <div className="p-3 rounded-full bg-gradient-to-br from-accent to-secondary group-hover:scale-110 transition-transform duration-300">
+                  <FileText className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gradient">2023 Brochures</h3>
+                  <div className="flex items-center justify-center gap-1 mt-1">
+                    <Sparkles className="w-4 h-4 text-secondary animate-pulse" />
+                    <span className="text-sm text-muted-foreground">Latest Collection</span>
+                    <Sparkles className="w-4 h-4 text-secondary animate-pulse" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                🌟 Experience the grandeur of CYNOSURE 2023! Explore our latest collection of event brochures, 
+                stunning moments, and unforgettable highlights.
+              </p>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="w-full group-hover:scale-105 transition-transform duration-300 border-accent/30 hover:bg-accent/10"
+                disabled
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Link Coming Soon!
                 <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
               </Button>
             </CardContent>
