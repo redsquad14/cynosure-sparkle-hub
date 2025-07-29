@@ -24,8 +24,8 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Headings - Aligned with Logo */}
-          <div className="text-center md:text-left space-y-4 md:space-y-6">
+          {/* Headings - Centered to align with Logo */}
+          <div className="text-center space-y-4 md:space-y-6">
             <h1 className="font-times text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               St. Gregorios High School
             </h1>
