@@ -70,7 +70,7 @@ const Events = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary"
-                  onClick={() => window.open('https://www.canva.com/design/DAGtzBTiecA/jsntczu5Hn3Yxy8AuMNynQ/edit?utm_content=DAGtzBTiecA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1RDOWiTgN9te-zDXr0jXEXuBwTxhNEyCz/view?usp=drive_link', '_blank')}
                 >
                   Learn More ✨
                 </Button>
