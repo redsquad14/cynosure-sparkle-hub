@@ -6,32 +6,38 @@ const Events = () => {
     icon: BookOpen,
     title: "Literary Events",
     description: "📚 Unleash the power of words! Poetry recitations, storytelling competitions, creative writing, and literary debates that inspire!",
-    category: "Music"
+    category: "Music",
+    link: "https://drive.google.com/file/d/1z66w6wAwbEeWexAXnAwIRvGh6u_drvN8/view?usp=sharing"
   }, {
     icon: Palette,
     title: "Art Attack",
     description: "🎨 Unleash your creativity! From traditional painting to digital art - express your soul on canvas!",
-    category: "Creative"
+    category: "Creative",
+    link: null // Will be updated when you provide the link
   }, {
     icon: Music,
     title: "Dance Revolution",
     description: "💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves!",
-    category: "Performance"
+    category: "Performance",
+    link: null // Will be updated when you provide the link
   }, {
     icon: Camera,
     title: "Lens Masters",
     description: "📸 Capture the world through your eyes! Photography and videography competitions that tell stories!",
-    category: "Media"
+    category: "Media",
+    link: null // Will be updated when you provide the link
   }, {
     icon: Gamepad2,
     title: "Tech Warriors",
     description: "💻 Code, create, innovate! Programming challenges, app development, and tech innovation contests!",
-    category: "Technology"
+    category: "Technology",
+    link: null // Will be updated when you provide the link
   }, {
     icon: Trophy,
     title: "Quiz Galaxy",
     description: "🧠 Test your knowledge! From pop culture to science - prove you're the ultimate quiz champion!",
-    category: "Academic"
+    category: "Academic",
+    link: null // Will be updated when you provide the link
   }];
   return <section id="events" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
@@ -70,7 +76,8 @@ const Events = () => {
                 <Button 
                   variant="outline" 
                   className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary"
-                  onClick={() => window.open('https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing', '_blank')}
+                  onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')}
+                  disabled={!event.link}
                 >
                   Learn More ✨
                 </Button>
