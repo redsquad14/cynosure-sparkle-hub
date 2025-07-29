@@ -38,7 +38,7 @@ const SlideshowGallery = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % galleryItems.length);
-    }, 3000);
+    }, 5000); // Increased to 5 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, userInteracted, galleryItems.length]);
@@ -107,11 +107,11 @@ const SlideshowGallery = () => {
           </p>
         </div>
 
-        {/* Main Slideshow - Bigger and More Aesthetic */}
+        {/* Main Slideshow - Even Larger and More Cinematic */}
         <div className="mb-16">
           <Card className="overflow-hidden bg-gradient-to-br from-card via-card/95 to-muted/20 border-primary/30 shadow-2xl shadow-primary/10">
             <CardContent className="p-0">
-              <div className="relative h-[75vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
+              <div className="relative h-[85vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
                 {currentItem.type === 'video' ? (
                   <video
                     src={currentItem.src}
