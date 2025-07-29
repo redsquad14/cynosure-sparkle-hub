@@ -15,29 +15,25 @@ const Index = () => {
       <div id="top"></div>
       
       {/* School Header Section */}
-      <section className="relative bg-background py-12 border-b border-primary/20">
+      <section className="relative bg-background py-8 md:py-12 border-b border-primary/20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex items-center justify-start">
-            {/* Logo */}
-            <div className="mr-8 ml-4 mt-2">
+          {/* Logo - Top Center on Mobile, Left on Desktop */}
+          <div className="flex justify-center md:justify-start mb-6 md:mb-8">
+            <div className="flex-shrink-0">
               <LogoWithBackgroundRemoval
                 originalSrc="/lovable-uploads/1e82be09-fbb7-43af-a3ba-a7ed614e427f.png"
                 alt="St. Gregorios High School Logo"
-                className="w-32 h-32 object-contain"
+                className="w-24 h-24 md:w-32 md:h-32 object-contain"
               />
-            </div>
-            
-            {/* Text Content */}
-            <div className="flex-1 ml-16">
-              <h1 className="font-times text-6xl font-bold text-primary mb-4">
-                St. Gregorios High School
-              </h1>
             </div>
           </div>
           
-          {/* Centered "Presents" heading */}
-          <div className="w-full flex justify-center mt-4">
-            <h2 className="font-times text-2xl font-semibold text-accent">
+          {/* Centered Headings */}
+          <div className="text-center space-y-4 md:space-y-6">
+            <h1 className="font-times text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+              St. Gregorios High School
+            </h1>
+            <h2 className="font-times text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-accent">
               Presents
             </h2>
           </div>
