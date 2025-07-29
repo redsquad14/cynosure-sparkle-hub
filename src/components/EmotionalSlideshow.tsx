@@ -55,56 +55,8 @@ const EmotionalSlideshow = () => {
         </div>
       ))}
       
-      {/* Enhanced Star Field Background */}
-      <div className="absolute inset-0 bg-background overflow-hidden">
-        {/* Multiple layers of animated stars */}
-        {[...Array(80)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute bg-primary rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              width: `${Math.random() * 3 + 1}px`,
-              height: `${Math.random() * 3 + 1}px`,
-              animationDuration: `${Math.random() * 3 + 2}s`,
-              animationDelay: `${Math.random() * 2}s`,
-              opacity: Math.random() * 0.8 + 0.2
-            }}
-          />
-        ))}
-        
-        {/* Twinkling stars with different animation */}
-        {[...Array(40)].map((_, i) => (
-          <div
-            key={`twinkle-${i}`}
-            className="absolute bg-accent rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              width: `${Math.random() * 2 + 0.5}px`,
-              height: `${Math.random() * 2 + 0.5}px`,
-              animation: `twinkle ${Math.random() * 4 + 3}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 4}s`
-            }}
-          />
-        ))}
-        
-        {/* Shooting stars */}
-        {[...Array(3)].map((_, i) => (
-          <div
-            key={`shooting-${i}`}
-            className="absolute h-px bg-gradient-to-r from-transparent via-primary to-transparent"
-            style={{
-              left: '-100px',
-              top: `${Math.random() * 60 + 20}%`,
-              width: '200px',
-              animation: `shooting-star ${Math.random() * 8 + 6}s ease-out infinite`,
-              animationDelay: `${Math.random() * 10}s`
-            }}
-          />
-        ))}
-      </div>
+      {/* Overlay to block background images */}
+      <div className="absolute inset-0 bg-background" />
     </div>
   );
 };
