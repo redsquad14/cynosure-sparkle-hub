@@ -108,10 +108,6 @@ All colors MUST be HSL for consistency.
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', serif;
-  }
 }
 
 /* CYNOSURE Custom Styles */
@@ -197,6 +193,23 @@ All colors MUST be HSL for consistency.
 @keyframes twinkle {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 1; }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(-100px) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(-200px);
+    opacity: 0;
+  }
 }
 
 /* Custom Scrollbar */

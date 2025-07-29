@@ -9,43 +9,22 @@ interface SlideContent {
   description?: string;
 }
 const FullWidthSlideshow = () => {
-  const slides: SlideContent[] = [{
-    type: 'image',
-    src: '/lovable-uploads/b71f7da9-3a9f-48ff-9897-c4a9db216f9b.png',
-    alt: 'CYNOSURE Logo',
-    title: 'Welcome to CYNOSURE 2024',
-    description: 'Where Innovation Meets Creativity'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/51ec13ca-f7de-46bb-af72-bfda6cc35214.png',
-    alt: 'CYNOSURE 2024 Celebration',
-    title: 'CYNOSURE 2024',
-    description: 'Celebrating Student Excellence and Innovation'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/2f3164f6-8cf3-4467-972d-205e303ec046.png',
-    alt: 'St. Gregorios High School Group Photo',
-    title: 'Our Amazing Participants',
-    description: 'Students from various schools coming together for CYNOSURE'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/81ed6ffc-8147-4db8-86a3-b64b0248f4f8.png',
-    alt: 'CYNOSURE Award Ceremony',
-    title: 'Celebrating Excellence',
-    description: 'Recognizing outstanding talent and achievements'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/dead12d6-010f-4222-8c69-3aa9ae36d74e.png',
-    alt: 'CYNOSURE 2023 Performance',
-    title: 'Performances That Inspire',
-    description: 'Talented performers showcasing their skills on stage'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/dcb9fae2-b348-46f8-8327-b93d75423a30.png',
-    alt: 'CYNOSURE Judges Panel',
-    title: 'Expert Judges',
-    description: 'Experienced professionals evaluating the competitions'
-  }];
+  const slides: SlideContent[] = [
+    {
+      type: 'image',
+      src: '/lovable-uploads/5277d382-76a1-4a24-9174-04eb4b5bd417.png',
+      alt: 'CYNOSURE 2025 Logo',
+      title: 'CYNOSURE 2025',
+      description: 'Welcome to CYNOSURE 2025'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/1575a70c-488a-4c69-aa66-0fd8c115d43e.png',
+      alt: 'CYNOSURE Team Photo',
+      title: 'CYNOSURE Team',
+      description: 'St. Gregorios High School presents the amazing CYNOSURE team'
+    }
+  ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
