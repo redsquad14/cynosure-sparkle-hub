@@ -68,24 +68,7 @@ const Gallery = () => {
         </div>
 
         {/* Preview Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {galleryItems.map((item, index) => <Card key={item.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group relative overflow-hidden" style={{
-          animationDelay: `${index * 0.1}s`
-        }}>
-              {/* Placeholder Background */}
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center relative">
-                {item.type === 'video' ? <Play className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" /> : <Camera className="w-12 h-12 text-primary opacity-60 group-hover:scale-110 transition-transform" />}
-                <div className="absolute top-2 right-2 bg-accent/80 text-accent-foreground px-2 py-1 rounded text-xs font-semibold">
-                  {item.highlight}
-                </div>
-              </div>
-              
-              <CardContent className="p-4">
-                <h3 className="text-lg font-bold text-gradient mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>)}
-        </div>
+        
 
         {/* What to Expect */}
         <div className="grid md:grid-cols-4 gap-6 mb-12">
