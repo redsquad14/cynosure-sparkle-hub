@@ -10,30 +10,20 @@ interface MediaItem {
 }
 
 const SlideshowGallery = () => {
-  // Combined media items - videos and images
+  // Only videos for now - user will add images later
   const galleryItems: MediaItem[] = [
-    // Images
-    { type: 'image', src: '/lovable-uploads/07445e39-ebb7-494e-9c11-f159d34531eb.png', alt: 'CYNOSURE Gallery Image 1' },
-    { type: 'image', src: '/lovable-uploads/0b490266-247f-4e90-9ea3-24f6e4952bc1.png', alt: 'CYNOSURE Gallery Image 2' },
-    { type: 'image', src: '/lovable-uploads/18f2d4f6-be6c-43ce-9ae3-e8be35bc8544.png', alt: 'CYNOSURE Gallery Image 3' },
-    { type: 'image', src: '/lovable-uploads/26f725f9-45bf-4897-b1fe-acf6296d096d.png', alt: 'CYNOSURE Gallery Image 4' },
-    { type: 'image', src: '/lovable-uploads/2f3164f6-8cf3-4467-972d-205e303ec046.png', alt: 'CYNOSURE Gallery Image 5' },
-    { type: 'image', src: '/lovable-uploads/32d389f1-0682-4410-9df8-5469354b7f56.png', alt: 'CYNOSURE Gallery Image 6' },
-    // Videos
     { type: 'video', src: '/vid1.mp4', alt: 'CYNOSURE Video 1' },
     { type: 'video', src: '/vid2.mp4', alt: 'CYNOSURE Video 2' },
     { type: 'video', src: '/vid3.mp4', alt: 'CYNOSURE Video 3' },
     { type: 'video', src: '/vid4.mp4', alt: 'CYNOSURE Video 4' },
     { type: 'video', src: '/vid5.mp4', alt: 'CYNOSURE Video 5' },
     { type: 'video', src: '/vid6.mp4', alt: 'CYNOSURE Video 6' },
-    // More images
-    { type: 'image', src: '/lovable-uploads/51ec13ca-f7de-46bb-af72-bfda6cc35214.png', alt: 'CYNOSURE Gallery Image 7' },
-    { type: 'image', src: '/lovable-uploads/627530d8-e51f-404f-a8fb-e79c0b106a8f.png', alt: 'CYNOSURE Gallery Image 8' },
-    { type: 'image', src: '/lovable-uploads/81ed6ffc-8147-4db8-86a3-b64b0248f4f8.png', alt: 'CYNOSURE Gallery Image 9' },
-    // More videos
     { type: 'video', src: '/vid7.mp4', alt: 'CYNOSURE Video 7' },
     { type: 'video', src: '/vid8.mp4', alt: 'CYNOSURE Video 8' },
     { type: 'video', src: '/vid9.mp4', alt: 'CYNOSURE Video 9' },
+    { type: 'video', src: '/vid10.mp4', alt: 'CYNOSURE Video 10' },
+    { type: 'video', src: '/vid11.mp4', alt: 'CYNOSURE Video 11' },
+    { type: 'video', src: '/vid12.mp4', alt: 'CYNOSURE Video 12' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -117,82 +107,83 @@ const SlideshowGallery = () => {
           </p>
         </div>
 
-        {/* Main Slideshow */}
+        {/* Main Slideshow - Bigger and More Aesthetic */}
         <div className="mb-16">
-          <Card className="overflow-hidden bg-gradient-to-br from-card to-muted/10 border-primary/20">
+          <Card className="overflow-hidden bg-gradient-to-br from-card via-card/95 to-muted/20 border-primary/30 shadow-2xl shadow-primary/10">
             <CardContent className="p-0">
-              <div className="relative h-[60vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
-                {currentItem.type === 'image' ? (
-                  <img
-                    src={currentItem.src}
-                    alt={currentItem.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
-                ) : (
+              <div className="relative h-[75vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
+                {currentItem.type === 'video' ? (
                   <video
                     src={currentItem.src}
                     autoPlay
                     muted
                     loop
-                    className="w-full h-full object-cover"
-                    onClick={handleVideoClick}
+                    className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02] filter brightness-110"
+                  />
+                ) : (
+                  <img
+                    src={currentItem.src}
+                    alt={currentItem.alt}
+                    className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]"
                   />
                 )}
                 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-primary/80 rounded-full p-4 backdrop-blur-sm">
-                    <Camera className="w-8 h-8 text-primary-foreground" />
+                {/* Enhanced Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div className="bg-primary/90 rounded-full p-6 backdrop-blur-md shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                    <Camera className="w-10 h-10 text-primary-foreground" />
                   </div>
                 </div>
 
-                {/* Navigation arrows */}
+                {/* Enhanced Navigation arrows */}
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute left-6 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg backdrop-blur-sm border border-white/20"
                   onClick={(e) => {
                     e.stopPropagation();
                     setCurrentIndex((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
                   }}
                 >
-                  <ChevronLeft className="h-6 w-6" />
+                  <ChevronLeft className="h-8 w-8" />
                 </Button>
                 
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute right-6 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg backdrop-blur-sm border border-white/20"
                   onClick={(e) => {
                     e.stopPropagation();
                     setCurrentIndex((prev) => (prev + 1) % galleryItems.length);
                   }}
                 >
-                  <ChevronRight className="h-6 w-6" />
+                  <ChevronRight className="h-8 w-8" />
                 </Button>
 
-                {/* Auto-play indicator */}
-                <div className="absolute bottom-4 left-4">
+                {/* Enhanced Auto-play indicator */}
+                <div className="absolute bottom-6 left-6">
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="bg-black/50 hover:bg-black/70 text-white"
+                    className="bg-black/60 hover:bg-black/80 text-white backdrop-blur-sm border border-white/20 shadow-lg"
                     onClick={(e) => {
                       e.stopPropagation();
                       setIsAutoPlaying(!isAutoPlaying);
                     }}
                   >
-                    {isAutoPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+                    {isAutoPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
                   </Button>
                 </div>
 
-                {/* Progress indicators */}
-                <div className="absolute bottom-4 right-4 flex gap-2">
+                {/* Enhanced Progress indicators */}
+                <div className="absolute bottom-6 right-6 flex gap-3">
                   {galleryItems.map((_, index) => (
                     <button
                       key={index}
-                      className={`w-2 h-2 rounded-full transition-all ${
-                        index === currentIndex ? 'bg-primary scale-125' : 'bg-white/50'
+                      className={`w-3 h-3 rounded-full transition-all duration-300 shadow-lg ${
+                        index === currentIndex 
+                          ? 'bg-primary scale-125 shadow-primary/50' 
+                          : 'bg-white/60 hover:bg-white/80 backdrop-blur-sm'
                       }`}
                       onClick={(e) => {
                         e.stopPropagation();
@@ -204,44 +195,6 @@ const SlideshowGallery = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Thumbnail Gallery */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
-          {galleryItems.map((item, index) => (
-            <Card
-              key={index}
-              className={`overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 ${
-                index === currentIndex ? 'ring-2 ring-primary' : ''
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            >
-              <CardContent className="p-0">
-                <div className="relative aspect-square">
-                  {item.type === 'image' ? (
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <video
-                      src={item.src}
-                      className="w-full h-full object-cover"
-                      muted
-                    />
-                  )}
-                  {item.type === 'video' && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-black/50 rounded-full p-2">
-                        <Play className="w-4 h-4 text-white" />
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
         </div>
 
         {/* Call to Action */}
