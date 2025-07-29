@@ -2,8 +2,24 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
-  // Video gallery items
+  // Gallery items - images first, then videos
   const galleryItems = [{
+    type: 'image',
+    src: '/lovable-uploads/8080baa4-7fd2-40d6-98e9-35ee811c368c.png',
+    alt: 'CYNOSURE team group photo'
+  }, {
+    type: 'image', 
+    src: '/lovable-uploads/084914d0-7df6-46f0-ab88-c9c4715e0841.png',
+    alt: 'CYNOSURE team members with event t-shirts'
+  }, {
+    type: 'image',
+    src: '/lovable-uploads/92782be3-62c6-4201-9b8b-f806c5773cf7.png', 
+    alt: 'CYNOSURE stage event with students'
+  }, {
+    type: 'image',
+    src: '/lovable-uploads/d0c3b3f7-9992-49d3-a652-4001df107730.png',
+    alt: 'CYNOSURE stage performance with band'
+  }, {
     type: 'video',
     src: '/vid1.mp4'
   }, {
@@ -56,32 +72,46 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Video Gallery Grid */}
+        {/* Gallery Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {galleryItems.map((item, index) => <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative group">
-                  <video controls preload="metadata" className="w-full h-64 object-cover rounded-lg" controlsList="nodownload" onError={e => {
-                console.error('Video loading error:', item.src, e);
-                e.currentTarget.style.display = 'none';
-              }} onLoadStart={() => console.log('Video loading started:', item.src)} onCanPlay={() => console.log('Video can play:', item.src)} onLoadedData={() => console.log('Video data loaded:', item.src)} style={{
-                backgroundColor: '#000'
-              }}>
-                    <source src={item.src} type="video/mp4" />
-                    <p className="p-4 text-center text-muted-foreground">
-                      Your browser doesn't support video playback. 
-                      <a href={item.src} download className="text-primary underline ml-1">
-                        Download video
-                      </a>
-                    </p>
-                  </video>
+                  {item.type === 'image' ? (
+                    <img 
+                      src={item.src} 
+                      alt={item.alt || 'CYNOSURE gallery image'} 
+                      className="w-full h-64 object-cover rounded-lg"
+                      onError={e => {
+                        console.error('Image loading error:', item.src, e);
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                  ) : (
+                    <video controls preload="metadata" className="w-full h-64 object-cover rounded-lg" controlsList="nodownload" onError={e => {
+                      console.error('Video loading error:', item.src, e);
+                      e.currentTarget.style.display = 'none';
+                    }} onLoadStart={() => console.log('Video loading started:', item.src)} onCanPlay={() => console.log('Video can play:', item.src)} onLoadedData={() => console.log('Video data loaded:', item.src)} style={{
+                      backgroundColor: '#000'
+                    }}>
+                      <source src={item.src} type="video/mp4" />
+                      <p className="p-4 text-center text-muted-foreground">
+                        Your browser doesn't support video playback. 
+                        <a href={item.src} download className="text-primary underline ml-1">
+                          Download video
+                        </a>
+                      </p>
+                    </video>
+                  )}
                   
-                  {/* Custom Play Button Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                    <div className="bg-primary/80 rounded-full p-4 backdrop-blur-sm">
-                      <Play className="w-8 h-8 text-primary-foreground" />
+                  {/* Custom Play Button Overlay - only for videos */}
+                  {item.type === 'video' && (
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                      <div className="bg-primary/80 rounded-full p-4 backdrop-blur-sm">
+                        <Play className="w-8 h-8 text-primary-foreground" />
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </CardContent>
             </Card>)}
