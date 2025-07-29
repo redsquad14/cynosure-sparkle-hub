@@ -4,18 +4,18 @@ import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
   // Video gallery items
   const galleryItems = [
-    { type: 'video', src: '/vid%201.mp4' },
-    { type: 'video', src: '/vid%202.mp4' },
-    { type: 'video', src: '/vid%203.mp4' },
-    { type: 'video', src: '/vid%204.mp4' },
-    { type: 'video', src: '/vid%205.mp4' },
-    { type: 'video', src: '/vid%206.mp4' },
-    { type: 'video', src: '/vid%207.mp4' },
-    { type: 'video', src: '/vid%208.mp4' },
-    { type: 'video', src: '/vid%209.mp4' },
-    { type: 'video', src: '/vid%2010.mp4' },
-    { type: 'video', src: '/vid%2011.mp4' },
-    { type: 'video', src: '/vid%2012.mp4' },
+    { type: 'video', src: '/vid1.mp4' },
+    { type: 'video', src: '/vid2.mp4' },
+    { type: 'video', src: '/vid3.mp4' },
+    { type: 'video', src: '/vid4.mp4' },
+    { type: 'video', src: '/vid5.mp4' },
+    { type: 'video', src: '/vid6.mp4' },
+    { type: 'video', src: '/vid7.mp4' },
+    { type: 'video', src: '/vid8.mp4' },
+    { type: 'video', src: '/vid9.mp4' },
+    { type: 'video', src: '/vid10.mp4' },
+    { type: 'video', src: '/vid11.mp4' },
+    { type: 'video', src: '/vid12.mp4' },
   ];
   return <section id="gallery" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
