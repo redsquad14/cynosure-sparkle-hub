@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Palette, Music, ShoppingCart, Mic, Trophy, Sparkles, Users } from 'lucide-react';
+import { BookOpen, Palette, Music, ShoppingCart, Mic, Activity, Trophy, Sparkles, Users } from 'lucide-react';
 const Events = () => {
   const events = [{
     icon: BookOpen,
@@ -33,10 +33,10 @@ const Events = () => {
     category: "Performance",
     link: null // Will be updated when you provide the link
   }, {
-    icon: Trophy,
-    title: "Quiz Galaxy",
-    description: "🧠 Test your knowledge! From pop culture to science - prove you're the ultimate quiz champion!",
-    category: "Academic",
+    icon: Activity,
+    title: "Sports",
+    description: "⚽ Get your game on! Football, basketball, athletics, and more - show your sporting spirit and competitive edge!",
+    category: "Sports",
     link: null // Will be updated when you provide the link
   }];
   return <section id="events" className="py-20 px-4 relative">
