@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Heart, Users, Lightbulb } from 'lucide-react';
 const About = () => {
-  return <section id="about" className="pt-10 pb-4 px-4 relative scroll-mt-20">
+  return <section id="about" className="pt-10 pb-4 px-4 relative scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
