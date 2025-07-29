@@ -20,8 +20,8 @@ const Index = () => {
           {/* Logo - Top Center on Mobile, Left on Desktop */}
           <div className="flex justify-center md:justify-start mb-6 md:mb-8">
             <div className="flex-shrink-0">
-              <LogoWithBackgroundRemoval
-                originalSrc="/lovable-uploads/1e82be09-fbb7-43af-a3ba-a7ed614e427f.png"
+              <img
+                src="/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png"
                 alt="St. Gregorios High School Logo"
                 className="w-24 h-24 md:w-32 md:h-32 object-contain"
               />
