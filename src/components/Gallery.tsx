@@ -3,20 +3,43 @@ import { Button } from '@/components/ui/button';
 import { Play, Heart, Camera, Users } from 'lucide-react';
 const Gallery = () => {
   // Video gallery items
-  const galleryItems = [
-    { type: 'video', src: '/vid1.mp4' },
-    { type: 'video', src: '/vid2.mp4' },
-    { type: 'video', src: '/vid3.mp4' },
-    { type: 'video', src: '/vid4.mp4' },
-    { type: 'video', src: '/vid5.mp4' },
-    { type: 'video', src: '/vid6.mp4' },
-    { type: 'video', src: '/vid7.mp4' },
-    { type: 'video', src: '/vid8.mp4' },
-    { type: 'video', src: '/vid9.mp4' },
-    { type: 'video', src: '/vid10.mp4' },
-    { type: 'video', src: '/vid11.mp4' },
-    { type: 'video', src: '/vid12.mp4' },
-  ];
+  const galleryItems = [{
+    type: 'video',
+    src: '/vid1.mp4'
+  }, {
+    type: 'video',
+    src: '/vid2.mp4'
+  }, {
+    type: 'video',
+    src: '/vid3.mp4'
+  }, {
+    type: 'video',
+    src: '/vid4.mp4'
+  }, {
+    type: 'video',
+    src: '/vid5.mp4'
+  }, {
+    type: 'video',
+    src: '/vid6.mp4'
+  }, {
+    type: 'video',
+    src: '/vid7.mp4'
+  }, {
+    type: 'video',
+    src: '/vid8.mp4'
+  }, {
+    type: 'video',
+    src: '/vid9.mp4'
+  }, {
+    type: 'video',
+    src: '/vid10.mp4'
+  }, {
+    type: 'video',
+    src: '/vid11.mp4'
+  }, {
+    type: 'video',
+    src: '/vid12.mp4'
+  }];
   return <section id="gallery" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -35,23 +58,17 @@ const Gallery = () => {
 
         {/* Video Gallery Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {galleryItems.map((item, index) => (
-            <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
+          {galleryItems.map((item, index) => <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative group">
-                  <video 
-                    controls 
-                    className="w-full h-64 object-cover rounded-lg"
-                    poster=""
-                  >
+                  <video controls className="w-full h-64 object-cover rounded-lg" poster="">
                     <source src={item.src} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
         
 
@@ -94,13 +111,7 @@ const Gallery = () => {
         <div className="text-center relative">
           {/* 2022 Brochures Button - Bottom Left */}
           <div className="absolute bottom-0 left-0">
-            <Button 
-              variant="outline" 
-              className="border-primary/30 hover:bg-primary/10"
-              onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}
-            >
-              📄 2022 Brochures
-            </Button>
+            
           </div>
           
           <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
