@@ -18,7 +18,7 @@ const Navbar = () => {
     href: '#gallery'
   }, {
     name: 'Brochures',
-    href: '#brochures'
+    href: 'https://drive.google.com/drive/u/0/folders/1MmXhnh4qDK007F6SLWSeIfr7s-BZVGc0'
   }, {
     name: 'Contact Us',
     href: '#contact'
