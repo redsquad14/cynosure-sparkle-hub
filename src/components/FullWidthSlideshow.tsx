@@ -15,30 +15,6 @@ const FullWidthSlideshow = () => {
     alt: 'CYNOSURE Logo',
     title: 'Welcome to CYNOSURE 2024',
     description: 'Where Innovation Meets Creativity'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/26f725f9-45bf-4897-b1fe-acf6296d096d.png',
-    alt: 'CYNOSURE 2024 Student Event',
-    title: 'CYNOSURE 2024',
-    description: 'Celebrating Student Excellence'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/c7e01668-b132-40bf-9ee5-bec38ce8024f.png',
-    alt: 'St. Gregorios High School Group Photo',
-    title: 'United We Shine',
-    description: 'Our Amazing CYNOSURE Participants'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/e0f053e6-f363-4dbb-8838-1fd18fc0c80d.png',
-    alt: 'Award Ceremony Moment',
-    title: 'Celebrating Excellence',
-    description: 'Recognizing Outstanding Achievements'
-  }, {
-    type: 'image',
-    src: '/lovable-uploads/07445e39-ebb7-494e-9c11-f159d34531eb.png',
-    alt: 'CYBERDUKE Champions',
-    title: 'Victory Moments',
-    description: 'Champions of CYNOSURE 2024'
   }];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
