@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             
             <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="h-12 w-12 object-contain" />
-            <img src="/lovable-uploads/97f48f37-25b6-414c-baf0-e52940e0cc33.png" alt="Enlightenment Logo" className="h-12 w-12 object-contain" />
+            
             <span className="text-2xl text-gradient font-bold">CYNOSURE</span>
           </div>
 
