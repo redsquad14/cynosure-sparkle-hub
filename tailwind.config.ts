@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'komu': ['Komu', 'sans-serif'],
+				'times': ['Times New Roman', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

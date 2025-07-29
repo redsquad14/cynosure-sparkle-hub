@@ -12,6 +12,35 @@ const Index = () => {
       <StarField />
       <Navbar />
       <div id="top"></div>
+      
+      {/* School Header Section */}
+      <section className="relative bg-background py-12 border-b border-primary/20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex items-center justify-start">
+            {/* Logo */}
+            <div className="mr-8">
+              <img 
+                src="/lovable-uploads/3dcd2ac8-6c4b-454f-a42d-fafe05f4a527.png" 
+                alt="St. Gregorios High School Logo" 
+                className="w-32 h-32 object-contain"
+              />
+            </div>
+            
+            {/* Text Content */}
+            <div className="flex-1 ml-16">
+              <h1 className="font-times text-6xl font-bold text-primary mb-4">
+                St. Gregorios High School
+              </h1>
+              <div className="flex justify-center">
+                <h2 className="font-times text-2xl font-semibold text-accent">
+                  Presents
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <FullWidthSlideshow />
       <main>
         <Hero />
