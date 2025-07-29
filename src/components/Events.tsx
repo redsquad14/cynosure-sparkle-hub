@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Palette, Music, Camera, Gamepad2, Trophy, Sparkles, Users } from 'lucide-react';
+import { BookOpen, Palette, Music, ShoppingCart, Gamepad2, Trophy, Sparkles, Users } from 'lucide-react';
 const Events = () => {
   const events = [{
     icon: BookOpen,
@@ -21,10 +21,10 @@ const Events = () => {
     category: "Performance",
     link: "https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing"
   }, {
-    icon: Camera,
-    title: "Lens Masters",
-    description: "📸 Capture the world through your eyes! Photography and videography competitions that tell stories!",
-    category: "Media",
+    icon: ShoppingCart,
+    title: "Commerce",
+    description: "💼 Master the art of business! Entrepreneurship challenges, marketing competitions, and innovative business plan contests!",
+    category: "Business",
     link: null // Will be updated when you provide the link
   }, {
     icon: Gamepad2,
