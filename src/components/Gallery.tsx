@@ -61,7 +61,14 @@ const Gallery = () => {
           {galleryItems.map((item, index) => <Card key={index} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative group">
-                  <video controls className="w-full h-64 object-cover rounded-lg" poster="">
+                  <video 
+                    controls 
+                    className="w-full h-64 object-cover rounded-lg" 
+                    poster=""
+                    onError={(e) => console.error('Video loading error:', item.src, e)}
+                    onLoadStart={() => console.log('Video loading started:', item.src)}
+                    onCanPlay={() => console.log('Video can play:', item.src)}
+                  >
                     <source src={item.src} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
