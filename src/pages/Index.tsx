@@ -21,7 +21,7 @@ const Index = () => {
             {/* Logo */}
             <div className="mr-8 ml-4 mt-2">
               <LogoWithBackgroundRemoval
-                originalSrc="/lovable-uploads/3dcd2ac8-6c4b-454f-a42d-fafe05f4a527.png"
+                originalSrc="/lovable-uploads/4e9330a3-64d1-409b-964a-733e7ab32673.png"
                 alt="St. Gregorios High School Logo"
                 className="w-32 h-32 object-contain"
               />
