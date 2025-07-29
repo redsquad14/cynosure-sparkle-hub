@@ -113,7 +113,7 @@ const Team = () => {
                 variant="gradient" 
                 size="sm"
                 className="w-full group-hover:scale-105 transition-transform duration-300"
-                onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download 2023
