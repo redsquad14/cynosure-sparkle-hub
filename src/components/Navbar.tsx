@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Menu, X, Sparkles } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,17 +43,31 @@ const Navbar = () => {
 
           {/* Register Button */}
           <div className="hidden md:block">
-            <Button 
-              variant="default" 
-              className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
-              style={{ animationDuration: '0.8s' }}
-              asChild
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Register Now!
-              </a>
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="default" 
+                  className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+                  style={{ animationDuration: '0.8s' }}
+                >
+                  <Sparkles className="w-4 h-4 mr-2" />
+                  Register Now!
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full">
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" 
+                  width="100%" 
+                  height={600} 
+                  frameBorder={0} 
+                  marginHeight={0} 
+                  marginWidth={0}
+                  className="rounded-md"
+                >
+                  Loading…
+                </iframe>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Mobile menu button */}
