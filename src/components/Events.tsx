@@ -13,13 +13,13 @@ const Events = () => {
     title: "Art Attack",
     description: "🎨 Unleash your creativity! From traditional painting to digital art - express your soul on canvas!",
     category: "Creative",
-    link: null // Will be updated when you provide the link
+    link: "https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing"
   }, {
     icon: Music,
     title: "Dance Revolution",
     description: "💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves!",
     category: "Performance",
-    link: null // Will be updated when you provide the link
+    link: "https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing"
   }, {
     icon: Camera,
     title: "Lens Masters",
