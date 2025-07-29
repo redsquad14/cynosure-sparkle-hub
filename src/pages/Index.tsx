@@ -8,7 +8,7 @@ import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
 import FullWidthSlideshow from '@/components/FullWidthSlideshow';
 const Index = () => {
-  return <div className="min-h-screen bg-background relative overflow-x-hidden">
+  return <div id="top" className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
       <Navbar />
       <FullWidthSlideshow />
