@@ -113,13 +113,13 @@ const Team = () => {
                 stunning moments, and unforgettable highlights.
               </p>
               <Button 
-                variant="outline" 
+                variant="gradient" 
                 size="lg"
-                className="w-full group-hover:scale-105 transition-transform duration-300 border-accent/30 hover:bg-accent/10"
-                disabled
+                className="w-full group-hover:scale-105 transition-transform duration-300"
+                onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
-                Link Coming Soon!
+                Download 2023 Brochures
                 <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
               </Button>
             </CardContent>
