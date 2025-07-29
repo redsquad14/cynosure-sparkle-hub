@@ -52,7 +52,7 @@ const Team = () => {
     talent: "Can organize chaos into perfection! 📋",
     icon: Users
   }];
-  return <section id="brochures" className="pt-10 pb-20 bg-card/30 relative">
+  return <section id="brochures" className="py-20 bg-card/30 relative">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
@@ -68,22 +68,13 @@ const Team = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gradient">2022 Brochures</h3>
-                  <div className="flex items-center justify-center gap-1">
-                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
-                    <span className="text-xs text-muted-foreground">Archive</span>
-                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
-                  </div>
+                  
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 ✨ Relive the magic of CYNOSURE 2022! Complete collection of memories.
               </p>
-              <Button 
-                variant="gradient" 
-                size="sm"
-                className="w-full group-hover:scale-105 transition-transform duration-300"
-                onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}
-              >
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2022
               </Button>
@@ -99,22 +90,13 @@ const Team = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gradient">2023 Brochures</h3>
-                  <div className="flex items-center justify-center gap-1">
-                    <Sparkles className="w-3 h-3 text-secondary animate-pulse" />
-                    <span className="text-xs text-muted-foreground">Collection</span>
-                    <Sparkles className="w-3 h-3 text-secondary animate-pulse" />
-                  </div>
+                  
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 🌟 Experience CYNOSURE 2023! Latest collection of stunning moments.
               </p>
-              <Button 
-                variant="gradient" 
-                size="sm"
-                className="w-full group-hover:scale-105 transition-transform duration-300"
-                onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}
-              >
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2023
               </Button>
@@ -130,22 +112,13 @@ const Team = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gradient">2024 Brochures</h3>
-                  <div className="flex items-center justify-center gap-1">
-                    <Sparkles className="w-3 h-3 text-primary animate-pulse" />
-                    <span className="text-xs text-muted-foreground">Latest</span>
-                    <Sparkles className="w-3 h-3 text-primary animate-pulse" />
-                  </div>
+                  
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 🚀 The grandest CYNOSURE yet! Fresh memories and achievements.
               </p>
-              <Button 
-                variant="gradient" 
-                size="sm"
-                className="w-full group-hover:scale-105 transition-transform duration-300"
-                onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}
-              >
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2024
               </Button>
@@ -161,22 +134,13 @@ const Team = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gradient">2025 Brochures</h3>
-                  <div className="flex items-center justify-center gap-1">
-                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
-                    <span className="text-xs text-muted-foreground">Future</span>
-                    <Sparkles className="w-3 h-3 text-accent animate-pulse" />
-                  </div>
+                  
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 🌈 Get ready for CYNOSURE 2025! The most spectacular edition awaits.
               </p>
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10"
-                disabled
-              >
+              <Button variant="outline" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10" disabled>
                 <Download className="w-4 h-4 mr-2" />
                 Coming Soon!
               </Button>
