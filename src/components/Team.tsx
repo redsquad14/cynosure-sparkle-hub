@@ -141,13 +141,13 @@ const Team = () => {
                 🚀 The grandest CYNOSURE yet! Fresh memories and achievements.
               </p>
               <Button 
-                variant="outline" 
+                variant="gradient" 
                 size="sm"
-                className="w-full group-hover:scale-105 transition-transform duration-300 border-secondary/30 hover:bg-secondary/10"
-                disabled
+                className="w-full group-hover:scale-105 transition-transform duration-300"
+                onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}
               >
                 <Download className="w-4 h-4 mr-2" />
-                Coming Soon!
+                Download 2024
               </Button>
             </CardContent>
           </Card>
