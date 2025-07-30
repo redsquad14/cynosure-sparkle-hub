@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Menu, X, Sparkles } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -106,21 +106,43 @@ const Navbar = () => {
 
           {/* Register Button */}
           <div className="hidden md:block">
-            <Dialog>
-              <DialogTrigger asChild>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
                 <Button variant="default" className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" style={{
                 animationDuration: '0.8s'
               }}>
                   <Sparkles className="w-4 h-4 mr-2" />
                   Register Now!
                 </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl w-full">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" width="100%" height={600} frameBorder={0} marginHeight={0} marginWidth={0} className="rounded-md">
-                  Loading…
-                </iframe>
-              </DialogContent>
-            </Dialog>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+                <div className="space-y-4">
+                  <DropdownMenuItem asChild className="p-0">
+                    <div className="w-full">
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        FORM 1
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        Primary registration form for general participants and students
+                      </p>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem asChild className="p-0">
+                    <div className="w-full">
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        FORM 2
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        Special registration form for teams and group participants
+                      </p>
+                    </div>
+                  </DropdownMenuItem>
+                </div>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Mobile menu button */}
@@ -149,27 +171,41 @@ const Navbar = () => {
               </a>
             ))}
             <div className="pt-4">
-              <Dialog>
-                <DialogTrigger asChild>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
                   <Button variant="gradient" className="w-full">
                     <Sparkles className="w-4 h-4 mr-2" />
                     Register Now
                   </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl w-full">
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" 
-                    width="100%" 
-                    height={600} 
-                    frameBorder={0} 
-                    marginHeight={0} 
-                    marginWidth={0} 
-                    className="rounded-md"
-                  >
-                    Loading…
-                  </iframe>
-                </DialogContent>
-              </Dialog>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-72 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+                  <div className="space-y-4">
+                    <DropdownMenuItem asChild className="p-0">
+                      <div className="w-full">
+                        <Button variant="gradient" className="w-full mb-2">
+                          <Sparkles className="w-4 h-4 mr-2" />
+                          FORM 1
+                        </Button>
+                        <p className="text-sm text-muted-foreground px-2">
+                          Primary registration form for general participants
+                        </p>
+                      </div>
+                    </DropdownMenuItem>
+                    
+                    <DropdownMenuItem asChild className="p-0">
+                      <div className="w-full">
+                        <Button variant="gradient" className="w-full mb-2">
+                          <Sparkles className="w-4 h-4 mr-2" />
+                          FORM 2
+                        </Button>
+                        <p className="text-sm text-muted-foreground px-2">
+                          Special registration form for teams and groups
+                        </p>
+                      </div>
+                    </DropdownMenuItem>
+                  </div>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
         </div>

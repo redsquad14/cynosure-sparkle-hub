@@ -167,7 +167,20 @@ const SlideshowGallery = () => {
 
                 {/* Enhanced Progress indicators */}
                 <div className="absolute bottom-6 right-6 flex gap-3">
-                  {galleryItems.map((_, index) => {})}
+                  {galleryItems.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        index === currentIndex 
+                          ? 'bg-primary shadow-lg shadow-primary/50' 
+                          : 'bg-white/40 hover:bg-white/60'
+                      }`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentIndex(index);
+                      }}
+                    />
+                  ))}
                 </div>
               </div>
             </CardContent>
