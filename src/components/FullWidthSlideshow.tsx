@@ -33,17 +33,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/a3ad07a9-6cbb-475e-8053-760e6d5b1a3a.png',
+      src: '/lovable-uploads/bafb7d9a-d730-46b7-b2d5-9a1873ab6767.png',
       alt: 'CYNOSURE Award Ceremony',
       title: 'Achievement Recognition',
       description: 'Award presentation ceremony at CYNOSURE 2024'
-    },
-    {
-      type: 'image',
-      src: '/lovable-uploads/49b8581e-9690-4e9b-8056-86e6795b931b.png',
-      alt: 'Award Ceremony',
-      title: 'Recognition',
-      description: 'Award ceremony celebrating achievements at CYNOSURE'
     },
     {
       type: 'image',
