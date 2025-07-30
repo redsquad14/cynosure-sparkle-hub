@@ -4,7 +4,7 @@ import CountdownTimer from './CountdownTimer';
 import StarField from './StarField';
 import EmotionalSlideshow from './EmotionalSlideshow';
 const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden font-times">
       <EmotionalSlideshow />
       <StarField />
       

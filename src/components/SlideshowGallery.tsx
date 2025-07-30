@@ -91,7 +91,7 @@ const SlideshowGallery = () => {
   const lightboxItem = galleryItems[lightboxIndex];
 
   return (
-    <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20">
+    <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20 font-times">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

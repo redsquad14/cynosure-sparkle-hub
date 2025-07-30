@@ -39,7 +39,7 @@ const Events = () => {
     category: "Sports",
     link: null // Will be updated when you provide the link
   }];
-  return <section id="events" className="pt-20 pb-5 px-4 relative">
+  return <section id="events" className="pt-20 pb-5 px-4 relative font-times">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
