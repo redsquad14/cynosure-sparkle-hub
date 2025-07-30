@@ -73,7 +73,7 @@ const Events = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {event.description}
                 </p>
-                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
+                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
                   Learn More ✨
                 </Button>
               </CardContent>
