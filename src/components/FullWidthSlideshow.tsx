@@ -31,13 +31,6 @@ const FullWidthSlideshow = () => {
       title: 'School Celebration',
       description: 'Traditional celebration at St. Gregorios High School'
     },
-    {
-      type: 'image',
-      src: '/lovable-uploads/1b5b6a87-4024-405b-b40c-dd6fb73e8d82.png',
-      alt: 'Victory Celebration',
-      title: 'Champions',
-      description: 'Celebrating victory and achievements at CYNOSURE'
-    }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
