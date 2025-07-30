@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 interface SlideContent {
   type: 'image' | 'video';
   src: string;
@@ -8,6 +9,7 @@ interface SlideContent {
   title?: string;
   description?: string;
 }
+
 const FullWidthSlideshow = () => {
   const slides: SlideContent[] = [
     {
@@ -31,7 +33,22 @@ const FullWidthSlideshow = () => {
       title: 'School Celebration',
       description: 'Traditional celebration at St. Gregorios High School'
     },
+    {
+      type: 'image',
+      src: '/lovable-uploads/e269d66f-1d90-48ab-8411-563808c7d97e.png',
+      alt: 'CYNOSURE Award Ceremony',
+      title: 'Achievement Recognition',
+      description: 'Award presentation ceremony at CYNOSURE 2024'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/bb6a03c2-5ad5-451b-9429-a29a453612bc.png',
+      alt: 'CYNOSURE Team Spirit',
+      title: 'Team Unity',
+      description: 'CYNOSURE team members showing their unity and spirit'
+    }
   ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -45,24 +62,35 @@ const FullWidthSlideshow = () => {
     
     return () => clearTimeout(timeout);
   }, [slides.length, isAutoPlaying, currentSlide]);
+
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
+
   const goToPrevious = () => {
     setCurrentSlide(prev => (prev - 1 + slides.length) % slides.length);
   };
+
   const goToNext = () => {
     setCurrentSlide(prev => (prev + 1) % slides.length);
   };
+
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
-  return <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black mt-16 z-10" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+
+  return (
+    <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black mt-16 z-10" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {/* Slides Container */}
       <div className="relative w-full h-full">
-        {slides.map((slide, index) => <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
-            {slide.type === 'image' ? <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 0 ? 'object-contain' : 'object-cover'}`} /> : <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />}
-            
-          </div>)}
+        {slides.map((slide, index) => (
+          <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
+            {slide.type === 'image' ? (
+              <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 0 ? 'object-contain' : 'object-cover'}`} />
+            ) : (
+              <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />
+            )}
+          </div>
+        ))}
       </div>
 
       {/* Navigation Arrows */}
@@ -74,14 +102,12 @@ const FullWidthSlideshow = () => {
         <ChevronRight className="h-6 w-6" />
       </Button>
 
-      {/* Dot Indicators */}
-      
-      
-
       {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-black/20">
         
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default FullWidthSlideshow;
