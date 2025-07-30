@@ -30,6 +30,34 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Event Celebration',
       title: 'School Celebration',
       description: 'Traditional celebration at St. Gregorios High School'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/5f89577b-6504-4ee2-a80f-346c93f2ccb3.png',
+      alt: 'CYNOSURE Team Members',
+      title: 'Team Spirit',
+      description: 'CYNOSURE team members in their official t-shirts'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/49b8581e-9690-4e9b-8056-86e6795b931b.png',
+      alt: 'Award Ceremony',
+      title: 'Recognition',
+      description: 'Award ceremony celebrating achievements at CYNOSURE'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/cff97cfc-7a36-443b-a522-727ef8f82094.png',
+      alt: 'Stage Performance',
+      title: 'Live Performance',
+      description: 'Musical performance on the CYNOSURE stage'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/1b5b6a87-4024-405b-b40c-dd6fb73e8d82.png',
+      alt: 'Victory Celebration',
+      title: 'Champions',
+      description: 'Celebrating victory and achievements at CYNOSURE'
     }
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
