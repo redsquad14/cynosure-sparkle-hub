@@ -46,6 +46,13 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Team Spirit',
       title: 'Team Unity',
       description: 'CYNOSURE team members showing their unity and spirit'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/c3190d33-e994-44d8-8b01-bb335b619630.png',
+      alt: 'CYNOSURE Victory Celebration',
+      title: 'Team Victory',
+      description: 'Celebrating achievements and teamwork at CYNOSURE 2024'
     }
   ];
 
