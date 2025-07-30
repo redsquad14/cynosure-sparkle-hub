@@ -60,8 +60,8 @@ const Team = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* 2022 Brochures */}
-          <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group">
-            <CardContent className="p-6 text-center">
+          <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group h-full">
+            <CardContent className="p-6 text-center h-full flex flex-col">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <div className="p-2 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-6 h-6 text-primary-foreground" />
@@ -71,10 +71,10 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
                 ✨ Relive the magic of CYNOSURE 2022! Complete collection of memories.
               </p>
-              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}>
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2022
               </Button>
@@ -82,8 +82,8 @@ const Team = () => {
           </Card>
 
           {/* 2023 Brochures */}
-          <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/20 group">
-            <CardContent className="p-6 text-center">
+          <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/20 group h-full">
+            <CardContent className="p-6 text-center h-full flex flex-col">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <div className="p-2 rounded-full bg-gradient-to-br from-accent to-secondary group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-6 h-6 text-primary-foreground" />
@@ -93,10 +93,10 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
                 🌟 Experience CYNOSURE 2023! Latest collection of stunning moments.
               </p>
-              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}>
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2023
               </Button>
@@ -104,8 +104,8 @@ const Team = () => {
           </Card>
 
           {/* 2024 Brochures */}
-          <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/20 group">
-            <CardContent className="p-6 text-center">
+          <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/20 group h-full">
+            <CardContent className="p-6 text-center h-full flex flex-col">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <div className="p-2 rounded-full bg-gradient-to-br from-secondary to-primary group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-6 h-6 text-primary-foreground" />
@@ -115,10 +115,10 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
                 🚀 The grandest CYNOSURE yet! Fresh memories and achievements.
               </p>
-              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2024
               </Button>
@@ -126,8 +126,8 @@ const Team = () => {
           </Card>
 
           {/* 2025 Brochures */}
-          <Card className="card-hover bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/30 group">
-            <CardContent className="p-6 text-center">
+          <Card className="card-hover bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/30 group h-full">
+            <CardContent className="p-6 text-center h-full flex flex-col">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <div className="p-2 rounded-full bg-gradient-to-br from-primary to-secondary group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-6 h-6 text-primary-foreground" />
@@ -137,10 +137,10 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
                 🌈 Get ready for CYNOSURE 2025! The most spectacular edition awaits.
               </p>
-              <Button variant="outline" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10" disabled>
+              <Button variant="outline" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10 mt-auto" disabled>
                 <Download className="w-4 h-4 mr-2" />
                 Coming Soon!
               </Button>
