@@ -152,7 +152,7 @@ const SlideshowGallery = () => {
                 e.stopPropagation();
                 setCurrentIndex(prev => (prev + 1) % galleryItems.length);
               }}>
-                  <ChevronRight className="h-8 w-8" />
+                  
                 </Button>
 
                 {/* Enhanced Auto-play indicator */}
