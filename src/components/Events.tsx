@@ -56,11 +56,11 @@ const Events = () => {
         </div>
 
         {/* Events Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {events.map((event, index) => <Card key={event.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full" style={{
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 items-stretch">
+          {events.map((event, index) => <Card key={event.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
           animationDelay: `${index * 0.1}s`
         }}>
-              <CardContent className="p-6 h-full flex flex-col">
+              <CardContent className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
                     <event.icon className="w-6 h-6 text-primary-foreground" />
@@ -70,10 +70,10 @@ const Events = () => {
                     <h3 className="text-xl font-bold text-gradient">{event.title}</h3>
                   </div>
                 </div>
-                <p className="leading-relaxed mb-4 text-slate-50 flex-1">
+                <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                   {event.description}
                 </p>
-                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center mt-auto" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
+                <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
                   Learn More ✨
                 </Button>
               </CardContent>
