@@ -17,7 +17,7 @@ const About = () => {
                 <Heart className="w-8 h-8 text-accent animate-pulse" />
                 <h3 className="text-3xl font-bold text-gradient py-[8px]">Our Origin Story</h3>
               </div>
-              <p className="text-3xl leading-relaxed text-muted-foreground mb-6">Cynosure is a inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Visual Arts, and Sports. Whether you're a wordsmith, a performer, a creator, or an athlete — there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork, and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram</p>
+              <p className="text-3xl leading-relaxed mb-6 text-slate-50">Cynosure is a inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Visual Arts, and Sports. Whether you're a wordsmith, a performer, a creator, or an athlete — there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork, and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram</p>
               
             </CardContent>
           </Card>
@@ -29,7 +29,7 @@ const About = () => {
             <CardContent className="p-6 text-center">
               <Users className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
               <h3 className="text-xl font-bold text-gradient mb-3">Unity Across Schools</h3>
-              <p className="text-muted-foreground">
+              <p className="text-slate-50">
                 Breaking barriers between institutions, we create a melting pot of talent 
                 where friendships bloom and collaborations flourish.
               </p>
