@@ -88,7 +88,7 @@ const Events = () => {
                 <Users className="w-8 h-8 text-accent animate-pulse" />
                 <h3 className="text-2xl font-bold text-gradient">Team Events</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="mb-4 text-lg text-slate-50">
                 🤝 Some competitions allow inter-school collaborations! 
                 Make new friends while competing together. Because the best victories are shared ones!
               </p>
@@ -107,7 +107,7 @@ const Events = () => {
                 <Trophy className="w-8 h-8 text-primary animate-pulse" />
                 <h3 className="text-2xl font-bold text-gradient">Amazing Rewards</h3>
               </div>
-              <p className="mb-4 text-slate-50 text-base">
+              <p className="mb-4 text-slate-50 text-lg">
                 🏆 It's not just about winning - it's about celebrating every effort! 
                 Everyone goes home with memories, but winners get extra sparkle!
               </p>
