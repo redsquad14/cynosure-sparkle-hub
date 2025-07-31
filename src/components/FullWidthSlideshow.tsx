@@ -35,10 +35,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/e269d66f-1d90-48ab-8411-563808c7d97e.png',
-      alt: 'CYNOSURE Award Ceremony',
-      title: 'Achievement Recognition',
-      description: 'Award presentation ceremony at CYNOSURE 2024'
+      src: '/lovable-uploads/f2fc02fd-6407-422d-83fb-6323b1a7205c.png',
+      alt: 'CYNOSURE Foundation Stone Ceremony',
+      title: 'Foundation Ceremony',
+      description: 'Special foundation stone ceremony at St. Gregorios High School'
     },
     {
       type: 'image',
