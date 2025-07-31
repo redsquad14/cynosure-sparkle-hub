@@ -113,7 +113,7 @@ const Events = () => {
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>🥇 Trophies & Certificates</li>
-                <li>🎁 Amazing Prizes</li>
+                <li>🎁 Amazing Prizes like AirPods!</li>
                 <li>🌟 Recognition & Fame</li>
                 <li>📸 Media Coverage</li>
               </ul>
