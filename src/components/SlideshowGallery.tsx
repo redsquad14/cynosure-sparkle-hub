@@ -123,7 +123,7 @@ const SlideshowGallery = () => {
             <p className="text-xl text-accent font-semibold">Moments That Sparkle Forever</p>
             <Camera className="text-primary animate-pulse" />
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">
             📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, 
             every video captures a dream, and every moment here is pure gold! ✨
           </p>
@@ -169,8 +169,8 @@ const SlideshowGallery = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse" style={{
-                animationDuration: '0.8s'
-              }}>
+              animationDuration: '0.8s'
+            }}>
                 <Sparkles className="w-4 h-4 mr-2" />
                 🌟 REGISTER NOW!
               </Button>
@@ -179,12 +179,7 @@ const SlideshowGallery = () => {
               <div className="space-y-4">
                 <DropdownMenuItem asChild className="p-0">
                   <div className="w-full">
-                    <Button 
-                      variant="gradient" 
-                      size="lg" 
-                      className="w-full text-lg px-8 py-6 text-slate-950 mb-2"
-                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}
-                    >
+                    <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}>
                       <Sparkles className="w-4 h-4 mr-2" />
                       FORM 1
                     </Button>
@@ -196,12 +191,7 @@ const SlideshowGallery = () => {
                 
                 <DropdownMenuItem asChild className="p-0">
                   <div className="w-full">
-                    <Button 
-                      variant="gradient" 
-                      size="lg" 
-                      className="w-full text-lg px-8 py-6 text-slate-950 mb-2"
-                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}
-                    >
+                    <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}>
                       <Sparkles className="w-4 h-4 mr-2" />
                       FORM 2
                     </Button>
