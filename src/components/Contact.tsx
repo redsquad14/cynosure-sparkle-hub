@@ -45,7 +45,7 @@ const Contact = () => {
                       <Phone className="w-5 h-5 text-accent" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Call/WhatsApp</p>
+                      <p className="font-semibold text-foreground mx-0 px-[77px]">Call</p>
                       <p className="text-sm text-muted-foreground">+91 98765 43210</p>
                     </div>
                   </div>
