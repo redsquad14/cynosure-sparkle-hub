@@ -29,7 +29,7 @@ const About = () => {
             <CardContent className="p-6 text-center">
               <Users className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
               <h3 className="text-xl font-bold text-gradient mb-3">Unity Across Schools</h3>
-              <p className="text-slate-50">
+              <p className="text-slate-50 text-lg">
                 Breaking barriers between institutions, we create a melting pot of talent 
                 where friendships bloom and collaborations flourish.
               </p>
