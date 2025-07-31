@@ -39,7 +39,7 @@ const Hero = () => {
         {/* Coming Soon */}
         <div className="mb-8">
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed"> We, the students of St. Gregorios High School, wish to extend a warm invitation for the fourth edition of our student-powered inter-school event, CYNOSURE, being held on the 26th and 27th of September, 2025. This much-awaited celebration brings together a group of immensely talented students from across Mumbai to participate, connect, and shine.</p>
+          <p className="text-lg mb-6 max-w-3xl mx-auto leading-relaxed text-slate-50 md:text-2xl"> We, the students of St. Gregorios High School, wish to extend a warm invitation for the fourth edition of our student-powered inter-school event, CYNOSURE, being held on the 26th and 27th of September, 2025. This much-awaited celebration brings together a group of immensely talented students from across Mumbai to participate, connect, and shine.</p>
         </div>
 
         {/* Call to Action */}
