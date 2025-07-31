@@ -98,7 +98,7 @@ const SlideshowGallery = () => {
     if (!isAutoPlaying || userInteracted) return;
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % galleryItems.length);
-    }, 5000); // Increased to 5 seconds
+    }, 8000); // Increased to 8 seconds for longer viewing
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, userInteracted, galleryItems.length]);
