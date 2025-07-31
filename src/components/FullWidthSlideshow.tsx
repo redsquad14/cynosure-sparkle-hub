@@ -21,10 +21,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/1575a70c-488a-4c69-aa66-0fd8c115d43e.png',
-      alt: 'CYNOSURE Team Photo',
-      title: 'CYNOSURE Team',
-      description: 'St. Gregorios High School presents the amazing CYNOSURE team'
+      src: '/lovable-uploads/c5cb4526-c92f-42d1-9510-4e9110178647.png',
+      alt: 'CYNOSURE 2024 Rangoli Art',
+      title: 'CYNOSURE 2024',
+      description: 'Beautiful rangoli art celebrating CYNOSURE 2024'
     },
     {
       type: 'image',
