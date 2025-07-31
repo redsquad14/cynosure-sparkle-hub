@@ -53,6 +53,13 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Inauguration Ceremony',
       title: 'Grand Inauguration',
       description: 'Official inauguration ceremony with traditional lamp lighting at CYNOSURE'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/61dc2ffe-05bb-4e08-a663-805c44914b82.png',
+      alt: 'CYNOSURE Event Highlights',
+      title: 'Event Moments',
+      description: 'Memorable moments from CYNOSURE events including performances and competitions'
     }
   ];
 
