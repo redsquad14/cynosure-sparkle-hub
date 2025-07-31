@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, X, Play, Pause, Camera } from 'lucide-react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { ChevronLeft, ChevronRight, X, Play, Pause, Camera, Sparkles } from 'lucide-react';
 interface MediaItem {
   type: 'image' | 'video';
   src: string;
@@ -191,13 +192,43 @@ const SlideshowGallery = () => {
         <div className="text-center">
           <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
           <p className="text-lg text-muted-foreground mb-6">Join CYNOSURE 2025 and become part of our family!</p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
-            <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse" style={{
-            animationDuration: '0.8s'
-          }}>
-              🌟 REGISTER NOW!
-            </Button>
-          </a>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse" style={{
+                animationDuration: '0.8s'
+              }}>
+                <Sparkles className="w-4 h-4 mr-2" />
+                🌟 REGISTER NOW!
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+              <div className="space-y-4">
+                <DropdownMenuItem asChild className="p-0">
+                  <div className="w-full">
+                    <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2">
+                      <Sparkles className="w-4 h-4 mr-2" />
+                      FORM 1
+                    </Button>
+                    <p className="text-sm text-muted-foreground px-2">
+                      Primary registration form for general participants and students
+                    </p>
+                  </div>
+                </DropdownMenuItem>
+                
+                <DropdownMenuItem asChild className="p-0">
+                  <div className="w-full">
+                    <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2">
+                      <Sparkles className="w-4 h-4 mr-2" />
+                      FORM 2
+                    </Button>
+                    <p className="text-sm text-muted-foreground px-2">
+                      Special registration form for teams and group participants
+                    </p>
+                  </div>
+                </DropdownMenuItem>
+              </div>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
 
