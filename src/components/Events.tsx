@@ -49,7 +49,7 @@ const Events = () => {
             <p className="text-xl text-primary font-semibold">Where Talents Collide and Stars Are Born</p>
             <Sparkles className="text-accent animate-pulse" />
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">
             🌟 Get ready for an explosion of creativity, talent, and pure fun! 
             Our events are designed to make you say "I WANT TO BE PART OF THAT!" 
           </p>
