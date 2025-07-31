@@ -135,7 +135,11 @@ const Navbar = () => {
                   
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                      <Button 
+                        variant="default" 
+                        className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2"
+                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}
+                      >
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 2
                       </Button>
@@ -198,7 +202,11 @@ const Navbar = () => {
                     
                     <DropdownMenuItem asChild className="p-0">
                       <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2">
+                        <Button 
+                          variant="gradient" 
+                          className="w-full mb-2"
+                          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}
+                        >
                           <Sparkles className="w-4 h-4 mr-2" />
                           FORM 2
                         </Button>
