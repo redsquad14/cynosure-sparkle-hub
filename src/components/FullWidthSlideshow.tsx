@@ -49,10 +49,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/c3190d33-e994-44d8-8b01-bb335b619630.png',
-      alt: 'CYNOSURE Victory Celebration',
-      title: 'Team Victory',
-      description: 'Celebrating achievements and teamwork at CYNOSURE 2024'
+      src: '/lovable-uploads/80f2adc1-62a1-4ec0-a814-f8afea5d94a6.png',
+      alt: 'CYNOSURE Inauguration Ceremony',
+      title: 'Grand Inauguration',
+      description: 'Official inauguration ceremony with traditional lamp lighting at CYNOSURE'
     }
   ];
 
