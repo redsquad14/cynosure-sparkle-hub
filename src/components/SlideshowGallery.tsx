@@ -156,15 +156,6 @@ const SlideshowGallery = () => {
                   
                 </Button>
 
-                {/* Enhanced Auto-play indicator */}
-                <div className="absolute bottom-6 left-6">
-                  <Button variant="ghost" size="sm" className="bg-black/60 hover:bg-black/80 text-white backdrop-blur-sm border border-white/20 shadow-lg" onClick={e => {
-                  e.stopPropagation();
-                  setIsAutoPlaying(!isAutoPlaying);
-                }}>
-                    {isAutoPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
-                  </Button>
-                </div>
 
               </div>
             </CardContent>
