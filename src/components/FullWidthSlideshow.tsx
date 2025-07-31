@@ -28,10 +28,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/1523ab97-cc06-4945-9209-74a3edeb3068.png',
-      alt: 'CYNOSURE Event Celebration',
-      title: 'School Celebration',
-      description: 'Traditional celebration at St. Gregorios High School'
+      src: '/lovable-uploads/21d555ba-ddd1-4d42-9241-56e6d4ebd87e.png',
+      alt: 'CYNOSURE Championship Trophies',
+      title: 'Victory & Achievement',
+      description: 'CYNOSURE championship trophies and awards showcase'
     },
     {
       type: 'image',
