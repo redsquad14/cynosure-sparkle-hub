@@ -42,10 +42,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/bb6a03c2-5ad5-451b-9429-a29a453612bc.png',
-      alt: 'CYNOSURE Team Spirit',
-      title: 'Team Unity',
-      description: 'CYNOSURE team members showing their unity and spirit'
+      src: '/lovable-uploads/54c7f825-d9b8-4844-a1cd-e6b83fed8ea0.png',
+      alt: 'CYNOSURE Lamp Lighting Ceremony',
+      title: 'Traditional Ceremony',
+      description: 'Students participating in the traditional lamp lighting ceremony'
     },
     {
       type: 'image',
