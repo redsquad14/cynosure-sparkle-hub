@@ -70,7 +70,7 @@ const Events = () => {
                     <h3 className="text-xl font-bold text-gradient">{event.title}</h3>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="leading-relaxed mb-4 text-slate-50">
                   {event.description}
                 </p>
                 <Button variant="outline" className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link}>
