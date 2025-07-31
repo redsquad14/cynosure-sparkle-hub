@@ -56,7 +56,7 @@ const Contact = () => {
                     </div>
                     <div className="text-left">
                       <p className="font-semibold text-foreground">Follow us</p>
-                      <p className="text-sm text-muted-foreground">@cynosure.stghs</p>
+                      <p className="text-sm text-white">@cynosure.stghs</p>
                     </div>
                   </div>
                 </div>
