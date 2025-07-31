@@ -16,7 +16,7 @@ const Contact = () => {
             <p className="text-xl text-primary font-semibold">We're Here for You!</p>
             
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">
             💌 Whether you're curious, confused, or just super excited about CYNOSURE - 
             we're here for you! Drop us a line and let's make magic happen together! ✨
           </p>
@@ -87,10 +87,7 @@ const Contact = () => {
             {/* More FAQs Button and Modal */}
             <Dialog>
               <DialogTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-accent/30 hover:bg-accent/10 hover:border-accent text-accent"
-                >
+                <Button variant="outline" className="w-full border-accent/30 hover:bg-accent/10 hover:border-accent text-accent">
                   More FAQs 🔽
                 </Button>
               </DialogTrigger>
@@ -136,12 +133,12 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="mb-4 text-slate-50">
                   One event. One location. All roads lead to:
                 </p>
                 <div className="space-y-2 text-sm mb-4">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
-                  <p className="text-muted-foreground">
+                  <p className="text-gray-50">
                     Ghatla, Chembur<br />
                     Mumbai, Maharashtra<br />
                     India 🇮🇳
