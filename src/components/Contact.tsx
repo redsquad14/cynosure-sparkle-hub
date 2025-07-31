@@ -45,7 +45,7 @@ const Contact = () => {
                       <Phone className="w-5 h-5 text-accent" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground mx-0 px-[77px]">Call</p>
+                      <p className="font-semibold text-foreground">Call/WhatsApp</p>
                       <p className="text-sm text-muted-foreground">+91 98765 43210</p>
                     </div>
                   </div>
@@ -161,7 +161,7 @@ const Contact = () => {
           <Card className="card-hover bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 max-w-2xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gradient mb-4"> We Can't Wait to Hear From You!</h3>
-              <p className="text-muted-foreground">
+              <p className="text-slate-50">
                 Every message you send brings us one step closer to making CYNOSURE 2025 
                 the most incredible celebration Mumbai has ever seen! 
                 Your excitement fuels our passion! ✨
