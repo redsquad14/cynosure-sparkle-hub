@@ -56,7 +56,7 @@ const Team = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
-          <p className="text-muted-foreground text-lg">Download the CYNOSURE brochures</p>
+          <p className="text-lg text-slate-50">Download the CYNOSURE brochures</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* 2022 Brochures */}
@@ -71,7 +71,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
+              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">
                 ✨ Relive the magic of CYNOSURE 2022! Complete collection of memories.
               </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}>
@@ -93,7 +93,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
+              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">
                 🌟 Experience CYNOSURE 2023! Latest collection of stunning moments.
               </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}>
@@ -115,7 +115,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
+              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">
                 🚀 The grandest CYNOSURE yet! Fresh memories and achievements.
               </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
@@ -137,7 +137,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed flex-grow">
+              <p className="mb-4 leading-relaxed flex-grow text-sm text-slate-50">
                 🌈 Get ready for CYNOSURE 2025! The most spectacular edition awaits.
               </p>
               <Button variant="outline" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10 mt-auto" disabled>
