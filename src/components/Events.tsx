@@ -107,7 +107,7 @@ const Events = () => {
                 <Trophy className="w-8 h-8 text-primary animate-pulse" />
                 <h3 className="text-2xl font-bold text-gradient">Amazing Rewards</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="mb-4 text-slate-50 text-base">
                 🏆 It's not just about winning - it's about celebrating every effort! 
                 Everyone goes home with memories, but winners get extra sparkle!
               </p>
