@@ -81,48 +81,49 @@ const Contact = () => {
                     <p className="text-muted-foreground">Registration closes on September 15, 2025.</p>
                   </div>
                 </div>
+                
+                {/* More FAQs Button and Modal */}
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" className="w-full mt-4 bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30 hover:bg-secondary/20 text-accent">
+                      More FAQs 🔽
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="bg-black border-secondary/30 text-foreground max-w-2xl max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-bold text-gradient">Frequently Asked Questions 💡</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 text-sm mt-4">
+                      <div>
+                        <p className="font-bold text-accent">🏫 Who can participate?</p>
+                        <p className="text-muted-foreground">Students from Grades 6 to 12 across all invited schools are eligible.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🏆 What types of events will be held?</p>
+                        <p className="text-muted-foreground">Expect a mix of literary, cultural, tech, and sports events. Full list coming soon!</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">📍 Where is the event taking place?</p>
+                        <p className="text-muted-foreground">St. Gregorios High School, Mumbai – On-campus only.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">👕 Is there a dress code or costume requirement?</p>
+                        <p className="text-muted-foreground">Depends on the event – rules will be shared in the event booklet.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">📸 Will photos or videos be taken?</p>
+                        <p className="text-muted-foreground">Yes, the entire event will be professionally photographed and filmed.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">📞 Whom do I contact for queries?</p>
+                        <p className="text-muted-foreground">See Quick Reach above!</p>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </CardContent>
             </Card>
 
-            {/* More FAQs Button and Modal */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" className="w-full border-accent/30 hover:bg-accent/10 hover:border-accent text-accent">
-                  More FAQs 🔽
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="bg-gradient-to-br from-secondary/95 to-primary/95 border-secondary/30 text-foreground max-w-2xl max-h-[80vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-gradient">Frequently Asked Questions 💡</DialogTitle>
-                </DialogHeader>
-                <div className="space-y-4 text-sm mt-4">
-                  <div>
-                    <p className="font-bold text-accent">🏫 Who can participate?</p>
-                    <p className="text-muted-foreground">Students from Grades 6 to 12 across all invited schools are eligible.</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-accent">🏆 What types of events will be held?</p>
-                    <p className="text-muted-foreground">Expect a mix of literary, cultural, tech, and sports events. Full list coming soon!</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-accent">📍 Where is the event taking place?</p>
-                    <p className="text-muted-foreground">St. Gregorios High School, Mumbai – On-campus only.</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-accent">👕 Is there a dress code or costume requirement?</p>
-                    <p className="text-muted-foreground">Depends on the event – rules will be shared in the event booklet.</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-accent">📸 Will photos or videos be taken?</p>
-                    <p className="text-muted-foreground">Yes, the entire event will be professionally photographed and filmed.</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-accent">📞 Whom do I contact for queries?</p>
-                    <p className="text-muted-foreground">See Quick Reach above!</p>
-                  </div>
-                </div>
-              </DialogContent>
-            </Dialog>
           </div>
 
           {/* Right Side - Find Us in Mumbai */}
