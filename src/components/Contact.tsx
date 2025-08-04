@@ -95,56 +95,64 @@ const Contact = () => {
                     </DialogHeader>
                     <div className="space-y-4 text-sm mt-4">
                       <div>
-                        <p className="font-bold text-accent">🏫 Who can participate?</p>
-                        <p className="text-muted-foreground">Students from Grades 6 to 12 across all invited schools are eligible.</p>
+                        <p className="font-bold text-accent">🏫 Who is eligible to participate?</p>
+                        <p className="text-muted-foreground">Students from Grades 6 to 12 across all invited schools are eligible to participate.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🏆 What types of events will be held?</p>
-                        <p className="text-muted-foreground">Expect a mix of literary, cultural, tech, and sports events. Full list coming soon!</p>
+                        <p className="font-bold text-accent">🎭 What types of events will be conducted?</p>
+                        <p className="text-muted-foreground">A diverse mix of literary, cultural, technological, and sports activities will be hosted. A comprehensive schedule will be released shortly.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📍 Where is the event taking place?</p>
-                        <p className="text-muted-foreground">St. Gregorios High School, Mumbai – On-campus only.</p>
+                        <p className="font-bold text-accent">📍 What is the venue for the event?</p>
+                        <p className="text-muted-foreground">The event will be held on-campus at <strong>St. Gregorios High School, Mumbai</strong>.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">👕 Is there a dress code or costume requirement?</p>
-                        <p className="text-muted-foreground">Depends on the event – rules will be shared in the event booklet.</p>
+                        <p className="font-bold text-accent">👗 Are participants required to wear specific attire or costumes?</p>
+                        <p className="text-muted-foreground">Dress code or costume requirements, if any, will be specified in the official event booklet for individual events.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📸 Will photos or videos be taken?</p>
-                        <p className="text-muted-foreground">Yes, the entire event will be professionally photographed and filmed.</p>
+                        <p className="font-bold text-accent">📸 Will the event be recorded or photographed?</p>
+                        <p className="text-muted-foreground">Yes, professional photography and videography will be conducted throughout the event.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📞 Whom do I contact for queries?</p>
-                        <p className="text-muted-foreground">See Quick Reach above!</p>
+                        <p className="font-bold text-accent">💬 Whom should we reach out to for any inquiries?</p>
+                        <p className="text-muted-foreground">Kindly refer to the <strong>Quick Reach</strong> section for contact details.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">⏰ What is the time for entry?</p>
-                        <p className="text-muted-foreground">7:30 a.m.</p>
+                        <p className="font-bold text-accent">⏰ What time should we arrive for the event?</p>
+                        <p className="text-muted-foreground">Participants are expected to report by <strong>7:30 a.m.</strong></p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🚪 When can we leave the event?</p>
-                        <p className="text-muted-foreground">First day, at any time. Second day after the awards ceremony is over.</p>
+                        <p className="font-bold text-accent">📅 When is departure permitted on both days?</p>
+                        <p className="text-muted-foreground">On Day 1, departure is allowed once events conclude. On Day 2, after the award ceremony.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🆔 What is a CG code?</p>
-                        <p className="text-muted-foreground">St. Gregorios Contingent Code is a unique identifier assigned to each school to ensure confidentiality.</p>
+                        <p className="font-bold text-accent">🆔 What is meant by the CG code?</p>
+                        <p className="text-muted-foreground">The <strong>St. Gregorios Contingent Code</strong> is a unique identification assigned to each school to maintain confidentiality.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🎵 What is the format for music tracks?</p>
-                        <p className="text-muted-foreground">mp3</p>
+                        <p className="font-bold text-accent">🎶 What format should music tracks be submitted in?</p>
+                        <p className="text-muted-foreground">All music tracks should be in <strong>MP3</strong> format.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🍽️ Do we need to carry food?</p>
-                        <p className="text-muted-foreground">We have food stalls here.</p>
+                        <p className="font-bold text-accent">🍽️ Are participants required to bring their own food?</p>
+                        <p className="text-muted-foreground">No, <strong>food stalls will be available</strong> at the venue for all attendees.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🏥 Should we need to carry first aid kit?</p>
-                        <p className="text-muted-foreground">We have a fully functional medical room available.</p>
+                        <p className="font-bold text-accent">🩺 Is there a need to carry a personal first aid kit?</p>
+                        <p className="text-muted-foreground">Not necessary. A fully equipped <strong>medical room</strong> will be operational on-site.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">✨ What can we expect from Cynosure 4.0?</p>
-                        <p className="text-muted-foreground">Joy, memories and a whole lot of love!</p>
+                        <p className="font-bold text-accent">🏆 Where can we collect our trophies and certificates?</p>
+                        <p className="text-muted-foreground">All trophies and certificates will be distributed during the awards ceremony on <strong>Saturday, 27th September 2025</strong>.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🚪 When are participants permitted to leave the venue?</p>
+                        <p className="text-muted-foreground">Participants may leave <strong>only after all scheduled events for the day have concluded</strong> and upon confirmation from their contingent leader.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">✨ What is the spirit of Cynosure 4.0?</p>
+                        <p className="text-muted-foreground">A celebration of joy, unity, and unforgettable memories!</p>
                       </div>
                     </div>
                   </DialogContent>
