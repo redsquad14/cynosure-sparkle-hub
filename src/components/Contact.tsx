@@ -118,6 +118,34 @@ const Contact = () => {
                         <p className="font-bold text-accent">📞 Whom do I contact for queries?</p>
                         <p className="text-muted-foreground">See Quick Reach above!</p>
                       </div>
+                      <div>
+                        <p className="font-bold text-accent">⏰ What is the time for entry?</p>
+                        <p className="text-muted-foreground">7:30 a.m.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🚪 When can we leave the event?</p>
+                        <p className="text-muted-foreground">First day, at any time. Second day after the awards ceremony is over.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🆔 What is a CG code?</p>
+                        <p className="text-muted-foreground">St. Gregorios Contingent Code is a unique identifier assigned to each school to ensure confidentiality.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🎵 What is the format for music tracks?</p>
+                        <p className="text-muted-foreground">mp3</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🍽️ Do we need to carry food?</p>
+                        <p className="text-muted-foreground">We have food stalls here.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">🏥 Should we need to carry first aid kit?</p>
+                        <p className="text-muted-foreground">We have a fully functional medical room available.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-accent">✨ What can we expect from Cynosure 4.0?</p>
+                        <p className="text-muted-foreground">Joy, memories and a whole lot of love!</p>
+                      </div>
                     </div>
                   </DialogContent>
                 </Dialog>
