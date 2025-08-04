@@ -70,7 +70,7 @@ const Contact = () => {
                 <div className="space-y-3 text-sm">
                   <div>
                     <p className="font-semibold text-accent">🤔 When is CYNOSURE 2025?</p>
-                    <p className="text-muted-foreground">September 26, 2025 - Mark your calendar!</p>
+                    <p className="text-muted-foreground">September 26 and 27, 2025 - Mark your calendar!</p>
                   </div>
                   <div>
                     <p className="font-semibold text-accent">📋 How to register?</p>
