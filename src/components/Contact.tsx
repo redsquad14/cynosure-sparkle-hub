@@ -56,7 +56,7 @@ const Contact = () => {
                     </div>
                     <div className="text-left">
                       <p className="font-semibold text-foreground">Follow us</p>
-                      <p className="text-sm text-white">@cynosure.stghs</p>
+                      <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-accent transition-colors">@cynosure.stghs</a>
                     </div>
                   </div>
                 </div>
