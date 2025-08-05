@@ -192,7 +192,7 @@ const SlideshowGallery = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! 📸</h3>
+          <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! </h3>
           <p className="mb-6 text-xl text-slate-50">Join CYNOSURE 2025 and become part of our family!</p>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
