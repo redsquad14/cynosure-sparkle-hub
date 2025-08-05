@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="space-y-4">
           
           
-          <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground mt-4 hover:text-accent transition-colors">Contact us on Instagram: @cynosure.stghs</a>
+          <p className="text-sm text-muted-foreground mt-4">Contact us on Instagram: <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@cynosure.stghs</a></p>
         </div>
       </div>
 
