@@ -66,7 +66,7 @@ const Contact = () => {
             {/* FAQ Snippet */}
             <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gradient mb-4">Quick Answers 💡</h3>
+                <h3 className="text-xl font-bold text-gradient mb-4 text-center">Quick Answers 💡</h3>
                 <div className="space-y-3 text-sm">
                   <div>
                     <p className="font-semibold text-accent">🤔 When is CYNOSURE 2025?</p>
