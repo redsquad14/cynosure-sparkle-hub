@@ -17,6 +17,10 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			sans: ['Times New Roman', 'serif'],
+			serif: ['Times New Roman', 'serif'],
+		},
 		extend: {
 			fontFamily: {
 				'komu': ['Komu', 'sans-serif'],
