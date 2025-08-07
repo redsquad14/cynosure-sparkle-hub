@@ -66,7 +66,7 @@ const Events = () => {
                   </div>
                   <div>
                     
-                    <h3 className="text-xl font-bold text-gradient">{event.title}</h3>
+                    <h3 className="text-xl font-bold text-gradient font-times">{event.title}</h3>
                   </div>
                 </div>
                 <p className="leading-relaxed text-slate-50 flex-1 mb-4">
