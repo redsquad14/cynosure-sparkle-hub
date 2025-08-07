@@ -94,7 +94,7 @@ const Events = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✨ Group Dance Battles</li>
                 <li>✨ Band Competitions</li>
-                <li>✨ Tech Hackathons</li>
+                <li>✨ Debate Competitions</li>
                 <li>✨ Drama Productions</li>
               </ul>
             </CardContent>
