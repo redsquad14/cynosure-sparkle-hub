@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6">Contact Us</h2>
+          <h2 className="text-5xl font-bold text-gradient mb-6 font-times">Contact Us</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             
             <p className="text-xl text-primary font-semibold">We're Here for You!</p>
