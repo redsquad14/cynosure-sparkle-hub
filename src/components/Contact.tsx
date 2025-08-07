@@ -7,7 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Mail, Phone, MapPin, Instagram, Heart, Send, X } from 'lucide-react';
 const Contact = () => {
   return <section id="contact" className="pt-4 pb-20 px-4 relative">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto font-times">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gradient mb-6 font-times">Contact Us</h2>
