@@ -37,10 +37,7 @@ const About = () => {
             <CardContent className="p-6 text-center">
               <Lightbulb className="w-12 h-12 text-accent mx-auto mb-4 animate-pulse" />
               <h3 className="text-xl font-bold text-gradient mb-3">Innovation Hub</h3>
-              <p className="text-slate-50 text-center">
-                A platform where creativity meets innovation, encouraging students to think 
-                outside the box and showcase their unique perspectives.
-              </p>
+              <p className="text-slate-50 text-center">A platform where imagination blends with innovation, inspiring students to push boundaries and share their unique vision.</p>
             </CardContent>
           </Card>
 
