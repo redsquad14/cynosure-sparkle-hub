@@ -4,7 +4,7 @@ import { BookOpen, Palette, Music, ShoppingCart, Mic, Activity, Trophy, Sparkles
 const Events = () => {
   const events = [{
     icon: BookOpen,
-    title: "Literary Events",
+    title: "Literary",
     description: "📚 Unleash the power of words! Poetry recitations, storytelling competitions, creative writing, and literary debates that inspire!",
     category: "Music",
     link: "https://drive.google.com/file/d/1z66w6wAwbEeWexAXnAwIRvGh6u_drvN8/view?usp=sharing"
