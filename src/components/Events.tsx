@@ -43,7 +43,7 @@ const Events = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6">Events & Competitions</h2>
+          <h2 className="text-5xl font-bold text-gradient mb-6 px-0 py-[20px] my-0">Events & Competitions</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             <Sparkles className="text-accent animate-pulse" />
             <p className="text-xl text-primary font-semibold">Where Talents Collide and Stars Are Born</p>
