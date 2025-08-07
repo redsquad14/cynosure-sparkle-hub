@@ -35,7 +35,7 @@ const Events = () => {
   }, {
     icon: Activity,
     title: "Sports",
-    description: "🎉 Get ready to ignite the field! Football, basketball, athletics, and more — it's time to unleash your game face and battle it out for glory at the Inter-School Sports Showdown! Bring the heat, show your spirit, and let the best school win!",
+    description: "⚽ Get your game on! Football, basketball, athletics, and more - show your sporting spirit and competitive edge!",
     category: "Sports",
     link: null // Will be updated when you provide the link
   }];
