@@ -50,7 +50,7 @@ const Events = () => {
             <Sparkles className="text-accent animate-pulse" />
           </div>
           <p className="text-lg max-w-3xl mx-auto text-slate-50">
-            🌟 Prepare for an unforgettable experience filled with talent and pure excitement! Our events are designed to make you say, "Sign me up!"
+            🏆where creativity meets competition and every student gets a chance to steal the spotlight and leave their mark!
           </p>
         </div>
 
