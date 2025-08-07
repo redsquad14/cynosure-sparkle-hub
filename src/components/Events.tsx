@@ -35,7 +35,7 @@ const Events = () => {
   }, {
     icon: Activity,
     title: "Sports",
-    description: "⚽ Get your game on! Football, basketball, athletics, and more - show your sporting spirit and competitive edge!",
+    description: "⚽Football, basketball, relays, and more — show your sporting spirit and unstoppable drive to win!",
     category: "Sports",
     link: null // Will be updated when you provide the link
   }];
