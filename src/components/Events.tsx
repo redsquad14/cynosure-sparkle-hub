@@ -62,7 +62,7 @@ const Events = () => {
               <CardContent className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl">🏆</span>
+                    <event.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     
