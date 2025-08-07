@@ -22,7 +22,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Left Side - Quick Reach and Quick Answers */}
           <div className="space-y-8">
             {/* Quick Contact */}
