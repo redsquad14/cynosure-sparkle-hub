@@ -140,9 +140,9 @@ const Team = () => {
               <p className="mb-4 leading-relaxed flex-grow text-sm text-slate-50">
                 🌈 Get ready for CYNOSURE 2025! The most spectacular edition awaits.
               </p>
-              <Button variant="outline" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 border-primary/30 hover:bg-primary/10 mt-auto" disabled>
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
-                Coming Soon!
+                Download 2025
               </Button>
             </CardContent>
           </Card>
