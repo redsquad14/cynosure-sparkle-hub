@@ -24,7 +24,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Left Side - Quick Reach and Quick Answers */}
-          <div className="space-y-8">
+          <div className="space-y-">
             {/* Quick Contact */}
             <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
               <CardContent className="p-8 text-center max-w-md mx-auto">
