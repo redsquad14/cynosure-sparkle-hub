@@ -8,6 +8,7 @@ import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
 import FullWidthSlideshow from '@/components/FullWidthSlideshow';
 import LogoWithBackgroundRemoval from '@/components/LogoWithBackgroundRemoval';
+import SimpleSlideshow from '@/components/SimpleSlideshow';
 const Index = () => {
   return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
@@ -17,10 +18,10 @@ const Index = () => {
       {/* School Header Section */}
       <section className="relative bg-background py-8 border-b border-primary/20 px-0 mx-0 my-0 md:py-[129px]">
         <div className="max-w-4xl mx-auto px-4">
-          {/* Logo - Centered above heading */}
+          {/* Simple Slideshow - 50% width, centered */}
           <div className="flex justify-center mb-6 md:mb-8 mt-4">
-            <div className="flex-shrink-0">
-              <img src="/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png" alt="St. Gregorios High School Logo" className="w-48 h-48 md:w-56 md:h-56 object-contain" />
+            <div className="w-full max-w-md">
+              <SimpleSlideshow />
             </div>
           </div>
           
