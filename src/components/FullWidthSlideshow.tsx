@@ -21,10 +21,31 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
+      src: '/lovable-uploads/98f06016-c362-40a1-8f95-875bc4e1e3bd.png',
+      alt: 'CYNOSURE 2024 Floor Art',
+      title: 'CYNOSURE 2024',
+      description: 'Beautiful floor art showcasing CYNOSURE 2024'
+    },
+    {
+      type: 'image',
       src: '/lovable-uploads/21d555ba-ddd1-4d42-9241-56e6d4ebd87e.png',
       alt: 'CYNOSURE Championship Trophies',
       title: 'Victory & Achievement',
       description: 'CYNOSURE championship trophies and awards showcase'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/47676aaf-4c3d-4b9a-86c6-8707cd756b21.png',
+      alt: 'CYNOSURE Event Gathering',
+      title: 'Community & Excellence',
+      description: 'Students and faculty gathered for CYNOSURE event'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/bb9a3f45-9176-4ff8-8acb-b47e5ba3f84d.png',
+      alt: 'CYNOSURE Lamp Lighting Ceremony',
+      title: 'Tradition & Beginning',
+      description: 'Students participating in the ceremonial lamp lighting'
     }
   ];
 
@@ -64,7 +85,7 @@ const FullWidthSlideshow = () => {
         {slides.map((slide, index) => (
           <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
             {slide.type === 'image' ? (
-              <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 0 || index === 1 || index === 2 || index === 4 ? 'object-contain' : index === 6 ? 'object-contain max-w-full max-h-full p-4 bg-black' : 'object-cover'}`} style={index === 6 ? { aspectRatio: '16/9' } : {}} />
+              <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 4 ? 'object-contain max-h-full' : index === 0 || index === 1 || index === 2 ? 'object-contain' : 'object-cover'}`} />
             ) : (
               <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />
             )}
