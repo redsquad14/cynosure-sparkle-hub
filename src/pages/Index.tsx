@@ -20,7 +20,7 @@ const Index = () => {
           {/* Logo - Centered above heading */}
           <div className="flex justify-center mb-6 md:mb-8 mt-4">
             <div className="flex-shrink-0">
-              <img src="/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png" alt="St. Gregorios High School Logo" className="w-60 h-60 md:w-72 md:h-72 object-contain" />
+              <img src="/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png" alt="St. Gregorios High School Logo" className="w-48 h-48 md:w-56 md:h-56 object-contain" />
             </div>
           </div>
           
