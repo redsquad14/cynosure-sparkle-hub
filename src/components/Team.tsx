@@ -111,7 +111,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">
+              <p className="mb-4 text-base leading-relaxed flex-grow text-slate-50">
                 🚀 The grandest CYNOSURE yet! Fresh memories and achievements.
               </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/13Crioz9ve_ZVrwBgu0SYl__XeSa80qlm/view?usp=drive_link', '_blank')}>
