@@ -14,7 +14,7 @@ const SimpleSlideshow = () => {
   return <div className="w-full max-w-lg mx-auto relative overflow-hidden rounded-lg shadow-lg">
       <div className="relative h-64 md:h-80">
         {images.map((image, index) => <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}>
-            <img src={image} alt={`Slideshow image ${index + 1}`} className="w-full h-full object-contain bg-background/50" />
+            <img src={image} alt={`Slideshow image ${index + 1}`} className="w-full h-full object-cover bg-background/50" />
           </div>)}
       </div>
       
