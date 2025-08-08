@@ -220,7 +220,7 @@ const Events = () => {
                 🏆 It's not just about winning - it's about celebrating every effort! 
                 Everyone goes home with memories, but winners get extra sparkle!
               </p>
-              <ul className="space-y-2 text-base text-muted-foreground">
+              <ul className="space-y-2 text-base text-white">
                 <li>🥇 Trophies & Certificates</li>
                 <li>🎁 Amazing Prizes like AirPods!</li>
                 <li>🌟 Recognition & Fame</li>
