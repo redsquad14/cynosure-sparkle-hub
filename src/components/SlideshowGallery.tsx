@@ -51,10 +51,6 @@ const SlideshowGallery = () => {
     src: '/vid4.mp4',
     alt: 'CYNOSURE Video 4'
   }, {
-    type: 'image',
-    src: '/lovable-uploads/5ab125d3-9205-463c-922f-a6ef36700814.png',
-    alt: 'CYNOSURE Audience'
-  }, {
     type: 'video',
     src: '/vid8.mp4',
     alt: 'CYNOSURE Video 8'
