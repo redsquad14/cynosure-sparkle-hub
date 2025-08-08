@@ -158,7 +158,7 @@ const Events = () => {
                 </div>
               </div>
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                🎭 Express yourself through performance! Drama, theater, singing, and musical performances that captivate audiences!
+                💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves
               </p>
               <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
