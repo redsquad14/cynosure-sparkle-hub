@@ -14,12 +14,25 @@ const SimpleSlideshow = () => {
   return <div className="w-full max-w-lg mx-auto relative overflow-hidden rounded-lg shadow-lg">
       <div className="relative h-64 md:h-80">
         {images.map((image, index) => <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}>
-            <img src={image} alt={`Slideshow image ${index + 1}`} className="w-full h-full object-contain bg-background/50" />
+            <img src={image} alt={`Slideshow image ${index + 1}`} className="w-full h-full object-cover bg-background/50" />
           </div>)}
       </div>
       
       {/* Dots indicator */}
-      
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImageIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentImageIndex 
+                ? 'bg-primary shadow-lg' 
+                : 'bg-background/50 hover:bg-background/70'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>;
 };
 export default SimpleSlideshow;
