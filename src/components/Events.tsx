@@ -116,7 +116,7 @@ const Events = () => {
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                 🎭 Express yourself through performance! Drama, theater, singing, and musical performances that captivate audiences!
               </p>
-              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1pW7xzPkGgmV-SB0zcW5Mtr8NJSxpTYfJ/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
             </CardContent>
