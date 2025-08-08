@@ -168,7 +168,7 @@ const Navbar = () => {
                   <div className="space-y-4">
                     <DropdownMenuItem asChild className="p-0">
                       <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2">
+                        <Button variant="gradient" className="w-full mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
                           <Sparkles className="w-4 h-4 mr-2" />
                           FORM 1
                         </Button>
