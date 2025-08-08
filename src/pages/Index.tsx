@@ -15,7 +15,7 @@ const Index = () => {
       <div id="top"></div>
       
       {/* School Header Section */}
-      <section className="relative bg-background py-8 border-b border-primary/20 px-0 mx-0 my-0 md:py-[100px]">
+      <section className="relative bg-background py-8 border-b border-primary/20 px-0 mx-0 my-0 md:py-[87px]">
         <div className="max-w-4xl mx-auto px-4">
           {/* Logo - Centered above heading */}
           <div className="flex justify-center mb-6 md:mb-8 mt-4">
