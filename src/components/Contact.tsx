@@ -69,16 +69,16 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gradient mb-4 text-center">Quick Answers 💡</h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <p className="font-semibold text-accent">⏰ What time should participants arrive?</p>
-                    <p className="text-muted-foreground">All participants must arrive by 7:30 a.m. on both days. General registration will be done on arrival — don't be late, the fun starts early!</p>
+                    <p className="font-semibold text-accent">What is the reporting time for participants?</p>
+                    <p className="text-muted-foreground">All participants must report by 7:30 a.m. on both days and complete general registration on arrival.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-accent">📝 How do schools register?</p>
-                    <p className="text-muted-foreground">Schools can register easily through our official website: cynosurestghs.com.</p>
+                    <p className="font-semibold text-accent">How can schools complete the registration process?</p>
+                    <p className="text-muted-foreground">Participating schools must register through the official Cynosure website: cynosurestghs.com.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-accent">🚪 When can participants leave the venue?</p>
-                    <p className="text-muted-foreground">Day 1 – Once all scheduled events are over. Day 2 – After the award ceremony.</p>
+                    <p className="font-semibold text-accent">What are the dispersal protocols for participants?</p>
+                    <p className="text-muted-foreground">Day 1: Participants may leave the venue once all scheduled events have concluded. Day 2: Departure is allowed post the award ceremony.</p>
                   </div>
                 </div>
                 
