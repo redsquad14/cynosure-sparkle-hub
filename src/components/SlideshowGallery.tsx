@@ -222,7 +222,7 @@ const SlideshowGallery = () => {
                   
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdU3kb0c3vh8phsOdut22YUwtAkYgpGMLTZddLS6EizaY-VLA/viewform?usp=sf_link', '_blank')}>
+                      <Button variant="gradient" size="lg" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdU3kb0c3vh8phsOdut22YUwtAkYgpGMLTZddLS6EizaY-VLA/viewform?usp=sf_link', '_blank')} className="w-full text-lg text-slate-950 mb-2 px-[18px] py-[25px] my-0 mx-[16px]">
                         <Sparkles className="w-4 h-4 mr-2" />
                         IR Form
                       </Button>
