@@ -99,7 +99,7 @@ const FullWidthSlideshow = () => {
         {slides.map((slide, index) => (
           <div key={index} className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100 transform translate-x-0' : index < currentSlide ? 'opacity-0 transform -translate-x-full' : 'opacity-0 transform translate-x-full'}`}>
             {slide.type === 'image' ? (
-              <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 4 ? 'object-contain max-h-full' : index === 0 || index === 1 || index === 2 || index === 3 ? 'object-contain' : index === 5 ? 'object-contain max-w-full' : 'object-cover'}`} />
+              <img src={slide.src} alt={slide.alt} className={`w-full h-full ${index === 4 ? 'object-contain max-h-full' : index === 0 || index === 1 || index === 2 || index === 3 ? 'object-contain' : index === 5 ? 'object-contain' : 'object-cover'}`} />
             ) : (
               <video src={slide.src} className="w-full h-full object-cover" autoPlay muted loop playsInline />
             )}
