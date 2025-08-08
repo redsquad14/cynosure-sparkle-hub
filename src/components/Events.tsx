@@ -112,10 +112,7 @@ const Events = () => {
                   <h3 className="text-xl font-bold text-gradient font-times">Fine Arts</h3>
                 </div>
               </div>
-              <EditableText 
-                initialText="🎨An interactive fine arts event where participants engage in hands-on creative activities exploring fashion, design, and art."
-                className="leading-relaxed text-slate-50 flex-1 mb-4"
-              />
+              <EditableText initialText="🎨An interactive fine arts event where participants engage in hands-on creative activities exploring fashion, design, and art." className="leading-relaxed text-slate-50 flex-1 mb-4" />
               <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1pW7xzPkGgmV-SB0zcW5Mtr8NJSxpTYfJ/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
@@ -179,9 +176,7 @@ const Events = () => {
                   <h3 className="text-xl font-bold text-gradient font-times">Sports</h3>
                 </div>
               </div>
-              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                ⚽Football, basketball, relays, and more — show your sporting spirit and unstoppable drive to win!
-              </p>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">⚽Football, basketball, cricket and more — show your sporting spirit and unstoppable drive to win!</p>
               <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1vtXJitVC6L5TroVKosUHNpFfpT3uNvrj/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
@@ -201,7 +196,7 @@ const Events = () => {
                 🤝 Some competitions allow inter-school collaborations! 
                 Make new friends while competing together. Because the best victories are shared ones!
               </p>
-               <ul className="space-y-2 text-base text-white">
+               <ul className="space-y-2 text-base text-muted-foreground">
                 <li>✨ Group Dance Battles</li>
                 <li>✨ Band Competitions</li>
                 <li>✨ Debate Competitions</li>
@@ -220,7 +215,7 @@ const Events = () => {
                 🏆 It's not just about winning - it's about celebrating every effort! 
                 Everyone goes home with memories, but winners get extra sparkle!
               </p>
-              <ul className="space-y-2 text-base text-white">
+              <ul className="space-y-2 text-base text-muted-foreground">
                 <li>🥇 Trophies & Certificates</li>
                 <li>🎁 Amazing Prizes like AirPods!</li>
                 <li>🌟 Recognition & Fame</li>
