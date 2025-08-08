@@ -8,15 +8,13 @@ import Contact from '@/components/Contact';
 import StarField from '@/components/StarField';
 import FullWidthSlideshow from '@/components/FullWidthSlideshow';
 import LogoWithBackgroundRemoval from '@/components/LogoWithBackgroundRemoval';
-import TopSlideshow from '@/components/TopSlideshow';
+
 const Index = () => {
   return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
       <Navbar />
       <div id="top"></div>
       
-      {/* Top Slideshow */}
-      <TopSlideshow />
       
       {/* School Header Section */}
       <section className="relative bg-background py-8 border-b border-primary/20 px-0 mx-0 my-0 md:py-[129px]">
