@@ -7,7 +7,7 @@ const HeroSlideshow = () => {
       alt: "CYNOSURE 2025 Logo"
     },
     {
-      image: "/lovable-uploads/3c5cf7f6-74bf-44bf-93b8-e68f3e22578a.png",
+      image: "/lovable-uploads/59759117-90a1-40a4-b943-a233eb25b339.png",
       alt: "St. Gregorios High School Presents"
     }
   ];
