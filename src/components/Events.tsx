@@ -138,7 +138,7 @@ const Events = () => {
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                 💼Step into the world of business mastery with thrilling entrepreneurship challenges, dynamic marketing battles, and groundbreaking business plan competitions!
               </p>
-              <Button variant="outline" onClick={() => window.open('https://drive.google.com/drive/folders/1Alfyse8BioOAFdOBOgVXA9HT_40qN5Im?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1CD6i1IyHCV_EYOigrRfl8x7yqtxzWCvs/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
             </CardContent>
