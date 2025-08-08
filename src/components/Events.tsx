@@ -160,7 +160,7 @@ const Events = () => {
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                 💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves
               </p>
-              <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1B1i99Z1YtzheQBzcyjUbrSTCcvP160QG/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
             </CardContent>
