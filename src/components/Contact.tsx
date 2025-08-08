@@ -16,10 +16,7 @@ const Contact = () => {
             <p className="text-xl text-primary font-semibold">We're Here for You!</p>
             
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">
-            💌 Whether you're curious, confused, or just super excited about CYNOSURE - 
-            we're here for you! Drop us a line and let's make magic happen together! ✨
-          </p>
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">💌 Whether you are curious, confused, or just super excited about CYNOSURE - we're here for you! Drop us a line and let's make magic happen together! ✨</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 px-[10px] py-px">
@@ -162,7 +159,7 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
-                <p className="mb-4 text-slate-50 mx-0 px-0">
+                <p className="mb-4 text-slate-50">
                   One event. One location. All roads lead to:
                 </p>
                 <div className="space-y-2 text-sm mb-4">
