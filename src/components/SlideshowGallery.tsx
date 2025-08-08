@@ -64,10 +64,6 @@ const SlideshowGallery = () => {
     alt: 'CYNOSURE Video 6'
   }, {
     type: 'video',
-    src: '/vid9.mp4',
-    alt: 'CYNOSURE Video 9'
-  }, {
-    type: 'video',
     src: '/vid12.mp4',
     alt: 'CYNOSURE Video 12'
   }];
