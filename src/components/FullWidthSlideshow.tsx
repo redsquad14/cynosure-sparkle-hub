@@ -56,7 +56,7 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/61dc2ffe-05bb-4e08-a663-805c44914b82-enhanced.png',
+      src: '/lovable-uploads/61dc2ffe-05bb-4e08-a663-805c44914b82.png',
       alt: 'CYNOSURE Event Highlights',
       title: 'Event Moments',
       description: 'Memorable moments from CYNOSURE events including performances and competitions'
