@@ -178,17 +178,6 @@ const Navbar = () => {
                       </div>
                     </DropdownMenuItem>
                     
-                    <DropdownMenuItem asChild className="p-0">
-                      <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}>
-                          <Sparkles className="w-4 h-4 mr-2" />
-                          IR Form
-                        </Button>
-                        <p className="text-sm text-muted-foreground px-2">
-                          Individual Registration form for individuals and teams
-                        </p>
-                      </div>
-                    </DropdownMenuItem>
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
