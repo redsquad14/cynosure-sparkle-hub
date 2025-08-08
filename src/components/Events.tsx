@@ -50,7 +50,7 @@ const Events = () => {
             <p className="text-2xl text-primary font-semibold">Where Potential Meets Opportunity and Greatness Emerges</p>
             <Sparkles className="text-accent animate-pulse" />
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">🌟 Prepare for an unforgettable experience filled with talent and pure excitement! Our events are designed to mae you say, "Sign me up1"</p>
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">🌟 Prepare for an unforgettable experience filled with talent and pure excitement! Our events are designed to make you say, "Sign me up!"</p>
         </div>
 
         {/* Events Grid */}
