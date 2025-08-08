@@ -155,7 +155,7 @@ const Contact = () => {
           <div>
             <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30 h-full">
               <CardContent className="p-6 text-center mx-0 h-full flex flex-col justify-between">
-                <h3 className="text-xl font-bold text-gradient mb-4 flex items-center justify-center gap-2 text-center">
+                <h3 className="text-3xl font-bold text-gradient mb-4 flex items-center justify-center gap-2 text-center">
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
