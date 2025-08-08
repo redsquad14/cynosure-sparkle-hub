@@ -152,9 +152,7 @@ const Events = () => {
                   <h3 className="text-xl font-bold text-gradient font-times">Performing Arts</h3>
                 </div>
               </div>
-              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                💃 Move to the rhythm! Classical, contemporary, hip-hop or freestyle - show us your moves.
-              </p>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">🎭Express yourself through performances! Dance, theater, singing and musical performances that captivate audiences!</p>
               <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1B1i99Z1YtzheQBzcyjUbrSTCcvP160QG/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
