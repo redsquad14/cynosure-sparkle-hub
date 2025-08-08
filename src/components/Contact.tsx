@@ -164,11 +164,7 @@ const Contact = () => {
                 </p>
                 <div className="space-y-2 text-sm mb-4">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
-                  <p className="text-gray-50">
-                    Ghatla, Chembur<br />
-                    Mumbai, Maharashtra<br />
-                    India 🇮🇳
-                  </p>
+                   <p className="text-gray-50">Ghatla, Chembur, Mumbai - 400074, Maharashtra, India</p>
                 </div>
                 
                 {/* Google Map */}
