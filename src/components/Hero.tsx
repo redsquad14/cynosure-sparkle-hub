@@ -31,7 +31,7 @@ const Hero = () => {
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="text-accent animate-pulse" />
-            <p className="text-xl md:text-2xl text-accent font-semibold">St. Gregorios High School's Student Powered Interschool Fest</p>
+            <p className="text-3xl text-accent font-semibold">St. Gregorios High School's Student Powered Interschool Fest</p>
             <Sparkles className="text-accent animate-pulse" />
           </div>
         </div>
