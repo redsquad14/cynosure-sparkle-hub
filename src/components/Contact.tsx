@@ -69,16 +69,16 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gradient mb-4 text-center">Quick Answers 💡</h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <p className="font-semibold text-accent">🤔 When is CYNOSURE 2025?</p>
-                    <p className="text-muted-foreground">September 26 and 27, 2025 - Mark your calendar!</p>
+                    <p className="font-semibold text-accent">⏰ What time should participants arrive?</p>
+                    <p className="text-muted-foreground">All participants must arrive by 7:30 a.m. on both days. General registration will be done on arrival — don't be late, the fun starts early!</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-accent">📋 How to register?</p>
-                    <p className="text-muted-foreground">Registration opens soon! Stay tuned for updates.</p>
+                    <p className="font-semibold text-accent">📝 How do schools register?</p>
+                    <p className="text-muted-foreground">Schools can register easily through our official website: cynosurestghs.com.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-accent">⏰ Last date of registration is?</p>
-                    <p className="text-muted-foreground">Registration closes on September 15, 2025.</p>
+                    <p className="font-semibold text-accent">🚪 When can participants leave the venue?</p>
+                    <p className="text-muted-foreground">Day 1 – Once all scheduled events are over. Day 2 – After the award ceremony.</p>
                   </div>
                 </div>
                 
