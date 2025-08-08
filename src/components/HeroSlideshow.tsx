@@ -5,7 +5,7 @@ const HeroSlideshow = () => {
         <div className="max-w-4xl mx-auto px-4 h-full flex flex-col justify-center py-[105px]">
           {/* School Emblem Image */}
           <div className="flex justify-center mb-4 md:mb-6">
-            <img src="/lovable-uploads/0aacfb32-340e-4008-90e2-a2ae3adffbc9.png" alt="St. Gregorios High School Emblem" className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain" />
+            <img src="/lovable-uploads/0aacfb32-340e-4008-90e2-a2ae3adffbc9.png" alt="St. Gregorios High School Emblem" className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 object-contain" />
           </div>
           
           {/* Text instead of image - Times New Roman font with greenish color for school name */}
