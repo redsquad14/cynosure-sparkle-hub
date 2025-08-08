@@ -134,18 +134,7 @@ const Navbar = () => {
                   </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
-                    <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdU3kb0c3vh8phsOdut22YUwtAkYgpGMLTZddLS6EizaY-VLA/viewform?usp=sf_link', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        IR Form
-                      </Button>
-                      <div className="px-2">
-                        
-                        <span className="inline-block mt-1 px-2 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
-                          Coming Soon
-                        </span>
-                      </div>
-                    </div>
+                    
                   </DropdownMenuItem>
                 </div>
               </DropdownMenuContent>
