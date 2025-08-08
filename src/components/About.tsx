@@ -45,10 +45,7 @@ const About = () => {
             <CardContent className="p-6 text-center">
               <Star className="w-12 h-12 text-secondary mx-auto mb-4 animate-pulse" />
               <h3 className="text-xl font-bold text-gradient mb-3">Star-Making Platform</h3>
-              <p className="text-slate-50">
-                Every participant is a star waiting to shine. We provide the stage, 
-                the audience, and the recognition that dreams deserve.
-              </p>
+              <p className="text-slate-50">Every participant is a star waiting to shine,we provide the stage, the audience, and the recognition that dreams deserve.</p>
             </CardContent>
           </Card>
         </div>
