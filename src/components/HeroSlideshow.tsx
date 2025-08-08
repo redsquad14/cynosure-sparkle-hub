@@ -20,7 +20,7 @@ const HeroSlideshow = () => {
           {/* Image - Centered */}
           <div className="flex justify-center mb-6 md:mb-8 mt-4">
             <div className="flex-shrink-0">
-              <img src={slides[currentSlide].image} alt={slides[currentSlide].alt} className={`object-contain transition-transform duration-300 hover:scale-105 ${currentSlide === 1 ? 'w-96 h-96 md:w-[28rem] md:h-[28rem]' : 'w-80 h-80 md:w-96 md:h-96'}`} />
+              <img src={slides[currentSlide].image} alt={slides[currentSlide].alt} className={`object-contain transition-transform duration-300 hover:scale-105 ${currentSlide === 1 ? 'w-[28rem] h-[28rem] md:w-[32rem] md:h-[32rem]' : 'w-80 h-80 md:w-96 md:h-96'}`} />
             </div>
           </div>
           
