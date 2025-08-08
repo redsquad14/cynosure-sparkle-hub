@@ -88,7 +88,7 @@ const Events = () => {
                 </div>
               </div>
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                🎨 Unleash your creativity! From traditional painting to digital art - express your soul on canvas!
+                🏆Where creativity meets competition and every student gets a chance to steal the spotlight and leave their mark!
               </p>
               <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
