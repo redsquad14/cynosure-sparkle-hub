@@ -162,7 +162,7 @@ const Contact = () => {
                 <p className="mb-4 text-slate-50">
                   One event. One location. All roads lead to:
                 </p>
-                <div className="space-y-1 text-base mb-4">
+                <div className="space-y-1 text-base mb-4 mx-[8px] px-[39px] py-0">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
                    <p className="text-gray-50">Ghatla, Chembur, Mumbai - 400074, Maharashtra, India</p>
                 </div>
