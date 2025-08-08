@@ -16,7 +16,7 @@ const HeroSlideshow = () => {
               <img 
                 src={fixedImage.image} 
                 alt={fixedImage.alt} 
-                className="w-[50.4rem] h-[50.4rem] md:w-[57.6rem] md:h-[57.6rem] object-contain transition-transform duration-300 hover:scale-105" 
+                className="w-[50.4rem] h-[50.4rem] md:w-[57.6rem] md:h-[57.6rem] object-contain" 
               />
             </div>
           </div>
