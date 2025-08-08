@@ -195,7 +195,7 @@ const Events = () => {
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Users className="w-8 h-8 text-accent animate-pulse" />
-                <h3 className="text-2xl font-bold text-gradient">Team Events</h3>
+                <h3 className="text-3xl font-bold text-gradient">Team Events</h3>
               </div>
               <p className="mb-4 text-lg text-slate-50">
                 🤝 Some competitions allow inter-school collaborations! 
