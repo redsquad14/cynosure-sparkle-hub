@@ -127,10 +127,7 @@ const SlideshowGallery = () => {
             <p className="text-2xl text-accent font-semibold">Moments That Sparkle Forever</p>
             <Camera className="text-primary animate-pulse" />
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">
-            📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, 
-            every video captures a dream, and every moment here is pure gold! ✨
-          </p>
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, every video captures a dream and every moment here is pure gold! ✨</p>
         </div>
 
         {/* Main Slideshow - Even Larger and More Cinematic */}
