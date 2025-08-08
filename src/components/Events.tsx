@@ -214,9 +214,9 @@ const Events = () => {
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-4">
                 <Trophy className="w-8 h-8 text-primary animate-pulse" />
-                <h3 className="text-2xl font-bold text-gradient">Amazing Rewards</h3>
+                <h3 className="text-3xl font-bold text-gradient">Amazing Rewards</h3>
               </div>
-              <p className="mb-4 text-slate-50 text-lg">
+              <p className="mb-4 text-xl text-slate-50">
                 🏆 It's not just about winning - it's about celebrating every effort! 
                 Everyone goes home with memories, but winners get extra sparkle!
               </p>
