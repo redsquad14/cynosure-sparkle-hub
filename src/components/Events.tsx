@@ -101,7 +101,7 @@ const Events = () => {
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
-                  <Music className="w-6 h-6 text-primary-foreground" />
+                  <Palette className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gradient font-times">Fine Arts</h3>
