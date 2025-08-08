@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { ChevronLeft, ChevronRight, X, Play, Pause, Camera, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, Play, Pause, Camera, Sparkles, Star } from 'lucide-react';
 interface MediaItem {
   type: 'image' | 'video';
   src: string;
@@ -198,11 +198,11 @@ const SlideshowGallery = () => {
           <p className="mb-6 text-xl text-slate-50">Join CYNOSURE 2025 and become part of our family!</p>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse" style={{
+              <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse flex items-center justify-center" style={{
               animationDuration: '0.8s'
             }}>
-                <Sparkles className="w-4 h-4 mr-2" />
-                🌟 REGISTER NOW!
+                <Star className="w-4 h-4 mr-2 fill-current" />
+                REGISTER NOW!
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
