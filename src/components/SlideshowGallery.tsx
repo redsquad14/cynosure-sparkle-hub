@@ -135,9 +135,24 @@ const SlideshowGallery = () => {
           <Card className="overflow-hidden bg-gradient-to-br from-card via-card/95 to-muted/20 border-primary/30 shadow-2xl shadow-primary/10">
             <CardContent className="p-0">
               <div className="relative h-[85vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
-                {currentItem.type === 'video' ? <video src={currentItem.src} autoPlay muted loop preload="auto" playsInline className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02] filter brightness-110" style={{
-                objectFit: 'cover'
-              }} /> : <img src={currentItem.src} alt={currentItem.alt} className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" />}
+                {currentItem.type === 'video' ? (
+                  <>
+                    <video 
+                      src={currentItem.src} 
+                      preload="metadata" 
+                      className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" 
+                      style={{ objectFit: 'cover' }}
+                    />
+                    {/* Play button overlay for videos */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                      <div className="bg-black/60 hover:bg-black/80 transition-all duration-300 rounded-full p-6 backdrop-blur-sm border border-white/20">
+                        <Play className="h-16 w-16 text-white fill-white" />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <img src={currentItem.src} alt={currentItem.alt} className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" />
+                )}
                 
                 {/* Enhanced Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
