@@ -25,7 +25,7 @@ const Contact = () => {
             {/* Quick Contact */}
             <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
               <CardContent className="p-8 text-center max-w-md mx-auto">
-                <h3 className="text-2xl font-bold text-gradient mb-4">Quick Reach 🚀</h3>
+                <h3 className="text-3xl font-bold text-gradient mb-4">Quick Reach 🚀</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-full bg-primary/20">
