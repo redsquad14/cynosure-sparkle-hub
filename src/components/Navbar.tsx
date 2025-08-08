@@ -77,8 +77,8 @@ const Navbar = () => {
           block: 'start'
         });
 
-        // Wait for scroll animation, with longer pause on final target
-        const delay = i === targetIndex ? 800 : 400;
+        // Wait for scroll animation, with shorter delays for smoother experience
+        const delay = i === targetIndex ? 500 : 250;
         await new Promise(resolve => setTimeout(resolve, delay));
       }
     }
