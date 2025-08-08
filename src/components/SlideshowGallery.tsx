@@ -124,7 +124,7 @@ const SlideshowGallery = () => {
           <h2 className="text-5xl font-bold text-gradient mb-6 my-0 py-[12px]">Gallery</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             <Camera className="text-primary animate-pulse" />
-            <p className="text-xl text-accent font-semibold">Moments That Sparkle Forever</p>
+            <p className="text-2xl text-accent font-semibold">Moments That Sparkle Forever</p>
             <Camera className="text-primary animate-pulse" />
           </div>
           <p className="text-lg max-w-3xl mx-auto text-slate-50">
