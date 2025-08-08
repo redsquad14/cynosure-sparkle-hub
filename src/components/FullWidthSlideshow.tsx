@@ -21,45 +21,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/c5cb4526-c92f-42d1-9510-4e9110178647.png',
-      alt: 'CYNOSURE 2024 Rangoli Art',
-      title: 'CYNOSURE 2024',
-      description: 'Beautiful rangoli art celebrating CYNOSURE 2024'
-    },
-    {
-      type: 'image',
       src: '/lovable-uploads/21d555ba-ddd1-4d42-9241-56e6d4ebd87e.png',
       alt: 'CYNOSURE Championship Trophies',
       title: 'Victory & Achievement',
       description: 'CYNOSURE championship trophies and awards showcase'
-    },
-    {
-      type: 'image',
-      src: '/lovable-uploads/f2fc02fd-6407-422d-83fb-6323b1a7205c.png',
-      alt: 'CYNOSURE Foundation Stone Ceremony',
-      title: 'Foundation Ceremony',
-      description: 'Special foundation stone ceremony at St. Gregorios High School'
-    },
-    {
-      type: 'image',
-      src: '/lovable-uploads/54c7f825-d9b8-4844-a1cd-e6b83fed8ea0.png',
-      alt: 'CYNOSURE Lamp Lighting Ceremony',
-      title: 'Traditional Ceremony',
-      description: 'Students participating in the traditional lamp lighting ceremony'
-    },
-    {
-      type: 'image',
-      src: '/lovable-uploads/80f2adc1-62a1-4ec0-a814-f8afea5d94a6.png',
-      alt: 'CYNOSURE Inauguration Ceremony',
-      title: 'Grand Inauguration',
-      description: 'Official inauguration ceremony with traditional lamp lighting at CYNOSURE'
-    },
-    {
-      type: 'image',
-      src: '/lovable-uploads/61dc2ffe-05bb-4e08-a663-805c44914b82.png',
-      alt: 'CYNOSURE Event Highlights',
-      title: 'Event Moments',
-      description: 'Memorable moments from CYNOSURE events including performances and competitions'
     }
   ];
 
