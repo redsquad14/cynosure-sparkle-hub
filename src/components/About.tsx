@@ -17,7 +17,7 @@ const About = () => {
                 <Heart className="w-8 h-8 text-accent animate-pulse" />
                 <h3 className="text-3xl font-bold text-gradient py-[8px]">Our Origin Story</h3>
               </div>
-              <p className="leading-relaxed mb-6 text-slate-50 text-xl">Cynosure is a inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Fine Arts, and Sports. Whether you're a wordsmith, a performer, a creator or an athlete - there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork, and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram, cynosure.stghs.</p>
+              <p className="leading-relaxed mb-6 text-slate-50 text-xl">Cynosure is a inter-school fest that offers a diverse range of activities and competitions, spanning Literary Arts, Performing Arts, Fine Arts and Sports. Whether you're a wordsmith, a performer, a creator or an athlete - there's something here for everyone. The event is designed to promote learning, inclusivity, teamwork and camaraderie, allowing participants to explore their talents in a spirited and supportive environment. All event descriptions, along with their rules and regulations, can be found in the Cynosure e-Brochure, accessible via our Instagram, @cynosure.stghs.</p>
               
             </CardContent>
           </Card>
