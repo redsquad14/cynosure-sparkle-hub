@@ -94,7 +94,7 @@ const Events = () => {
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                 🏆Where creativity meets competition and every student gets a chance to steal the spotlight and leave their mark!
               </p>
-              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1P2eoUvkAh1zyRJlnRXA-NqLBRV4UCthl/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
             </CardContent>
