@@ -226,9 +226,7 @@ const SlideshowGallery = () => {
                         <Sparkles className="w-4 h-4 mr-2" />
                         IR Form
                       </Button>
-                      <p className="text-sm text-muted-foreground px-2 mb-2">
-                        Individual Registration form for individuals and teams
-                      </p>
+                      
                       <div className="text-center">
                         <span className="bg-accent/20 backdrop-blur-sm text-accent text-sm font-semibold px-4 py-2 rounded-full border border-accent/30 inline-block">
                           Coming Soon
