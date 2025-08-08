@@ -95,64 +95,56 @@ const Contact = () => {
                     </DialogHeader>
                     <div className="space-y-4 text-sm mt-4">
                       <div>
-                        <p className="font-bold text-accent">🏫 Who is eligible to participate?</p>
-                        <p className="text-muted-foreground">Students from Grades 6 to 12 across all invited schools are eligible to participate.</p>
+                        <p className="font-bold text-accent">📐 When will the stage or court dimensions be shared for the event?</p>
+                        <p className="text-muted-foreground">The exact dimensions will be provided to each contingent upon successful registration for the respective event.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🎭 What types of events will be conducted?</p>
-                        <p className="text-muted-foreground">A diverse mix of literary, cultural, technological, and sports activities will be hosted. A comprehensive schedule will be released shortly.</p>
+                        <p className="font-bold text-accent">🎬 What file formats are required for submitting recorded videos and soundtracks?</p>
+                        <p className="text-muted-foreground">All video submissions must be in MP4 format and all audio tracks must be submitted in MP3 format.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📍 What is the venue for the event?</p>
-                        <p className="text-muted-foreground">The event will be held on-campus at <strong>St. Gregorios High School, Mumbai</strong>.</p>
+                        <p className="font-bold text-accent">🍽️ What are the food arrangements at the venue?</p>
+                        <p className="text-muted-foreground">Food stalls will be available for all attendees. While packed commercial food is not permitted, participants may carry home-made meals if they prefer.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">👗 Are participants required to wear specific attire or costumes?</p>
-                        <p className="text-muted-foreground">Dress code or costume requirements, if any, will be specified in the official event booklet for individual events.</p>
+                        <p className="font-bold text-accent">💬 Whom should we contact for queries or assistance?</p>
+                        <p className="text-muted-foreground">For all inquiries, please check the Quick Reach section on our website or refer to the contact details provided in the brochure.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📸 Will the event be recorded or photographed?</p>
-                        <p className="text-muted-foreground">Yes, professional photography and videography will be conducted throughout the event.</p>
+                        <p className="font-bold text-accent">🏫 Who can participate in Cynosure 2025?</p>
+                        <p className="text-muted-foreground">Students from Standard 6th to 12th of all registered schools are eligible to take part, as per the terms and conditions of the events.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">💬 Whom should we reach out to for any inquiries?</p>
-                        <p className="text-muted-foreground">Kindly refer to the <strong>Quick Reach</strong> section for contact details.</p>
+                        <p className="font-bold text-accent">🩺 Will medical assistance be available at the venue?</p>
+                        <p className="text-muted-foreground">Yes, a fully equipped medical room will be operational on-site to address any health-related concerns.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">⏰ What time should we arrive for the event?</p>
-                        <p className="text-muted-foreground">Participants are expected to report by <strong>7:30 a.m.</strong></p>
+                        <p className="font-bold text-accent">🏆 When can we collect our trophies and certificates?</p>
+                        <p className="text-muted-foreground">All trophies and certificates can be collected at the Closing Ceremony on Saturday, 27th September, 2025. At least 1 representative must be present during the Closing Ceremony.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">📅 When is departure permitted on both days?</p>
-                        <p className="text-muted-foreground">On Day 1, departure is allowed once events conclude. On Day 2, after the award ceremony.</p>
+                        <p className="font-bold text-accent">📱 Are participants permitted to bring their mobile phones?</p>
+                        <p className="text-muted-foreground">Participants may carry mobile phones but should use them only if required for the event. For events prohibiting electronics, phones must be submitted to the contingent leader or teacher in charge.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🆔 What is meant by the CG code?</p>
-                        <p className="text-muted-foreground">The <strong>St. Gregorios Contingent Code</strong> is a unique identification assigned to each school to maintain confidentiality.</p>
+                        <p className="font-bold text-accent">🧴 Are participants permitted to bring perfume and deodorant?</p>
+                        <p className="text-muted-foreground">Students may carry deodorants, but perfumes are not allowed. Any perfumes found will be confiscated.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🎶 What format should music tracks be submitted in?</p>
-                        <p className="text-muted-foreground">All music tracks should be in <strong>MP3</strong> format.</p>
+                        <p className="font-bold text-accent">🔄 Are last-minute replacements allowed if a child is absent on day 2 due to illness?</p>
+                        <p className="text-muted-foreground">Last-minute replacements due to illness on Day 2 may be allowed with prior approval from the organizers. Teams must inform the committee as early as possible.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🍽️ Are participants required to bring their own food?</p>
-                        <p className="text-muted-foreground">No, <strong>food stalls will be available</strong> at the venue for all attendees.</p>
+                        <p className="font-bold text-accent">↔️ Is it permissible to replace a registered participant if they can no longer participate?</p>
+                        <p className="text-muted-foreground">Yes, replacements may be allowed post-registration with prior approval from the organising committee.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🩺 Is there a need to carry a personal first aid kit?</p>
-                        <p className="text-muted-foreground">Not necessary. A fully equipped <strong>medical room</strong> will be operational on-site.</p>
+                        <p className="font-bold text-accent">🚪 Will there be designated areas for participants to change and prepare?</p>
+                        <p className="text-muted-foreground">Yes, participants may use the school washrooms and their assigned contingent rooms to get ready.</p>
                       </div>
                       <div>
-                        <p className="font-bold text-accent">🏆 Where can we collect our trophies and certificates?</p>
-                        <p className="text-muted-foreground">All trophies and certificates will be distributed during the awards ceremony on <strong>Saturday, 27th September 2025</strong>.</p>
-                      </div>
-                      <div>
-                        <p className="font-bold text-accent">🚪 When are participants permitted to leave the venue?</p>
-                        <p className="text-muted-foreground">Participants may leave <strong>only after all scheduled events for the day have concluded</strong> and upon confirmation from their contingent leader.</p>
-                      </div>
-                      <div>
-                        <p className="font-bold text-accent">✨ What is the spirit of Cynosure 4.0?</p>
-                        <p className="text-muted-foreground">A celebration of joy, unity, and unforgettable memories!</p>
+                        <p className="font-bold text-accent">📅 When is the Contingent Leader meeting?</p>
+                        <p className="text-muted-foreground">The exact dates of the Contingent Leader will be provided to each contingent upon successful registration for the respective event.</p>
                       </div>
                     </div>
                   </DialogContent>
