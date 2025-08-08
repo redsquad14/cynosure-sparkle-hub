@@ -16,7 +16,7 @@ const Contact = () => {
             <p className="text-xl text-primary font-semibold">We are Here for You!</p>
             
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
+          <p className="text-lg max-w-3xl mx-auto text-slate-50">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 px-[10px] py-px">
@@ -159,11 +159,11 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
-                <p className="mb-4 text-slate-50 text-xl">One event. 
+                <p className="mb-4 text-slate-50 text-xl">One event. 
 One location. All roads lead to:</p>
                 <div className="space-y-1 text-2xl mb-4">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
-                   <p className="text-gray-50">N . B. Patil Marg,   Ghatla,   Chembur, Mumbai - 400071,  Maharashtra, India</p>
+                   <p className="text-gray-50 text-lg">N . B. Patil Marg,   Ghatla,   Chembur, Mumbai - 400071,  Maharashtra, India</p>
                 </div>
                 
                 {/* Google Map */}
@@ -181,7 +181,7 @@ One location. All roads lead to:</p>
         <div className="text-center mt-16">
           <Card className="card-hover bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 max-w-2xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-gradient mb-4"> We Can't Wait to Hear From You!</h3>
+              <h3 className="text-2xl font-bold text-gradient mb-4"> We Can't Wait to Hear From You!</h3>
               <p className="text-slate-50">
                 Every message you send brings us one step closer to making CYNOSURE 2025 
                 the most incredible celebration Mumbai has ever seen! 
