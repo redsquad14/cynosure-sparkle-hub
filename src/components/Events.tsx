@@ -196,7 +196,7 @@ const Events = () => {
                 🤝 Some competitions allow inter-school collaborations! 
                 Make new friends while competing together. Because the best victories are shared ones!
               </p>
-               <ul className="space-y-2 text-base text-muted-foreground">
+               <ul className="space-y-2 text-base text-slate-50">
                 <li>✨ Group Dance Battles</li>
                 <li>✨ Band Competitions</li>
                 <li>✨ Debate Competitions</li>
