@@ -148,7 +148,7 @@ const SlideshowGallery = () => {
                   </> : <img src={currentItem.src} alt={currentItem.alt} className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" />}
                 
                 {/* Enhanced Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">mak</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">makmake </div>
 
                 {/* Enhanced Navigation arrows */}
                 <Button variant="ghost" size="icon" className="absolute left-6 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg backdrop-blur-sm border border-white/20" onClick={e => {
