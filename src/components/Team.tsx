@@ -56,7 +56,7 @@ const Team = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
-          <p className="text-lg text-slate-50">Download the CYNOSURE brochures</p>
+          
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* 2022 Brochures */}
