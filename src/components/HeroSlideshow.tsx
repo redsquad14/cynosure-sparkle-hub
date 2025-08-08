@@ -8,7 +8,7 @@ const HeroSlideshow = () => {
           {/* School Emblem Image */}
           <div className="flex justify-center mb-4 md:mb-6">
             <img 
-              src="/lovable-uploads/dbd47064-7ac8-463d-b339-d7066a30731b.png" 
+              src="/lovable-uploads/bf1d496b-e968-4330-8bbf-1a5ce34cccdc.png" 
               alt="St. Gregorios High School Emblem" 
               className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
             />
