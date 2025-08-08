@@ -71,9 +71,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">
-                ✨ Relive the magic of CYNOSURE 2022! Complete collection of memories.
-              </p>
+              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">✨ Relive the magic of CYNOSURE 2022! </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1h0Pyevr5EYn3T2ZmTJDkNEebAWTPGVWQ/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2022
