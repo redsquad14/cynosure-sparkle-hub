@@ -23,17 +23,9 @@ const SlideshowGallery = () => {
     src: '/lovable-uploads/246a69d5-d8c9-40f1-808a-41253a4026e5.png',
     alt: 'CYNOSURE Award Ceremony'
   }, {
-    type: 'video',
-    src: '/vid3.mp4',
-    alt: 'CYNOSURE Video 3'
-  }, {
     type: 'image',
     src: '/lovable-uploads/9018d806-b458-4e0c-96ce-0cd3ae56faf6.png',
     alt: 'CYNOSURE Chess Competition'
-  }, {
-    type: 'video',
-    src: '/vid5.mp4',
-    alt: 'CYNOSURE Video 5'
   }, {
     type: 'image',
     src: '/lovable-uploads/5979e1fb-c140-4bd2-8507-a4161a2372d7.png',
@@ -72,20 +64,12 @@ const SlideshowGallery = () => {
     alt: 'CYNOSURE Video 6'
   }, {
     type: 'video',
-    src: '/vid11.mp4',
-    alt: 'CYNOSURE Video 11'
-  }, {
-    type: 'video',
     src: '/vid9.mp4',
     alt: 'CYNOSURE Video 9'
   }, {
     type: 'video',
     src: '/vid12.mp4',
     alt: 'CYNOSURE Video 12'
-  }, {
-    type: 'video',
-    src: '/vid10.mp4',
-    alt: 'CYNOSURE Video 10'
   }];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
