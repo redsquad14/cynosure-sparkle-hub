@@ -8,7 +8,7 @@ const HeroSlideshow = () => {
 
   return (
     <section className="relative bg-background py-4 border-b border-primary/20 px-0 mx-0 my-0 md:py-8 overflow-hidden">
-      <div className="relative w-full h-full">
+      <div className="relative w-full">
         <div className="max-w-4xl mx-auto px-4 h-full flex flex-col justify-center">
           {/* Fixed Image - Centered */}
           <div className="flex justify-center mb-6 md:mb-8 mt-4">
