@@ -5,16 +5,31 @@ import { Menu, X, Sparkles } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
-  
-  const navItems = [
-    { name: 'Home', href: '#top', id: 'top' },
-    { name: 'About', href: '#about', id: 'about' },
-    { name: 'Events', href: '#events', id: 'events' },
-    { name: 'Gallery', href: '#gallery', id: 'gallery' },
-    { name: 'Brochures', href: '#brochures', id: 'brochures' },
-    { name: 'Contact Us', href: '#contact', id: 'contact' }
-  ];
-
+  const navItems = [{
+    name: 'Home',
+    href: '#top',
+    id: 'top'
+  }, {
+    name: 'About',
+    href: '#about',
+    id: 'about'
+  }, {
+    name: 'Events',
+    href: '#events',
+    id: 'events'
+  }, {
+    name: 'Gallery',
+    href: '#gallery',
+    id: 'gallery'
+  }, {
+    name: 'Brochures',
+    href: '#brochures',
+    id: 'brochures'
+  }, {
+    name: 'Contact Us',
+    href: '#contact',
+    id: 'contact'
+  }];
   const cinematicScrollTo = async (targetId: string) => {
     if (isScrolling) return;
     setIsScrolling(true);
@@ -67,10 +82,8 @@ const Navbar = () => {
         await new Promise(resolve => setTimeout(resolve, delay));
       }
     }
-
     setIsScrolling(false);
   };
-
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     cinematicScrollTo(targetId);
@@ -89,18 +102,9 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map(item => (
-                <a 
-                  key={item.name} 
-                  href={item.href} 
-                  onClick={(e) => handleNavClick(e, item.id)}
-                  className={`text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-primary/10 ${
-                    isScrolling ? 'pointer-events-none opacity-70' : ''
-                  }`}
-                >
+              {navItems.map(item => <a key={item.name} href={item.href} onClick={e => handleNavClick(e, item.id)} className={`text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-primary/10 ${isScrolling ? 'pointer-events-none opacity-70' : ''}`}>
                   {item.name}
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -119,11 +123,7 @@ const Navbar = () => {
                 <div className="space-y-4">
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button 
-                        variant="default" 
-                        className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}
-                      >
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 1
                       </Button>
@@ -135,18 +135,12 @@ const Navbar = () => {
                   
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button 
-                        variant="default" 
-                        className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdU3kb0c3vh8phsOdut22YUwtAkYgpGMLTZddLS6EizaY-VLA/viewform?usp=sf_link', '_blank')}
-                      >
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdU3kb0c3vh8phsOdut22YUwtAkYgpGMLTZddLS6EizaY-VLA/viewform?usp=sf_link', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         IR Form
                       </Button>
                       <div className="px-2">
-                        <p className="text-sm text-muted-foreground">
-                          Individual Registration form for individuals and teams
-                        </p>
+                        
                         <span className="inline-block mt-1 px-2 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
                           Coming Soon
                         </span>
@@ -168,21 +162,11 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md">
+      {isOpen && <div className="md:hidden bg-background/95 backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map(item => (
-              <a 
-                key={item.name} 
-                href={item.href} 
-                onClick={(e) => handleNavClick(e, item.id)}
-                className={`text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
-                  isScrolling ? 'pointer-events-none opacity-70' : ''
-                }`}
-              >
+            {navItems.map(item => <a key={item.name} href={item.href} onClick={e => handleNavClick(e, item.id)} className={`text-foreground hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isScrolling ? 'pointer-events-none opacity-70' : ''}`}>
                 {item.name}
-              </a>
-            ))}
+              </a>)}
             <div className="pt-4">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -207,11 +191,7 @@ const Navbar = () => {
                     
                     <DropdownMenuItem asChild className="p-0">
                       <div className="w-full">
-                        <Button 
-                          variant="gradient" 
-                          className="w-full mb-2"
-                          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}
-                        >
+                        <Button variant="gradient" className="w-full mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVkqOoCR4GWiywuN870QYaA53-2Gq8rjDFJJIpS4s9htyNOA/viewform?embedded=true', '_blank')}>
                           <Sparkles className="w-4 h-4 mr-2" />
                           IR Form
                         </Button>
@@ -225,8 +205,7 @@ const Navbar = () => {
               </DropdownMenu>
             </div>
           </div>
-        </div>
-      )}
+        </div>}
     </nav>;
 };
 export default Navbar;
