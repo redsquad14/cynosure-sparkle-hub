@@ -136,7 +136,7 @@ const Events = () => {
                 </div>
               </div>
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                Step into the world of business mastery with thrilling entrepreneurship challenges, dynamic marketing battles, and groundbreaking business plan competitions!
+                💼Step into the world of business mastery with thrilling entrepreneurship challenges, dynamic marketing battles, and groundbreaking business plan competitions!
               </p>
               <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
