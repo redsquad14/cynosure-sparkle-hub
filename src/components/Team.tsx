@@ -133,7 +133,7 @@ const Team = () => {
                   <FileText className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gradient">2025 Brochures</h3>
+                  <h3 className="text-xl font-bold text-gradient">2025 Brochure</h3>
                   
                 </div>
               </div>
