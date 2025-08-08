@@ -140,6 +140,7 @@ const Team = () => {
           </Card>
         </div>
       </div>
+      <div id="contact"></div>
     </section>;
 };
 export default Team;
