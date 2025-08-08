@@ -56,27 +56,125 @@ const Events = () => {
 
         {/* Events Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 items-stretch">
-          {events.map((event, index) => <Card key={event.title} className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
-          animationDelay: `${index * 0.1}s`
-        }}>
-              <CardContent className="p-6 flex-1 flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
-                    <event.icon className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    
-                    <h3 className="text-xl font-bold text-gradient font-times">{event.title}</h3>
-                  </div>
+          {/* Literary Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <BookOpen className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                  {event.description}
-                </p>
-                <Button variant="outline" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
-                  Learn More ✨
-                </Button>
-              </CardContent>
-            </Card>)}
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Literary</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                📚 Unleash the power of words! Poetry recitations, storytelling competitions, creative writing, and literary debates that inspire!
+              </p>
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1z66w6wAwbEeWexAXnAwIRvGh6u_drvN8/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Cynoshow Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.1s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <Palette className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Cynoshow</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                🎨 Unleash your creativity! From traditional painting to digital art - express your soul on canvas!
+              </p>
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/12vqRc9_gj3M36pZ_uB3GuRUwa8O69-PH/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Fine Arts Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.2s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <Music className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Fine Arts</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                💃 Move to the rhythm! Classical, contemporary, hip-hop, or freestyle - show us your moves!
+              </p>
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1FFouJFCH7j07i8NA50tMnOctiZbBVO2B/view?usp=sharing', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Commerce Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.3s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <ShoppingCart className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Commerce</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                💼 Master the art of business! Entrepreneurship challenges, marketing competitions, and innovative business plan contests!
+              </p>
+              <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Performing Arts Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.4s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <Mic className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Performing Arts</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                🎭 Express yourself through performance! Drama, theater, singing, and musical performances that captivate audiences!
+              </p>
+              <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Sports Event */}
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.5s'}}>
+            <CardContent className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
+                  <Activity className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gradient font-times">Sports</h3>
+                </div>
+              </div>
+              <p className="leading-relaxed text-slate-50 flex-1 mb-4">
+                ⚽Football, basketball, relays, and more — show your sporting spirit and unstoppable drive to win!
+              </p>
+              <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+                Learn More ✨
+              </Button>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Special Features */}
