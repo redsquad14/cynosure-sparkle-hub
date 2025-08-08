@@ -1,17 +1,11 @@
 import React from 'react';
-
 const HeroSlideshow = () => {
-  return (
-    <section className="relative bg-background py-4 border-b border-primary/20 px-0 mx-0 my-0 md:py-8 overflow-hidden">
+  return <section className="relative bg-background py-4 border-b border-primary/20 px-0 mx-0 my-0 md:py-8 overflow-hidden">
       <div className="relative w-full">
-        <div className="max-w-4xl mx-auto px-4 h-full flex flex-col justify-center">
+        <div className="max-w-4xl mx-auto px-4 h-full flex flex-col justify-center py-[105px]">
           {/* School Emblem Image */}
           <div className="flex justify-center mb-4 md:mb-6">
-            <img 
-              src="/lovable-uploads/0aacfb32-340e-4008-90e2-a2ae3adffbc9.png" 
-              alt="St. Gregorios High School Emblem" 
-              className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
-            />
+            <img src="/lovable-uploads/0aacfb32-340e-4008-90e2-a2ae3adffbc9.png" alt="St. Gregorios High School Emblem" className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain" />
           </div>
           
           {/* Text instead of image - Times New Roman font with greenish color for school name */}
@@ -26,8 +20,6 @@ const HeroSlideshow = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSlideshow;
