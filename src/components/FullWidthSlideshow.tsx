@@ -46,6 +46,13 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Lamp Lighting Ceremony',
       title: 'Tradition & Beginning',
       description: 'Students participating in the ceremonial lamp lighting'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/f64485b7-63cf-4bfc-80dc-a5b77c65a26a.png',
+      alt: 'CYNOSURE Event Highlights',
+      title: 'Memorable Moments',
+      description: 'Capturing the essence of CYNOSURE events and performances'
     }
   ];
 
