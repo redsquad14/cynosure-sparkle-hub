@@ -163,7 +163,7 @@ const Contact = () => {
 One location. All roads lead to:</p>
                 <div className="space-y-1 text-2xl mb-4">
                   <p className="text-accent font-semibold text-3xl -mt-2">📍 St Gregorios High School</p>
-                   <p className="text-gray-50 text-lg">N . B. Patil Marg,   Ghatla,   Chembur, Mumbai - 400071,  Maharashtra, India</p>
+                   <p className="text-gray-50 text-lg mt-2">N . B. Patil Marg,   Ghatla,   Chembur, Mumbai - 400071,  Maharashtra, India</p>
                 </div>
                 
                 {/* Google Map */}
