@@ -32,8 +32,8 @@ const Contact = () => {
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div className="text-left">
-                      <p className="font-semibold text-foreground whitespace-nowrap">Email us</p>
-                      <a href="mailto:cynosure.stghs@gmail.com" className="text-sm text-white hover:text-accent transition-colors">cynosure.stghs@gmail.com</a>
+                      <p className="font-semibold text-foreground whitespace-nowrap text-lg">Email us</p>
+                      <a href="mailto:cynosure.stghs@gmail.com" className="text-lg text-white hover:text-accent transition-colors">cynosure.stghs@gmail.com</a>
                     </div>
                   </div>
                   
@@ -42,8 +42,8 @@ const Contact = () => {
                       <Phone className="w-5 h-5 text-accent" />
                     </div>
                     <div className="text-left">
-                      <p className="font-semibold text-foreground">Call us</p>
-                      <a href="tel:02225203791" className="text-sm text-white hover:text-accent transition-colors">022 2520 3791</a>
+                      <p className="font-semibold text-foreground text-lg">Call us</p>
+                      <a href="tel:02225203791" className="text-lg text-white hover:text-accent transition-colors">022 2520 3791</a>
                     </div>
                   </div>
                   
@@ -52,8 +52,8 @@ const Contact = () => {
                       <Instagram className="w-5 h-5 text-secondary" />
                     </div>
                     <div className="text-left">
-                      <p className="font-semibold text-foreground">Follow us</p>
-                      <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-sm text-white hover:text-accent transition-colors">@cynosure.stghs</a>
+                      <p className="font-semibold text-foreground text-lg">Follow us</p>
+                      <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-lg text-white hover:text-accent transition-colors">@cynosure.stghs</a>
                     </div>
                   </div>
                 </div>
