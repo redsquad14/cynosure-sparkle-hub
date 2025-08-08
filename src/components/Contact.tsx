@@ -159,10 +159,10 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
-                <p className="mb-4 text-slate-50">
+                <p className="mb-4 text-slate-50 py-0">
                   One event. One location. All roads lead to:
                 </p>
-                <div className="space-y-1 text-base mb-4 mx-[8px] px-[39px] py-0">
+                <div className="space-y-1 text-base mb-4 px-[39px] py-0 mx-[36px]">
                   <p className="text-accent font-semibold">📍 St Gregorios High School</p>
                    <p className="text-gray-50">N.B.Patil Marg, Ghatla,  Chembur, 
  Mumbai - 400071, Maharashtra, India.</p>
