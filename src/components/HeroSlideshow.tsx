@@ -14,15 +14,13 @@ const HeroSlideshow = () => {
 
   const slides = [
     {
-      // First slide with current logo and text
-      image: "/lovable-uploads/083a2770-8df3-4cbf-9df4-5ac57ae211b4.png",
-      hasText: true,
-      title: "St. Gregorios High School",
-      subtitle: "Presents"
+      // First slide with St. Gregorios logo and text
+      image: "/lovable-uploads/ce8b7c6d-bdb2-4d71-bccb-6e3872318cef.png",
+      hasText: false
     },
     {
-      // Second slide - placeholder for new image, no text
-      image: "/lovable-uploads/placeholder-slide2.png", // User will replace this
+      // Second slide with CYNOSURE logo
+      image: "/lovable-uploads/d30f1652-95af-4d94-b8de-2942477b7fbf.png",
       hasText: false
     }
   ];
@@ -43,23 +41,11 @@ const HeroSlideshow = () => {
                 <div className="flex-shrink-0">
                   <img 
                     src={slide.image} 
-                    alt={slide.hasText ? "St. Gregorios High School Logo" : "Slideshow Image"} 
-                    className="w-48 h-48 md:w-56 md:h-56 object-contain transition-transform duration-300 hover:scale-105" 
+                    alt={index === 0 ? "St. Gregorios High School Logo" : "CYNOSURE 2025 Logo"} 
+                    className="w-64 h-64 md:w-80 md:h-80 object-contain transition-transform duration-300 hover:scale-105" 
                   />
                 </div>
               </div>
-              
-              {/* Text - Only for first slide */}
-              {slide.hasText && (
-                <div className="text-center space-y-4 md:space-y-6">
-                  <h1 className="font-times text-3xl sm:text-4xl lg:text-6xl font-bold text-primary leading-tight md:text-6xl">
-                    {slide.title}
-                  </h1>
-                  <h2 className="font-times text-lg sm:text-xl font-semibold text-accent lg:text-6xl text-center md:text-5xl">
-                    {slide.subtitle}
-                  </h2>
-                </div>
-              )}
             </div>
           </div>
         ))}
