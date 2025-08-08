@@ -11,12 +11,12 @@ const HeroSlideshow = () => {
       <div className="relative w-full">
         <div className="max-w-4xl mx-auto px-4 h-full flex flex-col justify-center">
           {/* Fixed Image - Centered */}
-          <div className="flex justify-center mb-4 md:mb-6 lg:mb-8 mt-2 md:mt-4 px-4">
-            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+          <div className="flex justify-center mb-6 md:mb-8 mt-4">
+            <div className="flex-shrink-0">
               <img 
                 src={fixedImage.image} 
                 alt={fixedImage.alt} 
-                className="w-full h-auto object-contain" 
+                className="w-[42.84rem] h-[42.84rem] md:w-[48.96rem] md:h-[48.96rem] object-contain" 
               />
             </div>
           </div>
