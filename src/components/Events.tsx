@@ -55,9 +55,11 @@ const Events = () => {
         </div>
 
         {/* Events Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 items-stretch px-[10px]">
           {/* Literary Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -77,7 +79,9 @@ const Events = () => {
           </Card>
 
           {/* Cynoshow Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.1s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0.1s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -97,7 +101,9 @@ const Events = () => {
           </Card>
 
           {/* Fine Arts Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.2s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0.2s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -117,7 +123,9 @@ const Events = () => {
           </Card>
 
           {/* Commerce Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.3s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0.3s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -137,7 +145,9 @@ const Events = () => {
           </Card>
 
           {/* Performing Arts Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.4s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0.4s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
@@ -157,7 +167,9 @@ const Events = () => {
           </Card>
 
           {/* Sports Event */}
-          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{animationDelay: '0.5s'}}>
+          <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
+          animationDelay: '0.5s'
+        }}>
             <CardContent className="p-6 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:scale-110 transition-transform duration-300">
