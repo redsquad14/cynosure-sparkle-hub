@@ -91,7 +91,7 @@ const Team = () => {
                   
                 </div>
               </div>
-              <p className="mb-4 text-sm leading-relaxed flex-grow text-slate-50">🌟 Experience CYNOSURE 2023! </p>
+              <p className="mb-4 text-base leading-relaxed flex-grow text-slate-50">🌟 Experience CYNOSURE 2023! </p>
               <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1lT-CeYK7lU7_5Rggg9aW2eyxZ4TZShEU/view?usp=drive_link', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2023
