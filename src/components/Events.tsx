@@ -70,7 +70,7 @@ const Events = () => {
                   </div>
                 </div>
                 <p className="leading-relaxed text-slate-50 flex-1 mb-4">
-                  {event.description}
+                  🏆Where creativity meets competition and every student gets a chance to steal the spotlight and leave their mark!
                 </p>
                 <Button variant="outline" onClick={() => event.link ? window.open(event.link, '_blank') : alert('Link coming soon!')} disabled={!event.link} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                   Learn More ✨
