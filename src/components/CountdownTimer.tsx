@@ -39,13 +39,13 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <div className="flex gap-4 justify-center font-times">
+    <div className="flex gap-2 sm:gap-4 justify-center font-times">
       {timeUnits.map((unit, index) => (
-        <div key={unit.label} className="countdown-box p-4 text-center min-w-[80px]">
-          <div className="text-3xl md:text-4xl font-bold text-gradient mb-1">
+        <div key={unit.label} className="countdown-box p-2 sm:p-4 text-center min-w-[60px] sm:min-w-[80px]">
+          <div className="text-xl sm:text-3xl md:text-4xl font-bold text-gradient mb-1">
             {unit.value.toString().padStart(2, '0')}
           </div>
-          <div className="text-sm text-muted-foreground uppercase tracking-wider">
+          <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider">
             {unit.label}
           </div>
         </div>
