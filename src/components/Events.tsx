@@ -46,7 +46,7 @@ const Events = () => {
           <h2 className="text-5xl font-bold text-gradient mb-6 px-0 py-[20px] my-0">Events & Competitions</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             <Sparkles className="text-accent animate-pulse" />
-            <p className="text-xl text-primary font-semibold">Where Talents Collide and Stars Are Born</p>
+            <p className="text-xl text-primary font-semibold">Where Potential Meets Opportunity and Greatness Emerges</p>
             <Sparkles className="text-accent animate-pulse" />
           </div>
           <p className="text-lg max-w-3xl mx-auto text-slate-50">
