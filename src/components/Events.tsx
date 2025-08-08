@@ -197,7 +197,7 @@ const Events = () => {
                 <Users className="w-8 h-8 text-accent animate-pulse" />
                 <h3 className="text-3xl font-bold text-gradient">Team Events</h3>
               </div>
-              <p className="mb-4 text-lg text-slate-50">
+              <p className="mb-4 text-xl text-slate-50">
                 🤝 Some competitions allow inter-school collaborations! 
                 Make new friends while competing together. Because the best victories are shared ones!
               </p>
