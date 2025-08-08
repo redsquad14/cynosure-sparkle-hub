@@ -29,7 +29,7 @@ const Index = () => {
             <h1 className="font-times text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
               St. Gregorios High School
             </h1>
-            <h2 className="font-times text-lg sm:text-xl font-semibold text-accent lg:text-6xl text-center md:text-4xl">Presents</h2>
+            <h2 className="font-times text-lg sm:text-xl font-semibold text-accent lg:text-6xl text-center md:text-5xl">Presents</h2>
           </div>
         </div>
       </section>
