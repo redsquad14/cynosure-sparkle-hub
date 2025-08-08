@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="mb-4">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Calendar className="text-primary" />
-            <h3 className="text-2xl font-semibold text-gradient">September 26, 2025
+            <h3 className="font-semibold text-gradient text-3xl">September 26, 2025
           </h3>
             <Calendar className="text-primary" />
           </div>
