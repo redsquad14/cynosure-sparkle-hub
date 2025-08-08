@@ -110,7 +110,7 @@ const Events = () => {
                   <h3 className="text-xl font-bold text-gradient font-times">Fine Arts</h3>
                 </div>
               </div>
-              <EditableText initialText="🎨An interactive fine arts event where participants engage in hands-on creative activities exploring fashion, design, and art." className="leading-relaxed text-slate-50 flex-1 mb-4" />
+              <EditableText initialText="🎨An interactive fine arts event where participants engage in hands-on creative activities exploring fashion design and art." className="leading-relaxed text-slate-50 flex-1 mb-4" />
               <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1pW7xzPkGgmV-SB0zcW5Mtr8NJSxpTYfJ/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
