@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        /* Container for centering */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            padding: 20px;
+        }
+
+        /* Responsive image styles */
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .responsive-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Media queries for different screen sizes */
+        
+        /* Mobile devices (portrait) */
+        @media screen and (max-width: 480px) {
+            .image-container {
+                padding: 10px;
+                min-height: 40vh;
+            }
+            
+            .responsive-image {
+                max-width: 95%;
+                border-radius: 4px;
+            }
+        }
+
+        /* Mobile devices (landscape) and small tablets */
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .image-container {
+                padding: 15px;
+                min-height: 45vh;
+            }
+            
+            .responsive-image {
+                max-width: 90%;
+                border-radius: 6px;
+            }
+        }
+
+        /* Tablets */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .image-container {
+                padding: 20px;
+                min-height: 50vh;
+            }
+            
+            .responsive-image {
+                max-width: 85%;
+                border-radius: 8px;
+            }
+        }
+
+        /* Laptops and smaller desktops */
+        @media screen and (min-width: 1025px) and (max-width: 1440px) {
+            .image-container {
+                padding: 30px;
+                min-height: 60vh;
+            }
+            
+            .responsive-image {
+                max-width: 80%;
+                border-radius: 10px;
+            }
+        }
+
+        /* Large desktops */
+        @media screen and (min-width: 1441px) {
+            .image-container {
+                padding: 40px;
+                min-height: 70vh;
+            }
+            
+            .responsive-image {
+                max-width: 75%;
+                border-radius: 12px;
+            }
+        }
+
+        /* High DPI displays */
+        @media screen and (-webkit-min-device-pixel-ratio: 2),
+               screen and (min-resolution: 192dpi) {
+            .responsive-image {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+
+        /* Alternative responsive image wrapper approach */
+        .image-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Utility classes for different aspect ratios */
+        .aspect-16-9 {
+            aspect-ratio: 16/9;
+        }
+
+        .aspect-4-3 {
+            aspect-ratio: 4/3;
+        }
+
+        .aspect-1-1 {
+            aspect-ratio: 1/1;
+        }
+
+        /* Example with background image for hero sections */
+        .hero-image {
+            width: 100%;
+            height: 50vh;
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-image {
+                height: 30vh;
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 30px; color: #333;">Responsive Image Examples</h1>
+    
+    <!-- Method 1: Simple responsive image with container -->
+    <div class="image-container">
+        <img 
+            src="https://via.placeholder.com/1200x800" 
+            alt="Responsive image example" 
+            class="responsive-image"
+        >
+    </div>
+
+    <!-- Method 2: Image wrapper approach -->
+    <div class="image-wrapper">
+        <img 
+            src="https://via.placeholder.com/1600x900" 
+            alt="Wrapper method example"
+        >
+    </div>
+
+    <!-- Method 3: With aspect ratio control -->
+    <div class="image-wrapper aspect-16-9">
+        <img 
+            src="https://via.placeholder.com/1920x1080" 
+            alt="16:9 aspect ratio example"
+        >
+    </div>
+
+    <!-- Method 4: Background image for hero sections -->
+    <div class="hero-image"></div>
+
+    <!-- Method 5: Picture element for art direction -->
+    <div class="image-container">
+        <picture>
+            <source media="(max-width: 480px)" srcset="https://via.placeholder.com/480x320">
+            <source media="(max-width: 768px)" srcset="https://via.placeholder.com/768x512">
+            <source media="(max-width: 1024px)" srcset="https://via.placeholder.com/1024x683">
+            <img 
+                src="https://via.placeholder.com/1200x800" 
+                alt="Picture element example"
+                class="responsive-image"
+            >
+        </picture>
+    </div>
+</body>
+</html>
