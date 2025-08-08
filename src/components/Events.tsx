@@ -209,10 +209,7 @@ const Events = () => {
                 <Trophy className="w-8 h-8 text-primary animate-pulse" />
                 <h3 className="text-3xl font-bold text-gradient">Amazing Rewards</h3>
               </div>
-              <p className="mb-4 text-xl text-slate-50">
-                🏆 It's not just about winning - it's about celebrating every effort! 
-                Everyone goes home with memories, but winners get extra sparkle!
-              </p>
+              <p className="mb-4 text-xl text-slate-50">🏆 It's not just about winning - it's about celebrating every effort! Everyone goes home with memories, but winners get extra pride!</p>
               <ul className="space-y-2 text-base text-slate-50">
                 <li>🥇 Trophies & Certificates</li>
                 <li>🎁 Amazing Prizes like AirPods!</li>
