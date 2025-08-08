@@ -147,7 +147,7 @@ const Navbar = () => {
                         <p className="text-sm text-muted-foreground">
                           Individual Registration form for individuals and teams
                         </p>
-                        <span className="inline-block mt-1 px-2 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
+                        <span className="inline-block mt-1 px-2 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
                           Coming Soon
                         </span>
                       </div>
