@@ -182,7 +182,7 @@ const Events = () => {
               <p className="leading-relaxed text-slate-50 flex-1 mb-4">
                 ⚽Football, basketball, relays, and more — show your sporting spirit and unstoppable drive to win!
               </p>
-              <Button variant="outline" onClick={() => alert('Link coming soon!')} disabled className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
+              <Button variant="outline" onClick={() => window.open('https://drive.google.com/file/d/1vtXJitVC6L5TroVKosUHNpFfpT3uNvrj/view?usp=drive_link', '_blank')} className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary text-center text-lg">
                 Learn More ✨
               </Button>
             </CardContent>
