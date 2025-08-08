@@ -143,9 +143,14 @@ const Navbar = () => {
                         <Sparkles className="w-4 h-4 mr-2" />
                         IR Form
                       </Button>
-                      <p className="text-sm text-muted-foreground px-2">
-                        Individual Registration form for individuals and teams
-                      </p>
+                      <div className="px-2">
+                        <p className="text-sm text-muted-foreground">
+                          Individual Registration form for individuals and teams
+                        </p>
+                        <span className="inline-block mt-1 px-2 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
+                          Coming Soon
+                        </span>
+                      </div>
                     </div>
                   </DropdownMenuItem>
                 </div>
