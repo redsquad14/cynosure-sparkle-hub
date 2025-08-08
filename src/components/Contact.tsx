@@ -162,7 +162,7 @@ const Contact = () => {
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
                 </h3>
-                <p className="mb-4 text-slate-50">
+                <p className="mb-4 text-slate-50 mx-0 px-0">
                   One event. One location. All roads lead to:
                 </p>
                 <div className="space-y-2 text-sm mb-4">
