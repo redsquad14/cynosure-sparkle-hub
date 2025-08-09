@@ -9,7 +9,7 @@ const Contact = () => {
   return <section id="contact" className="pt-4 pb-20 px-4 relative">
       <div className="max-w-6xl mx-auto font-times">
         {/* Section Header */}
-        <div className="text-center mb-[54px]">
+        <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gradient mb-6 font-times">Contact Us</h2>
           <div className="flex items-center justify-center gap-2 mb-8">
             
@@ -21,7 +21,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 py-0 mx-0 my-0 px-0">
           {/* Left Side - Quick Reach and Quick Answers */}
-          <div className="space-y-8 px-[10px] mx-[7px] my-[106px]">
+          <div className="space-y-8">
             {/* Quick Contact */}
             <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
               <CardContent className="p-8 text-center max-w-md mx-auto">
@@ -153,8 +153,8 @@ const Contact = () => {
 
           {/* Right Side - Find Us in Mumbai */}
           <div>
-            <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30 h-full px-0 py-0 my-[120px]">
-              <CardContent className="p-6 text-center h-full flex flex-col justify-between mx-[12px] my-[60px]">
+            <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30 h-full">
+              <CardContent className="p-6 text-center mx-0 h-full flex flex-col justify-between">
                 <h3 className="text-3xl font-bold text-gradient mb-4 flex items-center justify-center gap-2 text-center">
                   <MapPin className="w-5 h-5 text-accent" />
                   Find Us in Mumbai! 🏙️
