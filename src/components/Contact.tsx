@@ -16,7 +16,7 @@ const Contact = () => {
             <p className="text-base sm:text-lg lg:text-xl text-primary font-semibold">We are Here for You!</p>
             
           </div>
-          <p className="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto text-slate-50 px-2">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
+          <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto text-slate-50 px-2">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 px-2 sm:px-4 lg:px-0 py-4 sm:py-6 lg:py-8">
