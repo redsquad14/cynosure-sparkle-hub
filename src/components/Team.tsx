@@ -132,7 +132,7 @@ const Team = () => {
                 </div>
               </div>
               <p className="mb-4 leading-relaxed flex-grow text-base text-slate-50">💥 Get ready for CYNOSURE 2025! </p>
-              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1jJcuwlCJ6K_6gYzsYApr9yO07LLPjleY/view?usp=sharing', '_blank')}>
+              <Button variant="gradient" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300 mt-auto" onClick={() => window.open('https://drive.google.com/file/d/1V2OzHSSgYLaHZ_CuxBCu-NgvqHdU8a6X/view?usp=sharing', '_blank')}>
                 <Download className="w-4 h-4 mr-2" />
                 Download 2025
               </Button>
