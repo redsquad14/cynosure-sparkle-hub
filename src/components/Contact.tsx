@@ -13,7 +13,7 @@ const Contact = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-4 sm:mb-6 font-times">Contact Us</h2>
           <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 lg:mb-8">
             
-            <p className="text-base sm:text-lg lg:text-xl text-primary font-semibold">We are Here for You!</p>
+            <p className="text-xl sm:text-2xl lg:text-3xl text-primary font-semibold">We are Here for You!</p>
             
           </div>
           <p className="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto text-slate-50 px-2">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
