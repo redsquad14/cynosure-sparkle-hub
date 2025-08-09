@@ -9,51 +9,51 @@ const Contact = () => {
   return <section id="contact" className="pt-4 pb-20 px-4 relative">
       <div className="max-w-6xl mx-auto font-times">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6 font-times">Contact Us</h2>
-          <div className="flex items-center justify-center gap-2 mb-8">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-4 sm:mb-6 font-times">Contact Us</h2>
+          <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 lg:mb-8">
             
-            <p className="text-xl text-primary font-semibold">We are Here for You!</p>
+            <p className="text-base sm:text-lg lg:text-xl text-primary font-semibold">We are Here for You!</p>
             
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
+          <p className="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto text-slate-50 px-2">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 py-0 mx-0 my-0 px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 px-2 sm:px-4 lg:px-0 py-4 sm:py-6 lg:py-8">
           {/* Left Side - Quick Reach and Quick Answers */}
           <div className="space-y-8">
             {/* Quick Contact */}
-            <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
-              <CardContent className="p-8 text-center max-w-md mx-auto">
-                <h3 className="text-3xl font-bold text-gradient mb-4">Quick Reach 🚀</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-full bg-primary/20">
-                      <Mail className="w-5 h-5 text-primary" />
+            <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 w-full">
+              <CardContent className="p-4 sm:p-6 lg:p-8 text-center w-full">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient mb-3 sm:mb-4">Quick Reach 🚀</h3>
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="p-1.5 sm:p-2 rounded-full bg-primary/20 flex-shrink-0">
+                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
-                    <div className="text-left">
-                      <p className="font-semibold text-foreground whitespace-nowrap text-lg">Email us</p>
-                      <a href="mailto:cynosure.stghs@gmail.com" className="text-lg text-white hover:text-accent transition-colors">cynosure.stghs@gmail.com</a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-full bg-accent/20">
-                      <Phone className="w-5 h-5 text-accent" />
-                    </div>
-                    <div className="text-left">
-                      <p className="font-semibold text-foreground text-lg">Call us</p>
-                      <a href="tel:9324747718" className="text-lg text-white hover:text-accent transition-colors">9324747718</a>
+                    <div className="text-left min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm sm:text-base lg:text-lg">Email us</p>
+                      <a href="mailto:cynosure.stghs@gmail.com" className="text-sm sm:text-base lg:text-lg text-white hover:text-accent transition-colors break-all">cynosure.stghs@gmail.com</a>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-full bg-secondary/20">
-                      <Instagram className="w-5 h-5 text-secondary" />
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="p-1.5 sm:p-2 rounded-full bg-accent/20 flex-shrink-0">
+                      <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                     </div>
-                    <div className="text-left">
-                      <p className="font-semibold text-foreground text-lg">Follow us</p>
-                      <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-lg text-white hover:text-accent transition-colors">@cynosure.stghs</a>
+                    <div className="text-left min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm sm:text-base lg:text-lg">Call us</p>
+                      <a href="tel:9324747718" className="text-sm sm:text-base lg:text-lg text-white hover:text-accent transition-colors">9324747718</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="p-1.5 sm:p-2 rounded-full bg-secondary/20 flex-shrink-0">
+                      <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
+                    </div>
+                    <div className="text-left min-w-0 flex-1">
+                      <p className="font-semibold text-foreground text-sm sm:text-base lg:text-lg">Follow us</p>
+                      <a href="https://www.instagram.com/cynosure.stghs?utm_source=ig_web_button_share_sheet&igsh=MWhtY2luN3BrY3k2ZA==" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base lg:text-lg text-white hover:text-accent transition-colors break-all">@cynosure.stghs</a>
                     </div>
                   </div>
                 </div>
@@ -61,10 +61,10 @@ const Contact = () => {
             </Card>
 
             {/* FAQ Snippet */}
-            <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gradient mb-4 text-center">Quick Answers 💡</h3>
-                <div className="space-y-3 text-sm">
+            <Card className="card-hover bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/30 w-full">
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-gradient mb-3 sm:mb-4 text-center">Quick Answers 💡</h3>
+                <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                   <div>
                     <p className="font-semibold text-accent">⏰ What is the reporting time for participants?</p>
                     <p className="text-muted-foreground">All participants must report by 7:30 a.m. on both days and complete general registration on arrival.</p>
@@ -153,24 +153,31 @@ const Contact = () => {
 
           {/* Right Side - Find Us in Mumbai */}
           <div>
-            <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30 h-full">
-              <CardContent className="p-6 text-center mx-0 h-full flex flex-col justify-between">
-                <h3 className="text-3xl font-bold text-gradient mb-4 flex items-center justify-center gap-2 text-center">
-                  <MapPin className="w-5 h-5 text-accent" />
-                  Find Us in Mumbai! 🏙️
-                </h3>
-                <p className="mb-4 text-slate-50 text-2xl">One event. 
+            <Card className="card-hover bg-gradient-to-br from-accent/10 to-secondary/10 border-accent/30 h-full w-full">
+              <CardContent className="p-4 sm:p-6 text-center h-full flex flex-col justify-between">
+                <div className="flex-1">
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gradient mb-3 sm:mb-4 flex items-center justify-center gap-2 text-center">
+                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0" />
+                    <span className="break-words">Find Us in Mumbai! 🏙️</span>
+                  </h3>
+                  <p className="mb-3 sm:mb-4 text-slate-50 text-sm sm:text-lg lg:text-2xl">One event. 
 One location. All roads lead to:</p>
-                <div className="space-y-1 text-2xl mb-4">
-                  <p className="text-accent font-semibold text-3xl -mt-2">📍 St Gregorios High School</p>
-                   <p className="text-gray-50 text-lg mt-2">N . B. Patil Marg,   Ghatla,   Chembur, Mumbai - 400071,  Maharashtra, India</p>
+                  <div className="space-y-1 mb-3 sm:mb-4">
+                    <p className="text-accent font-semibold text-lg sm:text-2xl lg:text-3xl">📍 St Gregorios High School</p>
+                     <p className="text-gray-50 text-xs sm:text-sm lg:text-lg px-2">N . B. Patil Marg, Ghatla, Chembur, Mumbai - 400071, Maharashtra, India</p>
+                  </div>
                 </div>
                 
                 {/* Google Map */}
-                <div className="flex justify-center">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3007003604725!2d72.9077488!3d19.050512299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c60508681da9%3A0xe7ce066a06e48b92!2sSt%20Gregorios%20High%20School%2C%20New%20Building%20Premises!5e0!3m2!1sen!2sin!4v1753685586510!5m2!1sen!2sin" width="400" height="300" style={{
-                  border: 0
-                }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg shadow-md" />
+                <div className="flex justify-center w-full">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3007003604725!2d72.9077488!3d19.050512299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c60508681da9%3A0xe7ce066a06e48b92!2sSt%20Gregorios%20High%20School%2C%20New%20Building%20Premises!5e0!3m2!1sen!2sin!4v1753685586510!5m2!1sen!2sin" 
+                    className="w-full max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg h-48 sm:h-56 lg:h-64 xl:h-72 rounded-lg shadow-md" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade" 
+                  />
                 </div>
               </CardContent>
             </Card>
