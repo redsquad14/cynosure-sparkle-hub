@@ -19,7 +19,7 @@ const Contact = () => {
           <p className="text-lg max-w-3xl mx-auto text-slate-50">💌 Curious, confused or simply thrilled about CYNOSURE?  We have got you covered! Reach out to us - let us turn your excitement into something unforgettable!✨</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 px-[10px] py-px">
+        <div className="grid lg:grid-cols-2 gap-8 mx-[45px] my-[5px] px-[22px] py-0">
           {/* Left Side - Quick Reach and Quick Answers */}
           <div className="space-y-8">
             {/* Quick Contact */}
