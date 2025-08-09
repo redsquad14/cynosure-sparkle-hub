@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto font-times">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-4">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-4 sm:mb-6 font-times">Contact Us</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient mb-4 sm:mb-6 font-times">Contact Us</h2>
           <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6 lg:mb-8">
             
             <p className="text-xl sm:text-2xl lg:text-3xl text-primary font-semibold">We are Here for You!</p>
