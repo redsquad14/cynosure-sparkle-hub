@@ -36,8 +36,8 @@ const SlideshowGallery = () => {
     alt: 'CYNOSURE Video 2'
   }, {
     type: 'image',
-    src: '/lovable-uploads/352ce547-eba9-41a2-aac0-02181af7e509.png',
-    alt: 'CYNOSURE Group Photo'
+    src: '/lovable-uploads/457b5760-b68b-4694-93c1-e3cfab610c19.png',
+    alt: 'CYNOSURE Event Collage'
   }, {
     type: 'video',
     src: '/vid7.mp4',
