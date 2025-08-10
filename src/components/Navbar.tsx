@@ -90,19 +90,19 @@ const Navbar = () => {
     setIsOpen(false); // Close mobile menu
   };
   return <nav className="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-lg border-b border-primary/20 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+        <div className="flex items-center justify-between h-12 sm:h-14 md:h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-3">
             
-            <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="h-12 w-12 object-contain" />
+            <img src="/lovable-uploads/91005844-b2a4-4275-972d-0c502cb74f15.png" alt="CYNOSURE Logo" className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 object-contain" />
             
-            <span className="text-2xl text-gradient font-bold">CYNOSURE</span>
+            <span className="text-lg sm:text-xl md:text-2xl text-gradient font-bold">CYNOSURE</span>
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map(item => <a key={item.name} href={item.href} onClick={e => handleNavClick(e, item.id)} className={`text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-primary/10 ${isScrolling ? 'pointer-events-none opacity-70' : ''}`}>
+            <div className="ml-4 lg:ml-10 flex items-baseline space-x-2 lg:space-x-4">
+              {navItems.map(item => <a key={item.name} href={item.href} onClick={e => handleNavClick(e, item.id)} className={`text-foreground hover:text-primary px-2 lg:px-3 py-1 lg:py-2 rounded-md text-xs lg:text-sm font-medium transition-all duration-300 hover:bg-primary/10 ${isScrolling ? 'pointer-events-none opacity-70' : ''}`}>
                   {item.name}
                 </a>)}
             </div>

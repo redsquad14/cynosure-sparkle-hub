@@ -54,7 +54,7 @@ const Events = () => {
         </div>
 
         {/* Events Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 items-stretch px-[10px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 lg:mb-16 items-stretch px-2 sm:px-4 lg:px-[10px]">
           {/* Literary Event */}
           <Card className="card-hover bg-gradient-to-br from-card to-muted/10 border-primary/20 group h-full flex flex-col" style={{
           animationDelay: '0s'
@@ -181,18 +181,18 @@ const Events = () => {
         </div>
 
         {/* Special Features */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 lg:mb-16">
           <Card className="card-hover bg-gradient-to-br from-accent/10 to-primary/10 border-accent/30">
-            <CardContent className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Users className="w-8 h-8 text-accent animate-pulse" />
-                <h3 className="text-3xl font-bold text-gradient">Team Events</h3>
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <Users className="w-6 h-6 sm:w-8 sm:h-8 text-accent animate-pulse flex-shrink-0" />
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient text-center sm:text-left">Team Events</h3>
               </div>
-              <p className="mb-4 text-xl text-slate-50">
+              <p className="mb-3 sm:mb-4 text-sm sm:text-base lg:text-xl text-slate-50">
                 🤝 Some competitions allow inter-school collaborations! 
                 Make new friends while competing together. Because the best victories are shared ones!
               </p>
-               <ul className="space-y-2 text-base text-slate-50">
+               <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm lg:text-base text-slate-50">
                 <li>✨ Group Dance Battles</li>
                 <li>✨ Band Competitions</li>
                 <li>✨ Debate Competitions</li>
@@ -202,13 +202,13 @@ const Events = () => {
           </Card>
 
           <Card className="card-hover bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/30">
-            <CardContent className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Trophy className="w-8 h-8 text-primary animate-pulse" />
-                <h3 className="text-3xl font-bold text-gradient">Amazing Rewards</h3>
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <Trophy className="w-6 h-6 sm:w-8 sm:h-8 text-primary animate-pulse flex-shrink-0" />
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient text-center sm:text-left">Amazing Rewards</h3>
               </div>
-              <p className="mb-4 text-xl text-slate-50">🏆 It's not just about winning - it's about celebrating every effort! Everyone goes home with memories, but winners get extra pride!</p>
-              <ul className="space-y-2 text-base text-slate-50">
+              <p className="mb-3 sm:mb-4 text-sm sm:text-base lg:text-xl text-slate-50">🏆 It's not just about winning - it's about celebrating every effort! Everyone goes home with memories, but winners get extra pride!</p>
+              <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm lg:text-base text-slate-50">
                 <li>🥇 Trophies & Certificates</li>
                 <li>🎁 Amazing Prizes like AirPods!</li>
                 <li>🌟 Recognition & Fame</li>

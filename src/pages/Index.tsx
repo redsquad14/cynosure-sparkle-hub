@@ -14,7 +14,7 @@ const Index = () => {
   return <div className="min-h-screen bg-background relative overflow-x-hidden">
       <StarField />
       <Navbar />
-      <div id="top"></div>
+      <div id="top" className="pt-12 sm:pt-14 md:pt-16"></div>
       
       
       <HeroSlideshow />

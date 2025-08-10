@@ -93,7 +93,7 @@ const FullWidthSlideshow = () => {
   const handleMouseLeave = () => setIsAutoPlaying(true);
 
   return (
-    <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden group bg-black mt-16 z-10" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] overflow-hidden group bg-black mt-12 sm:mt-14 md:mt-16 z-10" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
@@ -108,12 +108,12 @@ const FullWidthSlideshow = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <Button variant="ghost" size="icon" className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-none opacity-0 group-hover:opacity-100 transition-all duration-300 h-12 w-12" onClick={goToPrevious}>
-        <ChevronLeft className="h-6 w-6" />
+      <Button variant="ghost" size="icon" className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-none opacity-0 group-hover:opacity-100 transition-all duration-300 h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" onClick={goToPrevious}>
+        <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
       </Button>
 
-      <Button variant="ghost" size="icon" className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-none opacity-0 group-hover:opacity-100 transition-all duration-300 h-12 w-12" onClick={goToNext}>
-        <ChevronRight className="h-6 w-6" />
+      <Button variant="ghost" size="icon" className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white border-none opacity-0 group-hover:opacity-100 transition-all duration-300 h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" onClick={goToNext}>
+        <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
       </Button>
 
       {/* Progress Bar */}

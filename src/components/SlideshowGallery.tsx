@@ -117,24 +117,24 @@ const SlideshowGallery = () => {
   };
   const currentItem = galleryItems[currentIndex];
   const lightboxItem = galleryItems[lightboxIndex];
-  return <section id="gallery" className="pt-4 pb-20 px-4 relative scroll-mt-20 font-times">
+  return <section id="gallery" className="pt-4 pb-12 sm:pb-16 lg:pb-20 px-2 sm:px-4 lg:px-6 relative scroll-mt-16 sm:scroll-mt-20 font-times">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gradient mb-6 my-0 py-[12px]">Gallery</h2>
-          <div className="flex items-center justify-center gap-2 mb-8">
-            <Camera className="text-primary animate-pulse" />
-            <p className="text-2xl text-accent font-semibold">Moments That Sparkle Forever</p>
-            <Camera className="text-primary animate-pulse" />
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient mb-4 sm:mb-6 my-0 py-2 sm:py-[12px]">Gallery</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-4 sm:mb-6 lg:mb-8 px-2">
+            <Camera className="text-primary animate-pulse w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 flex-shrink-0" />
+            <p className="text-sm sm:text-lg lg:text-2xl text-accent font-semibold text-center">Moments That Sparkle Forever</p>
+            <Camera className="text-primary animate-pulse w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 flex-shrink-0" />
           </div>
-          <p className="text-lg max-w-3xl mx-auto text-slate-50">📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, every video captures a dream and every moment here is pure gold! ✨</p>
+          <p className="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto text-slate-50 px-2">📸 Relive the magic of past CYNOSURE festivals! Every photo tells a story, every video captures a dream and every moment here is pure gold! ✨</p>
         </div>
 
         {/* Main Slideshow - Even Larger and More Cinematic */}
-        <div className="mb-16">
+        <div className="mb-8 sm:mb-12 lg:mb-16">
           <Card className="overflow-hidden bg-gradient-to-br from-card via-card/95 to-muted/20 border-primary/30 shadow-2xl shadow-primary/10">
             <CardContent className="p-0">
-              <div className="relative h-[85vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
+              <div className="relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[85vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
                 {currentItem.type === 'video' ? <>
                     <video src={currentItem.src} preload="metadata" className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" style={{
                   objectFit: 'cover'

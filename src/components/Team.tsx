@@ -52,13 +52,13 @@ const Team = () => {
     talent: "Can organize chaos into perfection! 📋",
     icon: Users
   }];
-  return <section id="brochures" className="py-20 bg-card/30 relative font-times">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-gradient">Brochures</h2>
+  return <section id="brochures" className="py-12 sm:py-16 lg:py-20 bg-card/30 relative font-times">
+      <div className="max-w-6xl mx-auto px-2 sm:px-4 lg:px-6">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-gradient">Brochures</h2>
           
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {/* 2022 Brochures */}
           <Card className="card-hover bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20 group h-full">
             <CardContent className="p-6 text-center h-full flex flex-col">
