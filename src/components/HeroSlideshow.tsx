@@ -9,12 +9,12 @@ const HeroSlideshow = () => {
           </div>
           
           {/* Text instead of image - Times New Roman font with greenish color for school name */}
-          <div className="flex justify-center mb-6 md:mb-8 mt-4 my-0">
-            <div className="flex-shrink-0">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-times text-center leading-tight">
-                <span className="text-green-400">St. Gregorios High School</span>
-                <br />
-                <span className="text-3xl md:text-5xl lg:text-6xl text-accent">Presents</span>
+          <div className="flex justify-center mb-4 sm:mb-6 md:mb-8 mt-2 sm:mt-4 mx-2 sm:mx-4">
+            <div className="flex-shrink-0 max-w-full px-2 sm:px-4">
+              <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold font-times text-center leading-tight break-words">
+                <span className="text-green-400 block sm:inline">St. Gregorios High School</span>
+                <br className="hidden sm:block" />
+                <span className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-accent block sm:inline">Presents</span>
               </h1>
             </div>
           </div>
