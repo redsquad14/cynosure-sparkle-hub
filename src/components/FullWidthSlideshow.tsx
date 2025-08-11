@@ -21,13 +21,6 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/6c6a2963-5747-4aea-8a22-c4b83fcd598a.png',
-      alt: 'St. Gregorios High School CYNOSURE Team',
-      title: 'CYNOSURE Community',
-      description: 'St. Gregorios High School presents CYNOSURE - Our amazing team and participants'
-    },
-    {
-      type: 'image',
       src: '/lovable-uploads/98f06016-c362-40a1-8f95-875bc4e1e3bd.png',
       alt: 'CYNOSURE 2024 Floor Art',
       title: 'CYNOSURE 2024',
@@ -60,6 +53,13 @@ const FullWidthSlideshow = () => {
       alt: 'CYNOSURE Event Collage',
       title: 'CYNOSURE Highlights',
       description: 'A collection of memorable moments from CYNOSURE events including performances, competitions and celebrations'
+    },
+    {
+      type: 'image',
+      src: '/lovable-uploads/6c6a2963-5747-4aea-8a22-c4b83fcd598a.png',
+      alt: 'St. Gregorios High School CYNOSURE Team',
+      title: 'CYNOSURE Community',
+      description: 'St. Gregorios High School presents CYNOSURE - Our amazing team and participants'
     }
   ];
 
