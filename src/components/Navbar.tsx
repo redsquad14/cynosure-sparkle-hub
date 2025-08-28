@@ -140,7 +140,7 @@ const Navbar = () => {
                         I.R FORM
                       </Button>
                       <p className="text-sm text-muted-foreground px-2">
-                        This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
+                        This registration form is for independent teams or individuals.
                       </p>
                     </div>
                   </DropdownMenuItem>
@@ -193,7 +193,7 @@ const Navbar = () => {
                           I.R FORM
                         </Button>
                         <p className="text-sm text-muted-foreground px-2">
-                          This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
+                          This registration form is for independent teams or individuals.
                         </p>
                       </div>
                     </DropdownMenuItem>
