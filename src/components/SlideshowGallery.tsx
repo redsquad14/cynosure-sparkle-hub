@@ -201,7 +201,15 @@ const SlideshowGallery = () => {
                   </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
-                    
+                    <div className="w-full">
+                      <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        I.R FORM
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
+                      </p>
+                    </div>
                   </DropdownMenuItem>
                 </div>
               </DropdownMenuContent>
