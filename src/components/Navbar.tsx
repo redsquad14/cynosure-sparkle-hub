@@ -130,13 +130,11 @@ const Navbar = () => {
                       <p className="text-sm text-muted-foreground px-2">
                         Primary registration form for general participants and students
                       </p>
-                      <Button variant="outline" className="w-full mt-2 border-primary/30 hover:bg-primary/10 text-sm" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                        I.R Form
-                      </Button>
-                      <p className="text-xs text-muted-foreground px-2 mt-1">
-                        This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
-                      </p>
                     </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem asChild className="p-0">
+                    
                   </DropdownMenuItem>
                 </div>
               </DropdownMenuContent>
@@ -176,12 +174,6 @@ const Navbar = () => {
                         </Button>
                         <p className="text-sm text-muted-foreground px-2">
                           Primary registration form for general participants
-                        </p>
-                        <Button variant="outline" className="w-full mt-2 border-primary/30 hover:bg-primary/10 text-sm" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                          I.R Form
-                        </Button>
-                        <p className="text-xs text-muted-foreground px-2 mt-1">
-                          This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
                         </p>
                       </div>
                     </DropdownMenuItem>
