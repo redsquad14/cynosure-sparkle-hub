@@ -134,7 +134,15 @@ const Navbar = () => {
                   </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
-                    
+                    <div className="w-full">
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        I.R FORM
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
+                      </p>
+                    </div>
                   </DropdownMenuItem>
                 </div>
               </DropdownMenuContent>
@@ -178,6 +186,17 @@ const Navbar = () => {
                       </div>
                     </DropdownMenuItem>
                     
+                    <DropdownMenuItem asChild className="p-0">
+                      <div className="w-full">
+                        <Button variant="gradient" className="w-full mb-2">
+                          <Sparkles className="w-4 h-4 mr-2" />
+                          I.R FORM
+                        </Button>
+                        <p className="text-sm text-muted-foreground px-2">
+                          This registration form is for independent teams or individuals who are interested in participating in Cynosure 4.0
+                        </p>
+                      </div>
+                    </DropdownMenuItem>
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
