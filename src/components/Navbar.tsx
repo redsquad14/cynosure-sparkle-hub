@@ -132,6 +132,18 @@ const Navbar = () => {
                       </p>
                     </div>
                   </DropdownMenuItem>
+
+                  <DropdownMenuItem asChild className="p-0">
+                    <div className="w-full">
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        FORM 2
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
+                      </p>
+                    </div>
+                  </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
@@ -182,6 +194,18 @@ const Navbar = () => {
                         </Button>
                         <p className="text-sm text-muted-foreground px-2">
                           Primary registration form for general participants
+                        </p>
+                      </div>
+                    </DropdownMenuItem>
+
+                    <DropdownMenuItem asChild className="p-0">
+                      <div className="w-full">
+                        <Button variant="gradient" className="w-full mb-2">
+                          <Sparkles className="w-4 h-4 mr-2" />
+                          FORM 2
+                        </Button>
+                        <p className="text-sm text-muted-foreground px-2">
+                          This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
                         </p>
                       </div>
                     </DropdownMenuItem>
