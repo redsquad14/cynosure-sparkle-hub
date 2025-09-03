@@ -202,7 +202,7 @@ const SlideshowGallery = () => {
 
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2">
+                      <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 2
                       </Button>
