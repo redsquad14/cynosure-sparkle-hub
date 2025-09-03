@@ -135,7 +135,7 @@ const Navbar = () => {
 
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2">
+                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 2
                       </Button>
