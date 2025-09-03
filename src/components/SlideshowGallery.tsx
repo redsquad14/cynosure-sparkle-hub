@@ -199,6 +199,18 @@ const SlideshowGallery = () => {
                       </p>
                     </div>
                   </DropdownMenuItem>
+
+                  <DropdownMenuItem asChild className="p-0">
+                    <div className="w-full">
+                      <Button variant="gradient" size="lg" className="w-full text-lg px-8 py-6 text-slate-950 mb-2">
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        FORM 2
+                      </Button>
+                      <p className="text-sm text-muted-foreground px-2">
+                        This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
+                      </p>
+                    </div>
+                  </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
                     <div className="w-full">
