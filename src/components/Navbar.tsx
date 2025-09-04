@@ -119,39 +119,39 @@ const Navbar = () => {
                   Register Now!
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                <div className="space-y-4">
+              <DropdownMenuContent className="w-96 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+                <div className="space-y-3">
                   <DropdownMenuItem asChild className="p-0">
-                    <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
+                    <div className="flex items-center gap-4">
+                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 1
                       </Button>
-                      <p className="text-sm text-muted-foreground px-2">
+                      <p className="text-sm text-muted-foreground flex-1">
                         Primary registration form for general participants and students
                       </p>
                     </div>
                   </DropdownMenuItem>
 
                   <DropdownMenuItem asChild className="p-0">
-                    <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
+                    <div className="flex items-center gap-4">
+                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         FORM 2
                       </Button>
-                      <p className="text-sm text-muted-foreground px-2">
+                      <p className="text-sm text-muted-foreground flex-1">
                         This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
                       </p>
                     </div>
                   </DropdownMenuItem>
                   
                   <DropdownMenuItem asChild className="p-0">
-                    <div className="w-full">
-                      <Button variant="default" className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
+                    <div className="flex items-center gap-4">
+                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
                         <Sparkles className="w-4 h-4 mr-2" />
                         I.R FORM
                       </Button>
-                      <p className="text-sm text-muted-foreground px-2">
+                      <p className="text-sm text-muted-foreground flex-1">
                         This registration form is for independent teams or individuals.
                       </p>
                     </div>
@@ -184,39 +184,39 @@ const Navbar = () => {
                     Register Now
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-72 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                  <div className="space-y-4">
+                <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+                  <div className="space-y-3">
                     <DropdownMenuItem asChild className="p-0">
-                      <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
                           <Sparkles className="w-4 h-4 mr-2" />
                           FORM 1
                         </Button>
-                        <p className="text-sm text-muted-foreground px-2">
+                        <p className="text-sm text-muted-foreground flex-1">
                           Primary registration form for general participants
                         </p>
                       </div>
                     </DropdownMenuItem>
 
                     <DropdownMenuItem asChild className="p-0">
-                      <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
                           <Sparkles className="w-4 h-4 mr-2" />
                           FORM 2
                         </Button>
-                        <p className="text-sm text-muted-foreground px-2">
+                        <p className="text-sm text-muted-foreground flex-1">
                           This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
                         </p>
                       </div>
                     </DropdownMenuItem>
                     
                     <DropdownMenuItem asChild className="p-0">
-                      <div className="w-full">
-                        <Button variant="gradient" className="w-full mb-2" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
                           <Sparkles className="w-4 h-4 mr-2" />
                           I.R FORM
                         </Button>
-                        <p className="text-sm text-muted-foreground px-2">
+                        <p className="text-sm text-muted-foreground flex-1">
                           This registration form is for independent teams or individuals.
                         </p>
                       </div>
