@@ -195,7 +195,7 @@ const SlideshowGallery = () => {
         {showRegistration && (
           <div className="mt-12 mx-auto max-w-7xl animate-fade-in">
             <div className="bg-gradient-to-br from-black/80 via-black/90 to-black/95 backdrop-blur-md border border-primary/30 rounded-2xl p-8 sm:p-12 shadow-2xl shadow-primary/20">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 items-stretch justify-items-center max-w-6xl mx-auto">
                 
                 {/* FORM 1 Card */}
                 <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
