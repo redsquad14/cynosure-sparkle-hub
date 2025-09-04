@@ -195,59 +195,57 @@ const SlideshowGallery = () => {
         {showRegistration && (
           <div className="mt-12 mx-auto max-w-7xl animate-fade-in">
             <div className="bg-gradient-to-br from-black/80 via-black/90 to-black/95 backdrop-blur-md border border-primary/30 rounded-2xl p-8 sm:p-12 shadow-2xl shadow-primary/20">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 items-stretch justify-items-center max-w-6xl mx-auto">
+              <div className="flex flex-col items-center justify-center space-y-8">
                 
-                {/* FORM 1 Card */}
-                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
-                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">FORM 1</h4>
-                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
-                    Primary registration form for general participants and students. Last day to fill the form is 8th September 2025.
-                  </p>
-                  <Button 
-                    variant="gradient" 
-                    size="lg" 
-                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
-                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    REGISTER
-                  </Button>
-                </div>
+                {/* Form Buttons Row */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-12 w-full max-w-5xl mx-auto">
+                  
+                  <div className="flex flex-col items-center text-center space-y-3 min-w-[200px]">
+                    <h4 className="text-xl sm:text-2xl font-bold text-primary glow-text">FORM 1</h4>
+                    <p className="text-sm text-slate-50/80 mb-2">General Participants</p>
+                    <Button 
+                      variant="gradient" 
+                      size="lg" 
+                      className="w-full text-xl font-bold px-8 py-4 text-slate-950 hover:scale-105 transition-transform duration-200" 
+                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}
+                    >
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      REGISTER
+                    </Button>
+                    <p className="text-xs text-slate-50/60">Deadline: 8th September 2025</p>
+                  </div>
 
-                {/* FORM 2 Card */}
-                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
-                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">FORM 2</h4>
-                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
-                    This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1). Last day to fill the form is 22nd September 2025.
-                  </p>
-                  <Button 
-                    variant="gradient" 
-                    size="lg" 
-                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
-                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    REGISTER
-                  </Button>
-                </div>
-                
-                {/* I.R FORM Card */}
-                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
-                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">I.R. Form</h4>
-                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
-                    This registration form is for independent teams or individuals.
-                  </p>
-                  <Button 
-                    variant="gradient" 
-                    size="lg" 
-                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
-                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}
-                  >
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    REGISTER
-                  </Button>
-                </div>
+                  <div className="flex flex-col items-center text-center space-y-3 min-w-[200px]">
+                    <h4 className="text-xl sm:text-2xl font-bold text-primary glow-text">FORM 2</h4>
+                    <p className="text-sm text-slate-50/80 mb-2">School Entries</p>
+                    <Button 
+                      variant="gradient" 
+                      size="lg" 
+                      className="w-full text-xl font-bold px-8 py-4 text-slate-950 hover:scale-105 transition-transform duration-200" 
+                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}
+                    >
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      REGISTER
+                    </Button>
+                    <p className="text-xs text-slate-50/60">Deadline: 22nd September 2025</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center text-center space-y-3 min-w-[200px]">
+                    <h4 className="text-xl sm:text-2xl font-bold text-primary glow-text">I.R. Form</h4>
+                    <p className="text-sm text-slate-50/80 mb-2">Independent Teams</p>
+                    <Button 
+                      variant="gradient" 
+                      size="lg" 
+                      className="w-full text-xl font-bold px-8 py-4 text-slate-950 hover:scale-105 transition-transform duration-200" 
+                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}
+                    >
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      REGISTER
+                    </Button>
+                    <p className="text-xs text-slate-50/60">For Independent Teams</p>
+                  </div>
 
+                </div>
               </div>
             </div>
           </div>
