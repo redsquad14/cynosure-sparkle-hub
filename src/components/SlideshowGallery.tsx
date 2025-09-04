@@ -218,7 +218,7 @@ const SlideshowGallery = () => {
                 <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
                   <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">FORM 2</h4>
                   <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
-                    This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1).
+                    This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1). Last day to fill the form is 22nd September 2025.
                   </p>
                   <Button 
                     variant="gradient" 
