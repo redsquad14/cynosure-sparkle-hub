@@ -68,6 +68,7 @@ const SlideshowGallery = () => {
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [userInteracted, setUserInteracted] = useState(false);
+  const [showRegistration, setShowRegistration] = useState(false);
 
   // Auto-advance slideshow
   useEffect(() => {
@@ -176,52 +177,81 @@ const SlideshowGallery = () => {
         <div className="text-center">
           <h3 className="text-3xl font-bold text-gradient mb-4">Create Your Own Memories! </h3>
           <p className="mb-6 text-xl text-slate-50">Join CYNOSURE 2025 and become part of our family!</p>
-          <div className="flex justify-center">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="gradient" size="lg" className="text-lg px-8 py-6 text-slate-950 animate-pulse flex items-center justify-center" style={{
-                animationDuration: '0.8s'
-              }}>
-                  <Star className="w-4 h-4 mr-2 fill-current" />
-                  REGISTER NOW!
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-[800px] p-6 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                      <Sparkles className="w-5 h-5 mr-2" />
-                      FORM 1
-                    </Button>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Primary registration form for general participants and students
-                    </p>
-                  </div>
-
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
-                      <Sparkles className="w-5 h-5 mr-2" />
-                      FORM 2
-                    </Button>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1).
-                    </p>
-                  </div>
-                  
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
-                      <Sparkles className="w-5 h-5 mr-2" />
-                      I.R FORM
-                    </Button>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      This registration form is for independent teams or individuals.
-                    </p>
-                  </div>
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+          <div className="flex justify-center mb-8">
+            <Button 
+              variant="gradient" 
+              size="lg" 
+              className="text-lg px-8 py-6 text-slate-950 animate-pulse flex items-center justify-center" 
+              style={{animationDuration: '0.8s'}}
+              onClick={() => setShowRegistration(!showRegistration)}
+            >
+              <Star className="w-4 h-4 mr-2 fill-current" />
+              REGISTER NOW!
+            </Button>
           </div>
         </div>
+
+        {/* Registration Section */}
+        {showRegistration && (
+          <div className="mt-12 mx-auto max-w-7xl animate-fade-in">
+            <div className="bg-gradient-to-br from-black/80 via-black/90 to-black/95 backdrop-blur-md border border-primary/30 rounded-2xl p-8 sm:p-12 shadow-2xl shadow-primary/20">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                
+                {/* FORM 1 Card */}
+                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">FORM 1</h4>
+                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
+                    Primary registration form for general participants and students
+                  </p>
+                  <Button 
+                    variant="gradient" 
+                    size="lg" 
+                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}
+                  >
+                    <Sparkles className="w-5 h-5 mr-2" />
+                    REGISTER
+                  </Button>
+                </div>
+
+                {/* FORM 2 Card */}
+                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">FORM 2</h4>
+                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
+                    This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1).
+                  </p>
+                  <Button 
+                    variant="gradient" 
+                    size="lg" 
+                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}
+                  >
+                    <Sparkles className="w-5 h-5 mr-2" />
+                    REGISTER
+                  </Button>
+                </div>
+                
+                {/* I.R FORM Card */}
+                <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
+                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">I.R FORM</h4>
+                  <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
+                    This registration form is for independent teams or individuals.
+                  </p>
+                  <Button 
+                    variant="gradient" 
+                    size="lg" 
+                    className="w-full text-lg px-6 py-4 text-slate-950 font-bold hover:scale-105 transition-transform duration-200" 
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}
+                  >
+                    <Sparkles className="w-5 h-5 mr-2" />
+                    REGISTER
+                  </Button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}
