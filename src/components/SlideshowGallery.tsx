@@ -233,7 +233,7 @@ const SlideshowGallery = () => {
                 
                 {/* I.R FORM Card */}
                 <div className="bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/30 rounded-xl p-6 sm:p-8 text-center hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
-                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">I.R FORM</h4>
+                  <h4 className="text-2xl sm:text-3xl font-bold text-primary mb-4 glow-text">I.R. Form</h4>
                   <p className="text-base sm:text-lg text-slate-50 leading-relaxed mb-6">
                     This registration form is for independent teams or individuals.
                   </p>
