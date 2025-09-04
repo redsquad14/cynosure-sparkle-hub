@@ -186,43 +186,37 @@ const SlideshowGallery = () => {
                   REGISTER NOW!
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-96 p-6 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex flex-col items-center text-center">
-                      <Button variant="gradient" size="lg" className="text-sm px-4 py-3 text-slate-950 mb-2 w-full md:w-auto" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        FORM 1
-                      </Button>
-                      <p className="text-xs text-muted-foreground max-w-28">
-                        Primary registration form for general participants and students
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
+              <DropdownMenuContent className="w-[800px] p-6 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
+                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      FORM 1
+                    </Button>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Primary registration form for general participants and students
+                    </p>
+                  </div>
 
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex flex-col items-center text-center">
-                      <Button variant="gradient" size="lg" className="text-sm px-4 py-3 text-slate-950 mb-2 w-full md:w-auto" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        FORM 2
-                      </Button>
-                      <p className="text-xs text-muted-foreground max-w-28">
-                        This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
+                  <div className="flex flex-col items-center text-center space-y-3">
+                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      FORM 2
+                    </Button>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      This form is for specifying the events and participant names for your school entries as per CG Registration 4.0 (Form 1).
+                    </p>
+                  </div>
                   
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex flex-col items-center text-center">
-                      <Button variant="gradient" size="lg" className="text-sm px-4 py-3 text-slate-950 mb-2 w-full md:w-auto" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        I.R FORM
-                      </Button>
-                      <p className="text-xs text-muted-foreground max-w-28">
-                        This registration form is for independent teams or individuals.
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
+                  <div className="flex flex-col items-center text-center space-y-3">
+                    <Button variant="gradient" size="lg" className="w-full text-base px-6 py-4 text-slate-950 font-semibold" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
+                      <Sparkles className="w-5 h-5 mr-2" />
+                      I.R FORM
+                    </Button>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      This registration form is for independent teams or individuals.
+                    </p>
+                  </div>
                 </div>
               </DropdownMenuContent>
             </DropdownMenu>
