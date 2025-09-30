@@ -116,7 +116,7 @@ const Navbar = () => {
                 animationDuration: '0.8s'
               }}>
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Register Now!
+                  Winner's List!
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-96 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
@@ -181,7 +181,7 @@ const Navbar = () => {
                 <DropdownMenuTrigger asChild>
                   <Button variant="gradient" className="w-full">
                     <Sparkles className="w-4 h-4 mr-2" />
-                    Register Now
+                    Winner's List!
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
