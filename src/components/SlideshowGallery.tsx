@@ -183,10 +183,10 @@ const SlideshowGallery = () => {
               size="lg" 
               className="text-lg px-8 py-6 text-slate-950 animate-pulse flex items-center justify-center" 
               style={{animationDuration: '0.8s'}}
-              onClick={() => setShowRegistration(!showRegistration)}
+              onClick={() => window.open('https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/edit?usp=sharing', '_blank')}
             >
               <Star className="w-4 h-4 mr-2 fill-current" />
-              REGISTER NOW!
+              Winner's List
             </Button>
           </div>
         </div>
