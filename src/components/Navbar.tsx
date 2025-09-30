@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Menu, X, Sparkles, ExternalLink } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -110,38 +110,37 @@ const Navbar = () => {
 
           {/* Winner's List Button */}
           <div className="hidden md:block">
-            <Dialog>
-              <DialogTrigger asChild>
+            <Popover>
+              <PopoverTrigger asChild>
                 <Button variant="default" className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" style={{
                 animationDuration: '0.8s'
               }}>
                   <Sparkles className="w-4 h-4 mr-2" />
                   Winner's List!
                 </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
-                <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold text-gradient">Winner's List</DialogTitle>
-                </DialogHeader>
-                <div className="flex-1 overflow-hidden rounded-lg border border-primary/20 bg-background">
-                  <iframe 
-                    src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
-                    className="w-full h-[60vh]"
-                    title="Winner's List Preview"
-                  />
-                </div>
-                <div className="pt-4 flex justify-center">
+              </PopoverTrigger>
+              <PopoverContent className="w-96 p-4" align="end" sideOffset={8}>
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold text-gradient">Winner's List</h3>
+                  <div className="rounded-lg border border-primary/20 bg-background overflow-hidden">
+                    <iframe 
+                      src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
+                      className="w-full h-[300px]"
+                      title="Winner's List Preview"
+                    />
+                  </div>
                   <Button 
                     variant="default" 
-                    className="bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+                    size="sm"
+                    className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold"
                     onClick={() => window.open('https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/edit?usp=sharing', '_blank')}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Click here to view the full list
                   </Button>
                 </div>
-              </DialogContent>
-            </Dialog>
+              </PopoverContent>
+            </Popover>
           </div>
 
           {/* Mobile menu button */}
@@ -160,36 +159,35 @@ const Navbar = () => {
                 {item.name}
               </a>)}
             <div className="pt-4">
-              <Dialog>
-                <DialogTrigger asChild>
+              <Popover>
+                <PopoverTrigger asChild>
                   <Button variant="gradient" className="w-full">
                     <Sparkles className="w-4 h-4 mr-2" />
                     Winner's List!
                   </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
-                  <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-gradient">Winner's List</DialogTitle>
-                  </DialogHeader>
-                  <div className="flex-1 overflow-hidden rounded-lg border border-primary/20 bg-background">
-                    <iframe 
-                      src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
-                      className="w-full h-[60vh]"
-                      title="Winner's List Preview"
-                    />
-                  </div>
-                  <div className="pt-4 flex justify-center">
+                </PopoverTrigger>
+                <PopoverContent className="w-80 p-4" align="start" sideOffset={8}>
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-bold text-gradient">Winner's List</h3>
+                    <div className="rounded-lg border border-primary/20 bg-background overflow-hidden">
+                      <iframe 
+                        src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
+                        className="w-full h-[300px]"
+                        title="Winner's List Preview"
+                      />
+                    </div>
                     <Button 
                       variant="default" 
-                      className="bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+                      size="sm"
+                      className="w-full bg-primary hover:bg-secondary text-primary-foreground font-bold"
                       onClick={() => window.open('https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/edit?usp=sharing', '_blank')}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Click here to view the full list
                     </Button>
                   </div>
-                </DialogContent>
-              </Dialog>
+                </PopoverContent>
+              </Popover>
             </div>
           </div>
         </div>}
