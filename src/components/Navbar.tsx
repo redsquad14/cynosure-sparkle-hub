@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Menu, X, Sparkles, ExternalLink } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -108,57 +108,40 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Register Button */}
+          {/* Winner's List Button */}
           <div className="hidden md:block">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+            <Dialog>
+              <DialogTrigger asChild>
                 <Button variant="default" className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" style={{
                 animationDuration: '0.8s'
               }}>
                   <Sparkles className="w-4 h-4 mr-2" />
                   Winner's List!
                 </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-96 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                <div className="space-y-3">
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex items-center gap-4">
-                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        FORM 1
-                      </Button>
-                      <p className="text-sm text-muted-foreground flex-1">
-                        Primary registration form for general participants and students
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
-
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex items-center gap-4">
-                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        FORM 2
-                      </Button>
-                      <p className="text-sm text-muted-foreground flex-1">
-                        This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem asChild className="p-0">
-                    <div className="flex items-center gap-4">
-                      <Button variant="default" className="flex-shrink-0 bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
-                        <Sparkles className="w-4 h-4 mr-2" />
-                        I.R FORM
-                      </Button>
-                      <p className="text-sm text-muted-foreground flex-1">
-                        This registration form is for independent teams or individuals.
-                      </p>
-                    </div>
-                  </DropdownMenuItem>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-gradient">Winner's List</DialogTitle>
+                </DialogHeader>
+                <div className="flex-1 overflow-hidden rounded-lg border border-primary/20 bg-background">
+                  <iframe 
+                    src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
+                    className="w-full h-[60vh]"
+                    title="Winner's List Preview"
+                  />
                 </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+                <div className="pt-4 flex justify-center">
+                  <Button 
+                    variant="default" 
+                    className="bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+                    onClick={() => window.open('https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/edit?usp=sharing', '_blank')}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Click here to view the full list
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Mobile menu button */}
@@ -177,53 +160,36 @@ const Navbar = () => {
                 {item.name}
               </a>)}
             <div className="pt-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
+              <Dialog>
+                <DialogTrigger asChild>
                   <Button variant="gradient" className="w-full">
                     <Sparkles className="w-4 h-4 mr-2" />
                     Winner's List!
                   </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-80 p-4 bg-background/95 backdrop-blur-md border border-primary/20 shadow-xl">
-                  <div className="space-y-3">
-                    <DropdownMenuItem asChild className="p-0">
-                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSd02ZrBYPIG8Wqn6YSlxyJpvWM8zaSzbMr2yAP-rUig-MMW9Q/viewform?vc=0&c=0&w=1&flr=0', '_blank')}>
-                          <Sparkles className="w-4 h-4 mr-2" />
-                          FORM 1
-                        </Button>
-                        <p className="text-sm text-muted-foreground flex-1">
-                          Primary registration form for general participants
-                        </p>
-                      </div>
-                    </DropdownMenuItem>
-
-                    <DropdownMenuItem asChild className="p-0">
-                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScvt3UKmOUVta1JNfr9vw2zOSb1wos3MBMM0gSXraHGjJHqxg/viewform?usp=sf_link', '_blank')}>
-                          <Sparkles className="w-4 h-4 mr-2" />
-                          FORM 2
-                        </Button>
-                        <p className="text-sm text-muted-foreground flex-1">
-                          This form is for specifying the events and participant names for your school's entries as per CG Registration 4.0 (Form 1).
-                        </p>
-                      </div>
-                    </DropdownMenuItem>
-                    
-                    <DropdownMenuItem asChild className="p-0">
-                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                        <Button variant="gradient" className="flex-shrink-0" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdopPGoFVA6Zn3RBGRqwKCuILfNvrclgr-dGzYp6RMSzn59xQ/viewform?usp=dialog', '_blank')}>
-                          <Sparkles className="w-4 h-4 mr-2" />
-                          I.R FORM
-                        </Button>
-                        <p className="text-sm text-muted-foreground flex-1">
-                          This registration form is for independent teams or individuals.
-                        </p>
-                      </div>
-                    </DropdownMenuItem>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-gradient">Winner's List</DialogTitle>
+                  </DialogHeader>
+                  <div className="flex-1 overflow-hidden rounded-lg border border-primary/20 bg-background">
+                    <iframe 
+                      src="https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/preview"
+                      className="w-full h-[60vh]"
+                      title="Winner's List Preview"
+                    />
                   </div>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                  <div className="pt-4 flex justify-center">
+                    <Button 
+                      variant="default" 
+                      className="bg-primary hover:bg-secondary text-primary-foreground font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300"
+                      onClick={() => window.open('https://docs.google.com/document/d/1LDVik5zwTtLDBWAVADSmUo2NbYnxssCoyCi4A8dtI6o/edit?usp=sharing', '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Click here to view the full list
+                    </Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>}
