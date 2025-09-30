@@ -122,7 +122,7 @@ const SlideshowGallery = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient mb-4 sm:mb-6 my-0 py-2 sm:py-[12px]">Gallery</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient mb-4 sm:mb-6 my-0 py-2 sm:py-[12px]">Winner's List</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-4 sm:mb-6 lg:mb-8 px-2">
             <Camera className="text-primary animate-pulse w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 flex-shrink-0" />
             <p className="text-sm sm:text-lg lg:text-2xl text-accent font-semibold text-center">Moments That Sparkle Forever</p>
