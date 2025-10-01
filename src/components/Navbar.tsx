@@ -112,11 +112,11 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Popover>
               <PopoverTrigger asChild>
-                <Button variant="default" className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300" style={{
+                <Button variant="default" size="sm" className="bg-primary hover:bg-secondary text-primary-foreground animate-pulse font-bold shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70 transition-all duration-300 flex items-center justify-center" style={{
                 animationDuration: '0.8s'
               }}>
-                  <Sparkles className="w-5 h-5 mr-2" />
-                  Winner's List!
+                  <Sparkles className="w-4 h-4 mr-1.5" />
+                  <span className="text-sm">Winner's List!</span>
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-96 p-4" align="end" sideOffset={8}>
@@ -161,9 +161,9 @@ const Navbar = () => {
             <div className="pt-4">
               <Popover>
                 <PopoverTrigger asChild>
-                  <Button variant="gradient" className="w-full">
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Winner's List!
+                  <Button variant="gradient" size="sm" className="w-full flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 mr-1.5" />
+                    <span className="text-sm">Winner's List!</span>
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-80 p-4" align="start" sideOffset={8}>
