@@ -78,6 +78,38 @@ const SlideshowGallery = () => {
     type: 'image',
     src: '/gallery/event-entrance.jpg',
     alt: 'CYNOSURE Event Entrance'
+  }, {
+    type: 'image',
+    src: '/gallery/colorful-performance.jpg',
+    alt: 'CYNOSURE Colorful Performance'
+  }, {
+    type: 'image',
+    src: '/gallery/stage-lights.jpg',
+    alt: 'CYNOSURE Stage Lights'
+  }, {
+    type: 'image',
+    src: '/gallery/energetic-crowd.jpg',
+    alt: 'CYNOSURE Energetic Crowd'
+  }, {
+    type: 'image',
+    src: '/gallery/audience-engagement.jpg',
+    alt: 'CYNOSURE Audience Engagement'
+  }, {
+    type: 'image',
+    src: '/gallery/performance-action.jpg',
+    alt: 'CYNOSURE Performance Action'
+  }, {
+    type: 'image',
+    src: '/gallery/group-performance.jpg',
+    alt: 'CYNOSURE Group Performance'
+  }, {
+    type: 'image',
+    src: '/gallery/dynamic-stage.jpg',
+    alt: 'CYNOSURE Dynamic Stage'
+  }, {
+    type: 'image',
+    src: '/gallery/lively-atmosphere.jpg',
+    alt: 'CYNOSURE Lively Atmosphere'
   }];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
