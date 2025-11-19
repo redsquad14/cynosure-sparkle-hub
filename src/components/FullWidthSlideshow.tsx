@@ -21,10 +21,10 @@ const FullWidthSlideshow = () => {
     },
     {
       type: 'image',
-      src: '/lovable-uploads/98f06016-c362-40a1-8f95-875bc4e1e3bd.png',
-      alt: 'CYNOSURE 2024 Floor Art',
-      title: 'CYNOSURE 2024',
-      description: 'Beautiful floor art showcasing CYNOSURE 2024'
+      src: '/lovable-uploads/cynosure-2025-eye-art.jpg',
+      alt: 'CYNOSURE 2025 Eye Art',
+      title: 'CYNOSURE 2025',
+      description: 'Beautiful eye artwork with CYNOSURE 2025 branding'
     },
     {
       type: 'image',
