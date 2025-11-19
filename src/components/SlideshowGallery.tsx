@@ -12,56 +12,40 @@ const SlideshowGallery = () => {
   // Mixed photos and videos from CYNOSURE events
   const galleryItems: MediaItem[] = [{
     type: 'image',
-    src: '/lovable-uploads/b9ef8db0-f4b4-4624-ad0f-d5fdd79eda45.png',
-    alt: 'CYNOSURE Team Winners'
-  }, {
-    type: 'video',
-    src: '/vid1.mp4',
-    alt: 'CYNOSURE Video 1'
+    src: '/gallery/cooking-event.jpg',
+    alt: 'CYNOSURE Culinary Competition'
   }, {
     type: 'image',
-    src: '/lovable-uploads/246a69d5-d8c9-40f1-808a-41253a4026e5.png',
-    alt: 'CYNOSURE Award Ceremony'
+    src: '/gallery/traditional-dance.jpg',
+    alt: 'CYNOSURE Traditional Dance Performance'
+  }, {
+    type: 'video',
+    src: '/gallery/event-video-1.mov',
+    alt: 'CYNOSURE Event Highlights'
   }, {
     type: 'image',
-    src: '/lovable-uploads/9018d806-b458-4e0c-96ce-0cd3ae56faf6.png',
-    alt: 'CYNOSURE Chess Competition'
+    src: '/gallery/art-activity.jpg',
+    alt: 'CYNOSURE Art & Craft Activity'
   }, {
     type: 'image',
-    src: '/lovable-uploads/5979e1fb-c140-4bd2-8507-a4161a2372d7.png',
-    alt: 'CYNOSURE Championship Celebration'
+    src: '/gallery/stage-performance.jpg',
+    alt: 'CYNOSURE Stage Performance'
   }, {
     type: 'video',
-    src: '/vid2.mp4',
-    alt: 'CYNOSURE Video 2'
+    src: '/gallery/event-video-2.mp4',
+    alt: 'CYNOSURE Event Moments'
   }, {
     type: 'image',
-    src: '/lovable-uploads/457b5760-b68b-4694-93c1-e3cfab610c19.png',
-    alt: 'CYNOSURE Event Collage'
-  }, {
-    type: 'video',
-    src: '/vid7.mp4',
-    alt: 'CYNOSURE Video 7'
+    src: '/gallery/sports-event.jpg',
+    alt: 'CYNOSURE Football Match'
   }, {
     type: 'image',
-    src: '/lovable-uploads/0251827a-6db1-47a2-b652-8739777b6816.png',
-    alt: 'CYNOSURE Event Presentation'
+    src: '/gallery/musical-performance.jpg',
+    alt: 'CYNOSURE Musical Performance'
   }, {
-    type: 'video',
-    src: '/vid4.mp4',
-    alt: 'CYNOSURE Video 4'
-  }, {
-    type: 'video',
-    src: '/vid8.mp4',
-    alt: 'CYNOSURE Video 8'
-  }, {
-    type: 'video',
-    src: '/vid6.mp4',
-    alt: 'CYNOSURE Video 6'
-  }, {
-    type: 'video',
-    src: '/vid12.mp4',
-    alt: 'CYNOSURE Video 12'
+    type: 'image',
+    src: '/gallery/performer-portrait.jpg',
+    alt: 'CYNOSURE Performer'
   }];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
