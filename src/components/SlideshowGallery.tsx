@@ -46,6 +46,38 @@ const SlideshowGallery = () => {
     type: 'image',
     src: '/gallery/performer-portrait.jpg',
     alt: 'CYNOSURE Performer'
+  }, {
+    type: 'image',
+    src: '/gallery/winners-team.jpg',
+    alt: 'CYNOSURE Winners Team'
+  }, {
+    type: 'image',
+    src: '/gallery/prize-presentation-1.jpg',
+    alt: 'CYNOSURE Prize Distribution'
+  }, {
+    type: 'image',
+    src: '/gallery/prize-presentation-2.jpg',
+    alt: 'CYNOSURE Award Ceremony'
+  }, {
+    type: 'image',
+    src: '/gallery/team-dance.jpg',
+    alt: 'CYNOSURE Team Dance Performance'
+  }, {
+    type: 'image',
+    src: '/gallery/crowd-celebration.jpg',
+    alt: 'CYNOSURE Crowd Celebration'
+  }, {
+    type: 'image',
+    src: '/gallery/trophy-ceremony.jpg',
+    alt: 'CYNOSURE Trophy Ceremony'
+  }, {
+    type: 'image',
+    src: '/gallery/crowd-fun.jpg',
+    alt: 'CYNOSURE Crowd Enjoying'
+  }, {
+    type: 'image',
+    src: '/gallery/event-entrance.jpg',
+    alt: 'CYNOSURE Event Entrance'
   }];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -121,16 +153,14 @@ const SlideshowGallery = () => {
             <CardContent className="p-0">
               <div className="relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[85vh] group cursor-pointer" onClick={() => openLightbox(currentIndex)}>
                 {currentItem.type === 'video' ? <>
-                    <video src={currentItem.src} preload="metadata" className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" style={{
-                  objectFit: 'cover'
-                }} />
+                    <video src={currentItem.src} preload="metadata" className="w-full h-full object-contain transition-all duration-700 bg-black" />
                     {/* Play button overlay for videos */}
                     <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                       <div className="bg-black/60 hover:bg-black/80 transition-all duration-300 rounded-full p-6 backdrop-blur-sm border border-white/20">
                         <Play className="h-16 w-16 text-white fill-white" />
                       </div>
                     </div>
-                  </> : <img src={currentItem.src} alt={currentItem.alt} className="w-full h-full object-cover transition-all duration-700 hover:scale-[1.02]" />}
+                  </> : <img src={currentItem.src} alt={currentItem.alt} className="w-full h-full object-contain transition-all duration-700 bg-black" />}
                 
                 {/* Enhanced Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
@@ -254,8 +284,8 @@ const SlideshowGallery = () => {
             </Button>
 
             {/* Media content */}
-            <div className="max-w-[90vw] max-h-[90vh] flex items-center justify-center">
-              {lightboxItem.type === 'image' ? <img src={lightboxItem.src} alt={lightboxItem.alt} className="max-w-full max-h-full object-contain rounded-lg shadow-2xl" /> : <video src={lightboxItem.src} controls autoPlay className="max-w-full max-h-full rounded-lg shadow-2xl" />}
+            <div className="max-w-[90vw] max-h-[90vh] flex items-center justify-center bg-black/50 rounded-lg">
+              {lightboxItem.type === 'image' ? <img src={lightboxItem.src} alt={lightboxItem.alt} className="max-w-full max-h-full object-contain rounded-lg shadow-2xl" /> : <video src={lightboxItem.src} controls autoPlay className="max-w-full max-h-full object-contain rounded-lg shadow-2xl" />}
             </div>
 
             {/* Media counter */}
